@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Researchin株式会社 | 事業内容・会社概要</title>
+    <meta
+      name="description"
+      content="Researchin株式会社は、研究・調査への参加を誰にでも開くプラットフォームを提供します。"
+    />
+    <style>
+      :root {
+        --bg: #f7fdf9;
+        --card: #ffffff;
+        --muted: #4b5563;
+        --text: #0b1b14;
+        --accent: #059669;
+        --accent-2: #34d399;
+        --border: #d1fae5;
+        --radius: 16px;
+        --container: 980px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 18px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: System-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+          Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+          sans-serif;
+        line-height: 1.75;
+        -webkit-text-size-adjust: 100%;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .container {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--border);
+        z-index: 10;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand {
+        font-weight: 800;
+        color: var(--accent);
+      }
+      .spacer {
+        flex: 1;
+      }
+      .btn {
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: var(--accent);
+        color: #fff;
+        font-weight: 600;
+      }
+      .hero {
+        background: radial-gradient(
+          900px 380px at 60% -20%,
+          rgba(5, 150, 105, 0.15),
+          transparent 60%
+        );
+      }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        align-items: start;
+        padding: 28px 0;
+      }
+      .badge {
+        padding: 6px 10px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--accent);
+        font-size: 0.8rem;
+        background: #ecfdf5;
+      }
+      h1 {
+        font-size: 1.9rem;
+        line-height: 1.25;
+        margin: 10px 0 4px;
+        color: var(--accent);
+      }
+      .lead {
+        font-size: 1.05rem;
+        color: #1f3b2f;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      section {
+        padding: 22px 0;
+      }
+      h2 {
+        font-size: 1.4rem;
+        margin: 0 0 10px;
+        color: var(--accent);
+      }
+      h3 {
+        font-size: 1.05rem;
+        margin: 10px 0 6px;
+        color: #065f46;
+      }
+      .list {
+        margin: 6px 0 0 1.2rem;
+      }
+      .kpi {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 12px;
+      }
+      .table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+      }
+      .table th,
+      .table td {
+        padding: 12px 14px;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        background: #f0fdf4;
+      }
+      .table th {
+        width: 42%;
+        color: #065f46;
+        text-align: left;
+        border-left: 1px solid var(--border);
+        border-radius: 10px 0 0 10px;
+        background: #ecfdf5;
+      }
+      .table td {
+        border-right: 1px solid var(--border);
+        border-radius: 0 10px 10px 0;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 22px 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      @media (min-width: 680px) {
+        html {
+          font-size: 19px;
+        }
+        .hero-inner {
+          padding: 40px 0;
+        }
+      }
+      @media (min-width: 980px) {
+        html {
+          font-size: 20px;
+        }
+        .hero-inner {
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 28px;
+        }
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">Researchin株式会社</div>
+        <div class="spacer"></div>
+        <a class="btn" href="#contact">お問い合わせ</a>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">研究参加プラットフォーム</span>
+          <h1>誰でも研究に参加できる社会を、あたりまえに。</h1>
+          <p class="lead">
+            大学の実験から企業の製品モニターまで、「知りたい」と「協力したい」をつなぐ参加者募集・管理プラットフォーム。楽しく社会貢献しながら、適切な謝礼を。
+          </p>
+          <div class="kpi">
+            <div class="card">
+              <span class="label">対象</span
+              ><strong>市民研究者・企業・大学</strong>
+            </div>
+            <div class="card">
+              <span class="label">提供価値</span
+              ><strong>募集の効率化 / 参加のしやすさ</strong>
+            </div>
+            <div class="card">
+              <span class="label">ビジョン</span
+              ><strong>研究参加のインフラになる</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 16px">
+        <div class="card">
+          <h3 style="margin-top: 0">Reseachin の中核機能</h3>
+          <ul class="list">
+            <li>詳細スクリーニング（属性・条件で協力者検索）</li>
+            <li>謝礼支払い代行（事務コスト削減）</li>
+            <li>実験完了後の相互評価（安心・信頼の醸成）</li>
+            <li>募集情報の集約（AI・スクレイピング活用）</li>
+            <li>アクセシブルなUI（入力簡略化・多言語）</li>
+            <li>成果フィードバック（長期的関係構築）</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="container">
+        <h2>事業内容</h2>
+        <div class="card">
+          <ul class="list">
+            <li>参加者募集・管理SaaS</li>
+            <li>案件アグリゲーション（国内募集情報の収集・公開）</li>
+            <li>決済・支払い代行</li>
+            <li>信頼レイヤ（評価・本人確認）</li>
+            <li>データ活用（匿名統計）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>会社概要</h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>会社名</th>
+              <td>Researchin株式会社</td>
+            </tr>
+            <tr>
+              <th>本店所在地</th>
+              <td>
+                東京都渋谷区道玄坂１丁目１０番８号渋谷道玄坂東急ビル２Ｆ－Ｃ
+              </td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2025年08月20日</td>
+            </tr>
+            <tr>
+              <th>代表取締役CEO</th>
+              <td>今井崇人</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>
+                研究・調査の参加者募集・管理プラットフォームの企画・開発・運営
+              </td>
+            </tr>
+            <tr>
+              <th>連絡先</th>
+              <td>
+                Email：<a href="mailto:info@jobresearchin.com"
+                  >info@jobresearchin.com</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <div class="card">
+          <p>ご相談・連携・取材のご依頼は以下までお願いします。</p>
+          <ul class="list">
+            <li>
+              Email：<a href="mailto:info@jobresearchin.com"
+                >info@jobresearchin.com</a
+              >
+            </li>
+            <li>フォーム：<a href="#">お問い合わせフォーム（準備中）</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        © <span id="y"></span> Researchin Inc. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
