@@ -1,319 +1,362 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Researchin株式会社 | 事業内容・会社概要</title>
+    <title data-translate-key="metaTitle">Researchin Inc. | 参加者募集プラットフォーム</title>
     <meta
-      name="description"
-      content="Researchin株式会社は、研究・調査への参加を誰にでも開くプラットフォームを提供します！"
+        name="description"
+        content="Researchin株式会社は、研究・調査への参加を誰にでも開くプラットフォームを提供します"
+        data-translate-key="metaDescription"
     />
-    <style>
-      :root {
-        --bg: #f7fdf9;
-        --card: #ffffff;
-        --muted: #4b5563;
-        --text: #0b1b14;
-        --accent: #059669;
-        --accent-2: #34d399;
-        --border: #d1fae5;
-        --radius: 16px;
-        --container: 980px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        font-size: 18px;
-      }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: System-ui, -apple-system, Segoe UI, Roboto, Helvetica,
-          Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
-          sans-serif;
-        line-height: 1.75;
-        -webkit-text-size-adjust: 100%;
-      }
-      a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-      .container {
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 20px;
-      }
-      header {
-        position: sticky;
-        top: 0;
-        background: rgba(255, 255, 255, 0.96);
-        border-bottom: 1px solid var(--border);
-        z-index: 10;
-      }
-      .nav {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .brand {
-        font-weight: 800;
-        color: var(--accent);
-      }
-      .spacer {
-        flex: 1;
-      }
-      .btn {
-        padding: 12px 16px;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        background: var(--accent);
-        color: #fff;
-        font-weight: 600;
-      }
-      .hero {
-        background: radial-gradient(
-          900px 380px at 60% -20%,
-          rgba(5, 150, 105, 0.15),
-          transparent 60%
-        );
-      }
-      .hero-inner {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 18px;
-        align-items: start;
-        padding: 28px 0;
-      }
-      .badge {
-        padding: 6px 10px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        color: var(--accent);
-        font-size: 0.8rem;
-        background: #ecfdf5;
-      }
-      h1 {
-        font-size: 1.9rem;
-        line-height: 1.25;
-        margin: 10px 0 4px;
-        color: var(--accent);
-      }
-      .lead {
-        font-size: 1.05rem;
-        color: #1f3b2f;
-      }
-      .card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 18px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      }
-      section {
-        padding: 22px 0;
-      }
-      h2 {
-        font-size: 1.4rem;
-        margin: 0 0 10px;
-        color: var(--accent);
-      }
-      h3 {
-        font-size: 1.05rem;
-        margin: 10px 0 6px;
-        color: #065f46;
-      }
-      .list {
-        margin: 6px 0 0 1.2rem;
-      }
-      .kpi {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-top: 12px;
-      }
-      .table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 10px;
-      }
-      .table th,
-      .table td {
-        padding: 12px 14px;
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        background: #f0fdf4;
-      }
-      .table th {
-        width: 42%;
-        color: #065f46;
-        text-align: left;
-        border-left: 1px solid var(--border);
-        border-radius: 10px 0 0 10px;
-        background: #ecfdf5;
-      }
-      .table td {
-        border-right: 1px solid var(--border);
-        border-radius: 0 10px 10px 0;
-      }
-      footer {
-        border-top: 1px solid var(--border);
-        padding: 22px 0;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      @media (min-width: 680px) {
-        html {
-          font-size: 19px;
-        }
-        .hero-inner {
-          padding: 40px 0;
-        }
-      }
-      @media (min-width: 980px) {
-        html {
-          font-size: 20px;
-        }
-        .hero-inner {
-          grid-template-columns: 1.1fr 0.9fr;
-          gap: 28px;
-        }
-        h1 {
-          font-size: 2.2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <div class="brand">Researchin株式会社</div>
-        <div class="spacer"></div>
-        <a class="btn" href="#contact">お問い合わせ</a>
-      </div>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <main class="hero">
-      <div class="container hero-inner">
-        <div>
-          <span class="badge">研究参加プラットフォーム</span>
-          <h1>誰でも研究に参加できる社会を、あたりまえに。</h1>
-          <p class="lead">
-            大学の実験から企業の製品モニターまで、「知りたい」と「協力したい」をつなぐ参加者募集・管理プラットフォーム。楽しく社会貢献しながら、適切な謝礼を。
-          </p>
-          <div class="kpi">
-            <div class="card">
-              <span class="label">対象</span
-              ><strong>市民研究者・企業・大学</strong>
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <button class="menu-close-btn" id="menu-close-btn">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#vision" class="menu-link" data-translate-key="navVision">Vision</a></li>
+                <li><a href="#features" class="menu-link" data-translate-key="navFeatures">Features</a></li>
+                <li><a href="#services" class="menu-link" data-translate-key="navServices">Services</a></li>
+                <li><a href="#company" class="menu-link" data-translate-key="navCompany">Company</a></li>
+                <li><a href="#contact" class="menu-link" data-translate-key="navContactMenu">Contact</a></li>
+            </ul>
+            <div class="lang-switcher mobile-lang-switcher">
+                <button data-lang="jp">JP</button>
+                <span>/</span>
+                <button data-lang="en">EN</button>
             </div>
-            <div class="card">
-              <span class="label">提供価値</span
-              ><strong>募集の効率化 / 参加のしやすさ</strong>
+        </nav>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+    <div class="site-wrapper">
+        <header>
+            <div class="container nav-container">
+                <a href="/" class="brand-logo">
+                    <img src="logo.png" alt="Researchin Inc. Logo" />
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="#vision" data-translate-key="navVision">Vision</a>
+                    <a href="#features" data-translate-key="navFeatures">Features</a>
+                    <a href="#services" data-translate-key="navServices">Services</a>
+                    <a href="#company" data-translate-key="navCompany">Company</a>
+                </nav>
+
+                <div class="header-right">
+                    <div class="lang-switcher desktop-lang-switcher">
+                        <button data-lang="jp">JP</button>
+                        <span>/</span>
+                        <button data-lang="en">EN</button>
+                    </div>
+                    <a href="#contact" class="btn contact-btn" data-translate-key="navContactBtn">Contact</a>
+                    <button class="hamburger-menu" id="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
-            <div class="card">
-              <span class="label">ビジョン</span
-              ><strong>研究参加のインフラになる</strong>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-background">
+                    <img src="hero-background.jpg" alt="Abstract background image">
+                </div>
+                <div class="container hero-content">
+                    <h1 class="fade-in-up" data-translate-key="heroTitle">
+                        Connecting Curiosity with Discovery.
+                    </h1>
+                    <p class="fade-in-up delay-1" data-translate-key="heroSubtitle">
+                        科学の進歩に、あなたの参加を。誰でも研究に参加できる社会を、あたりまえに。
+                    </p>
+                </div>
+            </section>
+            
+            <section id="vision" class="section bg-light">
+                <div class="container narrow">
+                    <div class="section-header fade-in-up">
+                        <h2 data-translate-key="visionSectionTitle">Our Vision</h2>
+                        <p data-translate-key="visionSectionSubtitle">私たちの目指す世界</p>
+                    </div>
+                    <div class="vision-image fade-in-up">
+                        <img src="vision-image.jpg" alt="Vision concept image">
+                    </div>
+                    <h3 class="vision-tagline fade-in-up delay-1" data-translate-key="visionTagline">
+                        すべての知的好奇心が、<br>未来の発見につながる社会へ。
+                    </h3>
+                    <p class="fade-in-up delay-2" data-translate-key="visionDesc">
+                        私たちは、研究が一部の専門家だけのものではなく、すべての人の好奇心から始まるものだと信じています。Researchinは、小さな「知りたい」と誠実な「協力したい」という想いを繋ぐことで、科学技術と社会の発展に貢献するインフラとなることを目指します。
+                    </p>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 data-translate-key="featuresSectionTitle">Our Features</h2>
+                        <p data-translate-key="featuresSectionSubtitle">Researchinの3つの特徴</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-image fade-in-left">
+                            <img src="feature-image-01.jpg" alt="詳細な検索機能のイメージ画像" />
+                        </div>
+                        <div class="feature-text fade-in-right delay-1">
+                            <span>01</span>
+                            <h3 data-translate-key="feature1Title">詳細な検索機能</h3>
+                            <p data-translate-key="feature1Desc">興味や専門分野に合わせて、豊富な研究プロジェクトを簡単に検索できます。属性や条件で絞り込み、あなたにぴったりの研究を見つけましょう。</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item row-reverse">
+                        <div class="feature-image fade-in-right">
+                            <img src="feature-image-02.jpg" alt="透明性の高い報酬制度のイメージ画像" />
+                        </div>
+                        <div class="feature-text fade-in-left delay-1">
+                            <span>02</span>
+                            <h3 data-translate-key="feature2Title">透明性の高い報酬制度</h3>
+                            <p data-translate-key="feature2Desc">参加する研究に応じて、明確な謝礼が提供されます。あなたの貢献がきちんと評価される仕組みで、安心して研究に参加できます。</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-image fade-in-left">
+                            <img src="feature-image-03.jpg" alt="研究者との繋がりのイメージ画像" />
+                        </div>
+                        <div class="feature-text fade-in-right delay-1">
+                            <span>03</span>
+                            <h3 data-translate-key="feature3Title">研究者との繋がり</h3>
+                            <p data-translate-key="feature3Desc">研究プロジェクトを通じて、大学や企業の研究者と直接繋がることができます。知的好奇心を満たし、新たな知識や視点を得る貴重な機会です。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section bg-light">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2 data-translate-key="servicesSectionTitle">Our Services</h2>
+                        <p data-translate-key="servicesSectionSubtitle">事業内容</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card fade-in-up">
+                            <img src="icon-platform.png" alt="" class="service-icon">
+                            <h4 data-translate-key="service1Title">研究参加プラットフォーム</h4>
+                            <p data-translate-key="service1Desc">多様な研究プロジェクトの募集情報を一元化。参加者は興味のある研究を簡単に、研究者は効率的に協力者を集められます。</p>
+                        </div>
+                        <div class="service-card fade-in-up delay-1">
+                            <img src="icon-aggregation.png" alt="" class="service-icon">
+                            <h4 data-translate-key="service2Title">案件アグリゲーション</h4>
+                            <p data-translate-key="service2Desc">国内外の主要な研究募集情報をAIが収集・解析し、プラットフォームに集約。常に最新の情報を提供します。</p>
+                        </div>
+                        <div class="service-card fade-in-up delay-2">
+                            <img src="icon-payment.png" alt="" class="service-icon">
+                            <h4 data-translate-key="service3Title">決済・支払い代行</h4>
+                            <p data-translate-key="service3Desc">研究協力者への謝礼支払いをスムーズに代行。煩雑な事務手続きを軽減し、研究者は研究活動に専念できます。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="company" class="section">
+                <div class="container narrow fade-in-up">
+                    <div class="section-header">
+                        <h2 data-translate-key="companySectionTitle">Company Profile</h2>
+                        <p data-translate-key="companySectionSubtitle">会社概要</p>
+                    </div>
+                    <table class="company-table">
+                        <tr><th data-translate-key="companyNameLabel">会社名</th><td>Researchin株式会社</td></tr>
+                        <tr><th data-translate-key="companyAddressLabel">本店所在地</th><td>東京都渋谷区道玄坂１丁目１０番８号渋谷道玄坂東急ビル２Ｆ－Ｃ</td></tr>
+                        <tr><th data-translate-key="companyFoundedLabel">設立</th><td>2025年08月20日</td></tr>
+                        <tr><th>代表取締役CEO</th><td>今井崇人</td></tr>
+                        <tr><th data-translate-key="companyBizLabel">事業内容</th><td data-translate-key="companyBizDesc">研究・調査の参加者募集・管理プラットフォームの企画・開発・運営</td></tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="contact" class="section bg-light">
+                <div class="container narrow fade-in-up">
+                     <div class="section-header">
+                        <h2 data-translate-key="contactSectionTitle">Contact</h2>
+                        <p data-translate-key="contactSectionSubtitle">ご相談・連携・取材のご依頼は、<br class="mobile-only">以下までお願いします。</p>
+                    </div>
+                    <p class="contact-email">
+                        <a href="mailto:info@jobresearchin.com">info@jobresearchin.com</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>© <span id="currentYear"></span> Researchin Inc. All rights reserved.</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="container" style="margin-top: 16px">
-        <div class="card">
-          <h3 style="margin-top: 0">Reseachin の中核機能</h3>
-          <ul class="list">
-            <li>詳細スクリーニング（属性・条件で協力者検索）</li>
-            <li>謝礼支払い代行（事務コスト削減）</li>
-            <li>実験完了後の相互評価（安心・信頼の醸成）</li>
-            <li>募集情報の集約（AI・スクレイピング活用）</li>
-            <li>アクセシブルなUI（入力簡略化・多言語）</li>
-            <li>成果フィードバック（長期的関係構築）</li>
-          </ul>
-        </div>
-      </div>
-    </main>
+        </footer>
+    </div>
+<script>
+        // 年の表示
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-    <section>
-      <div class="container">
-        <h2>事業内容</h2>
-        <div class="card">
-          <ul class="list">
-            <li>参加者募集・管理SaaS</li>
-            <li>案件アグリゲーション（国内募集情報の収集・公開）</li>
-            <li>決済・支払い代行</li>
-            <li>信頼レイヤ（評価・本人確認）</li>
-            <li>データ活用（匿名統計）</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        // モバイルメニューの開閉ロジック
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const hamburgerBtn = document.getElementById('hamburger-menu');
+        const closeMenuBtn = document.getElementById('menu-close-btn');
+        const overlay = document.getElementById('sidebar-overlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
+        
+        const openMenu = () => {
+            mobileSidebar.classList.add('is-open');
+            overlay.classList.add('is-open');
+        };
+        const closeMenu = () => {
+            mobileSidebar.classList.remove('is-open');
+            overlay.classList.remove('is-open');
+        };
 
-    <section>
-      <div class="container">
-        <h2>会社概要</h2>
-        <table class="table">
-          <tbody>
-            <tr>
-              <th>会社名</th>
-              <td>Researchin株式会社</td>
-            </tr>
-            <tr>
-              <th>本店所在地</th>
-              <td>
-                東京都渋谷区道玄坂１丁目１０番８号渋谷道玄坂東急ビル２Ｆ－Ｃ
-              </td>
-            </tr>
-            <tr>
-              <th>設立</th>
-              <td>2025年08月20日</td>
-            </tr>
-            <tr>
-              <th>代表取締役CEO</th>
-              <td>今井崇人</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>
-                研究・調査の参加者募集・管理プラットフォームの企画・開発・運営
-              </td>
-            </tr>
-            <tr>
-              <th>連絡先</th>
-              <td>
-                Email：<a href="mailto:info@jobresearchin.com"
-                  >info@jobresearchin.com</a
-                >
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        hamburgerBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+        menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+        
+        // --- 翻訳とアニメーションのスクリプトは変更なし ---
+        const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedElements.forEach(el => observer.observe(el));
+        const translations = {
+            jp: {
+                metaTitle: "Researchin Inc. | 参加者募集プラットフォーム",
+                metaDescription: "Researchin株式会社は、研究・調査への参加を誰にでも開くプラットフォームを提供します！",
+                navVision: "ビジョン",
+                navFeatures: "特徴",
+                navServices: "事業内容",
+                navCompany: "会社概要",
+                navContactMenu: "お問い合わせ",
+                navContactBtn: "お問い合わせ",
+                heroTitle: "科学の進歩に、<br>あなたの参加を。",
+                heroSubtitle: "誰でも研究に参加できる社会を、あたりまえに。",
+                visionSectionTitle: "Our Vision",
+                visionSectionSubtitle: "私たちの目指す世界",
+                visionTagline: "すべての知的好奇心が、<br>未来の発見につながる社会へ。",
+                visionDesc: "私たちは、研究が一部の専門家だけのものではなく、すべての人の好奇心から始まるものだと信じています。Researchinは、小さな「知りたい」と誠実な「協力したい」という想いを繋ぐことで、科学技術と社会の発展に貢献するインフラとなることを目指します。",
+                featuresSectionTitle: "Our Features",
+                featuresSectionSubtitle: "Researchinの3つの特徴",
+                feature1Title: "詳細な検索機能",
+                feature1Desc: "興味や専門分野に合わせて、豊富な研究プロジェクトを簡単に検索できます。属性や条件で絞り込み、あなたにぴったりの研究を見つけましょう。",
+                feature2Title: "透明性の高い報酬制度",
+                feature2Desc: "参加する研究に応じて、明確な謝礼が提供されます。あなたの貢献がきちんと評価される仕組みで、安心して研究に参加できます。",
+                feature3Title: "研究者との繋がり",
+                feature3Desc: "研究プロジェクトを通じて、大学や企業の研究者と直接繋がることができます。知的好奇心を満たし、新たな知識や視点を得る貴重な機会です。",
+                servicesSectionTitle: "Our Services",
+                servicesSectionSubtitle: "事業内容",
+                service1Title: "研究参加プラットフォーム",
+                service1Desc: "多様な研究プロジェクトの募集情報を一元化。参加者は興味のある研究を簡単に、研究者は効率的に協力者を集められます。",
+                service2Title: "案件アグリゲーション",
+                service2Desc: "国内外の主要な研究募集情報をAIが収集・解析し、プラットフォームに集約。常に最新の情報を提供します。",
+                service3Title: "決済・支払い代行",
+                service3Desc: "研究協力者への謝礼支払いをスムーズに代行。煩雑な事務手続きを軽減し、研究者は研究活動に専念できます。",
+                companySectionTitle: "Company Profile",
+                companySectionSubtitle: "会社概要",
+                companyNameLabel: "会社名",
+                companyAddressLabel: "本店所在地",
+                companyFoundedLabel: "設立",
+                companyBizLabel: "事業内容",
+                companyBizDesc: "研究・調査の参加者募集・管理プラットフォームの企画・開発・運営",
+                contactSectionTitle: "Contact",
+                contactSectionSubtitle: "ご相談・連携・取材のご依頼は、<br class=\"mobile-only\">以下までお願いします。",
+            },
+            en: {
+                metaTitle: "Researchin Inc. | Participant Recruitment Platform",
+                metaDescription: "Researchin Inc. provides a platform that opens participation in research and surveys to everyone!",
+                navVision: "Vision",
+                navFeatures: "Features",
+                navServices: "Services",
+                navCompany: "Company",
+                navContactMenu: "Contact",
+                navContactBtn: "Contact",
+                heroTitle: "Connecting Curiosity<br>with Discovery.",
+                heroSubtitle: "Making participation in research a natural part of society for everyone.",
+                visionSectionTitle: "Our Vision",
+                visionSectionSubtitle: "The World We Envision",
+                visionTagline: "To a society where all intellectual curiosity<br>leads to future discoveries.",
+                visionDesc: "We believe that research begins not just with a few experts, but with everyone's curiosity. Researchin aims to become the infrastructure that contributes to the advancement of science, technology, and society by connecting the simple desire to 'know' with the sincere willingness to 'collaborate.'",
+                featuresSectionTitle: "Our Features",
+                featuresSectionSubtitle: "Three Core Features of Researchin",
+                feature1Title: "Advanced Search",
+                feature1Desc: "Easily search for a wide range of research projects based on your interests and expertise. Find the perfect study by filtering with specific attributes and conditions.",
+                feature2Title: "Transparent Rewards",
+                feature2Desc: "Receive clear compensation for your participation. Our system ensures your contributions are properly valued, allowing you to participate with peace of mind.",
+                feature3Title: "Connect with Researchers",
+                feature3Desc: "Connect directly with university and corporate researchers through projects. It's a valuable opportunity to satisfy your curiosity and gain new knowledge.",
+                servicesSectionTitle: "Our Services",
+                servicesSectionSubtitle: "What We Do",
+                service1Title: "Research Participation Platform",
+                service1Desc: "We centralize recruitment information for various projects. Participants can easily find studies, and researchers can efficiently gather collaborators.",
+                service2Title: "Project Aggregation",
+                service2Desc: "Our AI collects and analyzes major research recruitment information from Japan and abroad, consolidating it on our platform to provide the latest data.",
+                service3Title: "Payment Processing",
+                service3Desc: "We handle reward payments to collaborators, reducing administrative burdens and allowing researchers to focus on their work.",
+                companySectionTitle: "Company Profile",
+                companySectionSubtitle: "About Us",
+                companyNameLabel: "Company Name",
+                companyAddressLabel: "Address",
+                companyFoundedLabel: "Founded",
+                companyBizLabel: "Business",
+                companyBizDesc: "Planning, development, and operation of a participant recruitment and management platform for research and surveys.",
+                contactSectionTitle: "Contact",
+                contactSectionSubtitle: "For consultations, partnerships, or media inquiries, <br class=\"mobile-only\">please contact us below.",
+            }
+        };
+        const langSwitchers = document.querySelectorAll('.lang-switcher');
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('[data-translate-key]');
+            elements.forEach(el => {
+                const key = el.dataset.translateKey;
+                const translation = translations[lang][key];
+                if (translation !== undefined) {
+                    if (el.tagName === 'META' || el.tagName === 'TITLE') {
+                        el.content = translation;
+                        if(el.tagName === 'TITLE') document.title = translation;
+                    } else {
+                        el.innerHTML = translation;
+                    }
+                }
+            });
+            langSwitchers.forEach(switcher => {
+                switcher.querySelectorAll('button').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.lang === lang);
+                });
+            });
+            localStorage.setItem('user-lang', lang);
+        };
+        langSwitchers.forEach(switcher => {
+            switcher.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    const lang = e.target.dataset.lang;
+                    setLanguage(lang);
+                    if (switcher.classList.contains('mobile-lang-switcher')) closeMenu();
+                }
+            });
+        });
+        const savedLang = localStorage.getItem('user-lang') || 'jp';
+        setLanguage(savedLang);
 
-    <section id="contact">
-      <div class="container">
-        <h2>お問い合わせ</h2>
-        <div class="card">
-          <p>ご相談・連携・取材のご依頼は以下までお願いします。</p>
-          <ul class="list">
-            <li>
-              Email：<a href="mailto:info@jobresearchin.com"
-                >info@jobresearchin.com</a
-              >
-            </li>
-            <li>フォーム：<a href="#">お問い合わせフォーム（準備中）</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        © <span id="y"></span> Researchin Inc. All rights reserved.
-      </div>
-    </footer>
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
     </script>
-  </body>
+</body>
 </html>
