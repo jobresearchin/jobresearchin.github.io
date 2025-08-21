@@ -111,18 +111,18 @@ header {
 .mobile-sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0; /* 初期位置を右端に */
     width: 300px;
     height: 100%;
     background-color: var(--bg-color);
     z-index: 1200;
     padding: 60px 30px;
-    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-    transform: translateX(-100%);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1); /* 影の向きを調整 */
+    transform: translateX(100%); /* 初期状態は画面右外 */
     transition: transform 0.4s ease-in-out;
 }
 .mobile-sidebar.is-open {
-    transform: translateX(0);
+    transform: translateX(0); /* is-openクラスで表示 */
 }
 .menu-close-btn {
     position: absolute;
