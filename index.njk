@@ -1,0 +1,285 @@
+---
+pagination:
+  data: translations
+  size: 1
+  alias: lang
+permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index.html"
+---
+
+<!DOCTYPE html>
+<html lang="{{ lang.key }}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ lang.metaTitle }}</title>
+  <meta name="description" content="{{ lang.metaDescription }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" hreflang="ja" href="/" />
+  <link rel="alternate" hreflang="en" href="/en/" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X754F6MGCM');
+</script>
+<body>
+  <div class="mobile-sidebar" id="mobile-sidebar">
+    <button class="menu-close-btn" id="menu-close-btn">&times;</button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#vision" class="menu-link">{{ lang.navVision }}</a>
+        </li>
+        <li>
+          <a href="#features" class="menu-link">{{ lang.navFeatures }}</a>
+        </li>
+        <li>
+          <a href="#services" class="menu-link">{{ lang.navServices }}</a>
+        </li>
+        <li>
+          <a href="#company" class="menu-link">{{ lang.navCompany }}</a>
+        </li>
+        <li>
+          <a href="#contact" class="menu-link">{{ lang.navContactMenu }}</a>
+        </li>
+      </ul>
+      <div class="lang-switcher mobile-lang-switcher">
+        <a href="/" {% if lang.key=='ja' %}class="active" {% endif %}>JP</a>
+        <span>/</span>
+        <a href="/en/" {% if lang.key=='en' %}class="active" {% endif %}>EN</a>
+      </div>
+    </nav>
+  </div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <div class="site-wrapper">
+    <header>
+      <div class="container nav-container">
+        <a href="/" class="brand-logo">
+          <img src="/images/logo.png" alt="Researchin" />
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="#vision">{{ lang.navVision }}</a>
+          <a href="#features">{{ lang.navFeatures }}</a>
+          <a href="#services">{{ lang.navServices }}</a>
+          <a href="#company">{{ lang.navCompany }}</a>
+        </nav>
+
+        <div class="header-right">
+          <div class="lang-switcher desktop-lang-switcher">
+            <a href="/" {% if lang.key=='ja' %}class="active" {% endif %}>JP</a>
+            <span>/</span>
+            <a href="/en/" {% if lang.key=='en' %}class="active" {% endif %}>EN</a>
+          </div>
+          <a href="#contact" class="btn contact-btn">{{ lang.navContactBtn }}</a>
+          <button class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-background">
+          <img src="/images/hero-background.jpg" alt="Abstract background image" />
+        </div>
+        <div class="container hero-content">
+          <h1 class="fade-in-up">{{ lang.heroTitle }}</h1>
+          <p class="fade-in-up delay-1">{{ lang.heroSubtitle }}</p>
+        </div>
+      </section>
+
+      <section id="vision" class="section bg-light">
+        <div class="container narrow">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.visionSectionTitle }}</h2>
+            <p>{{ lang.visionSectionSubtitle }}</p>
+          </div>
+          <div class="vision-image fade-in-up">
+            <img src="/images/vision-image.jpg" alt="Vision concept image" />
+          </div>
+          <h3 class="vision-tagline fade-in-up delay-1">{{ lang.visionTagline | safe }}</h3>
+          <p class="fade-in-up delay-2">{{ lang.visionDesc }}</p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.featuresSectionTitle }}</h2>
+            <p>{{ lang.featuresSectionSubtitle }}</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-image fade-in-left">
+              <img src="/images/feature-image-01.jpg" alt="詳細な検索機能のイメージ画像" />
+            </div>
+            <div class="feature-text fade-in-right delay-1">
+              <span>01</span>
+              <h3>{{ lang.feature1Title }}</h3>
+              <p>{{ lang.feature1Desc }}</p>
+            </div>
+          </div>
+
+          <div class="feature-item row-reverse">
+            <div class="feature-image fade-in-right">
+              <img src="/images/feature-image-02.jpg" alt="透明性の高い報酬制度のイメージ画像" />
+            </div>
+            <div class="feature-text fade-in-left delay-1">
+              <span>02</span>
+              <h3>{{ lang.feature2Title }}</h3>
+              <p>{{ lang.feature2Desc }}</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-image fade-in-left">
+              <img src="/images/feature-image-03.jpg" alt="研究者との繋がりのイメージ画像" />
+            </div>
+            <div class="feature-text fade-in-right delay-1">
+              <span>03</span>
+              <h3>{{ lang.feature3Title }}</h3>
+              <p>{{ lang.feature3Desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.servicesSectionTitle }}</h2>
+            <p>{{ lang.servicesSectionSubtitle }}</p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card fade-in-up">
+              <img src="/images/icon-platform.png" alt="" class="service-icon" />
+              <h4>{{ lang.service1Title }}</h4>
+              <p>{{ lang.service1Desc }}</p>
+            </div>
+            <div class="service-card fade-in-up delay-1">
+              <img src="/images/icon-data-analysis.png" alt="" class="service-icon" />
+              <h4>{{ lang.service2Title }}</h4>
+              <p>{{ lang.service2Desc }}</p>
+            </div>
+            <div class="service-card fade-in-up delay-2">
+              <img src="/images/icon-tour.png" alt="" class="service-icon" />
+              <h4>{{ lang.service3Title }}</h4>
+              <p>{{ lang.service3Desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="company" class="section">
+        <div class="container narrow fade-in-up">
+          <div class="section-header">
+            <h2>{{ lang.companySectionTitle }}</h2>
+            <p>{{ lang.companySectionSubtitle }}</p>
+          </div>
+          <table class="company-table">
+            <tr>
+              <th>{{ lang.companyNameLabel }}</th>
+              <td>Researchin株式会社</td>
+            </tr>
+            <tr>
+              <th>{{ lang.companyAddressLabel }}</th>
+              <td>
+                東京都渋谷区道玄坂１丁目１０番８号渋谷道玄坂東急ビル２Ｆ－Ｃ
+              </td>
+            </tr>
+            <tr>
+              <th>{{ lang.companyFoundedLabel }}</th>
+              <td>2025年08月20日</td>
+            </tr>
+            <tr>
+              <th>代表取締役CEO</th>
+              <td>今井崇人</td>
+            </tr>
+            <tr>
+              <th>{{ lang.companyBizLabel }}</th>
+              <td>{{ lang.companyBizDesc | safe }}</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="contact" class="section bg-light">
+        <div class="container narrow fade-in-up">
+          <div class="section-header">
+            <h2>{{ lang.contactSectionTitle }}</h2>
+            <p>{{ lang.contactSectionSubtitle | safe }}</p>
+          </div>
+          <p class="contact-email">
+            <a href="mailto:info@jobresearchin.com">info@jobresearchin.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span> Researchin Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // 年の表示
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    // モバイルメニューの開閉ロジック
+    const mobileSidebar = document.getElementById("mobile-sidebar");
+    const hamburgerBtn = document.getElementById("hamburger-menu");
+    const closeMenuBtn = document.getElementById("menu-close-btn");
+    const overlay = document.getElementById("sidebar-overlay");
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    const openMenu = () => {
+      mobileSidebar.classList.add("is-open");
+      overlay.classList.add("is-open");
+    };
+    const closeMenu = () => {
+      mobileSidebar.classList.remove("is-open");
+      overlay.classList.remove("is-open");
+    };
+
+    hamburgerBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+    menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+    // --- 翻訳とアニメーションのスクリプトは変更 ---
+    const animatedElements = document.querySelectorAll(
+      ".fade-in-up, .fade-in-left, .fade-in-right"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+
+</html>
