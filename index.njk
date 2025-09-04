@@ -16,11 +16,11 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
   <meta name="description" content="{{ lang.metaDescription }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 
   <link rel="stylesheet" href="/style.css" />
-  <link rel="alternate" hreflang="ja" href="/" />
-  <link rel="alternate" hreflang="en" href="/en/" />
+  <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/" />
+  <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
@@ -82,7 +82,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
             <a href="/en/" {% if lang.key=='en' %}class="active" {% endif %}>EN</a>
           </div>
           <a href="#contact" class="btn contact-btn">{{ lang.navContactBtn }}</a>
-          <button class="hamburger-menu" id="hamburger-menu">
+          <button class="hamburger-menu" id="hamburger-menu" aria-label="{{ lang.navMenuAriaLabel }}">
             <span></span>
             <span></span>
           </button>
@@ -166,17 +166,17 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
           <div class="services-grid">
             <div class="service-card fade-in-up">
               <img src="/images/icon-platform.png" alt="" class="service-icon" />
-              <h4>{{ lang.service1Title }}</h4>
+              <h3>{{ lang.service1Title }}</h3>
               <p>{{ lang.service1Desc }}</p>
             </div>
             <div class="service-card fade-in-up delay-1">
               <img src="/images/icon-data-analysis.png" alt="" class="service-icon" />
-              <h4>{{ lang.service2Title }}</h4>
+              <h3>{{ lang.service2Title }}</h3>
               <p>{{ lang.service2Desc }}</p>
             </div>
             <div class="service-card fade-in-up delay-2">
               <img src="/images/icon-tour.png" alt="" class="service-icon" />
-              <h4>{{ lang.service3Title }}</h4>
+              <h3>{{ lang.service3Title }}</h3>
               <p>{{ lang.service3Desc }}</p>
             </div>
           </div>

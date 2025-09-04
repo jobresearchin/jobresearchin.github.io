@@ -49,6 +49,7 @@ module.exports = [
     contactSectionTitle: "Contact",
     contactSectionSubtitle:
       'ご相談・連携・取材のご依頼は、<br class="mobile-only">以下までお願いします。',
+    navMenuAriaLabel: "ナビゲーションメニューの表示切替",
   },
   {
     key: "en",
@@ -102,5 +103,6 @@ module.exports = [
     contactSectionTitle: "Contact",
     contactSectionSubtitle:
       'For consultations, partnerships, or media inquiries, <br class="mobile-only">please contact us below.',
+    navMenuAriaLabel: "Toggle navigation menu",
   },
 ];
