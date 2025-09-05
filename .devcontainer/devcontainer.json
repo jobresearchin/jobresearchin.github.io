@@ -1,0 +1,8 @@
+{
+  "name": "Node.js v24 Alpine Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "forwardPorts": [
+    8080
+  ],
+  "postCreateCommand": "npm install"
+}
