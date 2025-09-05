@@ -65,7 +65,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
     <header>
       <div class="container nav-container">
         <a href="/" class="brand-logo">
-          <img src="/images/logo.png" alt="Researchin" />
+          <img eleventy:ignore src="/images/logo.png" alt="Researchin" />
         </a>
 
         <nav class="desktop-nav">
@@ -93,7 +93,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
     <main>
       <section class="hero">
         <div class="hero-background">
-          <img src="/images/hero-background.jpg" alt="Abstract background image" />
+          <img src="/images/hero-background.jpg" alt="Abstract background image" eleventy:widths="[500, 1000]">
         </div>
         <div class="container hero-content">
           <h1 class="fade-in-up">{{ lang.heroTitle }}</h1>
@@ -124,7 +124,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
 
           <div class="feature-item">
             <div class="feature-image fade-in-left">
-              <img src="/images/feature-image-01.jpg" alt="詳細な検索機能のイメージ画像" />
+              <img src="/images/feature-image-01.jpg" alt="詳細な検索機能のイメージ画像" eleventy:widths="[500, 1000]" />
             </div>
             <div class="feature-text fade-in-right delay-1">
               <span>01</span>
@@ -135,7 +135,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
 
           <div class="feature-item row-reverse">
             <div class="feature-image fade-in-right">
-              <img src="/images/feature-image-02.jpg" alt="透明性の高い報酬制度のイメージ画像" />
+              <img src="/images/feature-image-02.jpg" alt="透明性の高い報酬制度のイメージ画像" eleventy:widths="[500, 1000]"/>
             </div>
             <div class="feature-text fade-in-left delay-1">
               <span>02</span>
@@ -146,7 +146,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
 
           <div class="feature-item">
             <div class="feature-image fade-in-left">
-              <img src="/images/feature-image-03.jpg" alt="研究者との繋がりのイメージ画像" />
+              <img src="/images/feature-image-03.jpg" alt="研究者との繋がりのイメージ画像" eleventy:widths="[500, 1000]"/>
             </div>
             <div class="feature-text fade-in-right delay-1">
               <span>03</span>
@@ -165,17 +165,17 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
           </div>
           <div class="services-grid">
             <div class="service-card fade-in-up">
-              <img src="/images/icon-platform.png" alt="" class="service-icon" />
+              <img eleventy:ignore src="/images/icon-platform.png" alt="" class="service-icon" eleventy:widths="[50, 100]"/>
               <h3>{{ lang.service1Title }}</h3>
               <p>{{ lang.service1Desc }}</p>
             </div>
             <div class="service-card fade-in-up delay-1">
-              <img src="/images/icon-data-analysis.png" alt="" class="service-icon" />
+              <img eleventy:ignore src="/images/icon-data-analysis.png" alt="" class="service-icon" eleventy:widths="[50, 100]" />
               <h3>{{ lang.service2Title }}</h3>
               <p>{{ lang.service2Desc }}</p>
             </div>
             <div class="service-card fade-in-up delay-2">
-              <img src="/images/icon-tour.png" alt="" class="service-icon" />
+              <img eleventy:ignore src="/images/icon-tour.png" alt="" class="service-icon" eleventy:widths="[50, 100]" />
               <h3>{{ lang.service3Title }}</h3>
               <p>{{ lang.service3Desc }}</p>
             </div>
