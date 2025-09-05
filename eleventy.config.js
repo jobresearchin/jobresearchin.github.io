@@ -17,6 +17,8 @@ module.exports = function (eleventyConfig) {
     }
   });
   eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("static");
 
   return {
     dir: {
