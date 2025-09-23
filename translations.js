@@ -1,155 +1,331 @@
 module.exports = [
   {
     key: "ja",
-    metaTitle: "Researchin | 大学などの実験募集に応募できる参加者募集プラットフォーム",
-    metaDescription: "Researchinは、大学や企業が募集する心理学や医学などの実験募集情報を掲載。簡単な登録で実験に応募し、社会貢献をしながら謝礼を受け取りませんか？",
+    // --- Meta & Header ---
+    meta: {
+      title: "研究を当たり前に | Researchin",
+      description: "研究者と参加者を繋ぐ新たなプラットフォーム。研究者には円滑な募集と事務負担の軽減を、参加者には気軽に関われる機会を提供します。",
+      siteName: "Researchin"
+    },
+    header: {
+      navOverview: "サービス概要",
+      navResearchers: "研究者の方へ",
+      navParticipants: "参加者の方へ",
+      navTeam: "メンバー",
+      navCompany: "会社概要",
+      navContact: "お問い合わせ",
+      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+    },
+
+    // --- 1. Hero Section ---
+    hero: {
+      title: "研究を当たり前に",
+      subtitle: "私たちは、研究者と参加者を繋ぐ新たなプラットフォームを提供しています。研究者には円滑な募集と事務負担の軽減を、参加者には気軽に関われる機会を提供します。",
+      participantBtnText: "研究に参加する",
+      participantBtnLink: "https://stg.jobresearchin.com/",
+      researcherBtnText: "研究者・企業の方はこちら",
+      researcherBtnLink: "#researchers",
+      businessesTitle: "その他の事業はこちら",
+      businessesInquiry: '私たちは、研究を身近にするための複数の事業を展開しています。詳しい情報をご希望の場合は、お問い合わせください。'
+    },
+
+    // --- 2. Service Overview ---
+    overview: {
+      title: "研究者と参加者を繋ぐ新しいプラットフォーム",
+      subtitle: "私たちのサービスは、研究開発を加速させたい研究者と、社会貢献に関心のある参加者を繋ぐプラットフォームです。",
+      feature1: {
+        title: "研究者向け：質の高い募集と事務代行",
+        desc: "求める条件に合った参加者を、スピーディーかつ効率的に募集。また、事務作業の代行によって時間をより研究に注げます。"
+      },
+      feature2: {
+        title: "参加者向け：簡単な登録",
+        desc: "専門知識は不要。簡単な登録で気軽に参加できます。多くの研究を掲載。自分に合った研究に参加可能です。"
+      },
+      feature3: {
+        title: "双方に：透明性の高い仕組み",
+        desc: "研究内容や条件、謝礼などが事前に明確に提示され、双方が納得して繋がります。"
+      }
+    },
     
-    // --- Navigation ---
-    navVision: "ビジョン",
-    navParticipants: "実験に参加したい方",
-    navResearchers: "参加者を募集したい方",
-    navPlans: "実装予定機能",
-    navCompany: "会社概要",
-    navContactBtn: "お問い合わせ",
+    // --- 3a. Researchers Section ---
+    researchers: {
+      title: "研究者・企業の方へ",
+      subtitle: "募集の手間を削減し、研究に集中できる環境を提供します。",
+      point1: "多様な参加者プールにアクセスし、最適な候補者を効率的に見つけられます。",
+      point2: "募集ページの作成から管理までオンラインで完結。研究本来の業務に集中できます。",
+      point3: "従来のリクルーティング手法に比べ、時間とコストを大幅に削減します。",
+      btnText: "募集のフォームはこちら",
+      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfTUvPiJ-xgYqx_31N6nYtKogQ22dNVTCTr06ubMPqvR-2vIQ/viewform"
+    },
 
-    // --- Hero Section ---
-    heroTitle: "IN TO RESEARCH",
-    heroSubtitle: "研究参加をもっと身近に",
+    // --- 3b. Participants Section ---
+    participants: {
+      title: "実験・調査に参加したい方へ",
+      subtitle: "あなたの「協力したい」という気持ちが、未来を創る力になります。",
+      point1: "あなたの経験や時間が、新しい発見や技術革新の礎となり、社会に貢献できます。",
+      point2: "興味や関心に合わせて、豊富な研究プロジェクトの中から参加したいものを選べます。",
+      point3: "参加する実験や調査に応じて、明確な謝礼が提供され、あなたの貢献が評価されます。",
+      btnText: "参加できる研究を探す",
+      btnLink: "https://stg.jobresearchin.com/"
+    },
+
+    // --- 4. Upcoming Features ---
+    features: {
+      title: "進化し続けるプラットフォーム",
+      subtitle: "私たちは、ユーザーの皆様の声に耳を傾け、サービスの改善を続けます。近日中に、以下の機能が追加される予定です。",
+      feature1: { 
+        title: "謝礼支払いの代行機能", 
+        desc: "面倒な謝礼の支払い手続きをプラットフォームが代行。研究者は募集から支払いまで、ワンストップで完結できます。" 
+      },
+      feature2: { 
+        title: "キャンセル防止機能", 
+        desc: "無断キャンセルを繰り返す参加者へのペナルティや、参加率の高いユーザーを評価する仕組みを導入し、募集の信頼性を高めます。" 
+      },
+      feature3: { 
+        title: "リピーターへのインセンティブ機能", 
+        desc: "複数回の研究に協力していただいた参加者へ、追加の謝礼や特典を提供するインセンティブプログラムを導入します。" 
+      },
+      feature4: { 
+        title: "AIによる募集効果の分析", 
+        desc: "AIが募集ページの閲覧数や応募率を分析し、より効果的な募集文や条件設定を提案。募集効果の最大化を支援します。" 
+      }
+    },
     
-    // --- Vision Section ---
-    visionSectionTitle: "Our Vision",
-    visionSectionSubtitle: "私たちの目指す世界",
-    visionDesc: "私たちのミッションは、「すべての人が研究にアクセスできる社会をつくること」です。私たちのプラットフォームは、これまで接点のなかった「研究者」と「研究に参加したい人」とを繋ぎ、双方の課題を解決します。参加者は、興味のある分野の実験や調査に、スマートフォン一つで気軽に応募できるようになります。最先端の科学に触れ、社会に貢献しながら謝礼を得るという、新しい体験があなたを待っています。研究者にとっては、これまで多大な時間がかかっていた参加者募集が、劇的に効率化されます。最適な参加者を素早く集めることで募集にかかる時間を削減し、研究そのものに、より多くの時間を注げるようになります。",
+    // --- 5. Company Info Sections ---
+    businesses: {
+      title: "事業紹介",
+      item1: { title: "事務作業の代行", desc: "研究者や企業の煩雑な事務作業を代行し、コア業務に集中できる環境をサポートします。" },
+      item2: { title: "Webサイトの作成委託", desc: "研究内容やサービスを効果的に伝えるための、専門的なWebサイトの企画から制作・運用までを請け負います。" },
+      item3: { title: "ツアーの開催", desc: "研究施設や関連企業への見学ツアーを企画・開催し、一般の方々と研究の現場を繋ぎます。" }
+    },
 
-    // --- Branching Buttons ---
-    participantButton: "実験に参加・応募したい方",
-    researcherButton: "実験参加者を募集したい方",
+    team: {
+      title: "メンバー",
+      members: [
+        { 
+          name: "今井 崇人", 
+          title: "CEO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/takahitoimai/",
+          } 
+        },
+        { 
+          name: "江利口 晴矢", 
+          title: "CTO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/eriguchi/",
+            github: "https://github.com/seieric"
+          } 
+        },
+        { 
+          name: "波多 紘希", 
+          title: "CSO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/koki-hata-aab3b0379/",
+          } 
+        },
+        { 
+          name: "小笠原 佳人", 
+          title: "Stack System Inc. CEO & Engineer", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/yachtpa3/"
+          } 
+        },
+        { 
+          name: "内藤 剛汰", 
+          title: "FYBE CEO & Engineer", 
+          affiliation: null, 
+          socials: {
+            github: "https://github.com/konaito"
+          } 
+        }
+      ]
+    },
 
-    // --- Participants Section ---
-    participantSectionTitle: "実験モニターや調査に応募・参加したい方へ",
-    feature1Title: "あなたに合う実験・研究が見つかる",
-    feature1Desc: "興味や専門分野に合わせて、豊富な実験・研究プロジェクトを簡単にスクリーニングし、検索できます。",
-    feature2Title: "安心の報酬制度",
-    feature2Desc: "参加する実験や調査に応じて、明確な謝礼が提供されます。あなたの貢献がきちんと評価される仕組みです。",
-    feature3Title: "未来への貢献",
-    feature3Desc: "あなたの経験や時間が、新しい発見や技術革新の礎になります。社会貢献という貴重な体験を得られます。",
-    participantAction: "実験・調査参加のプラットフォームはこちら",
-
-    // --- Researchers Section ---
-    researcherSectionTitle: "実験・調査の参加者を募集したい研究者の方へ",
-    researcherFeature1Title: "多様な参加者プール",
-    researcherFeature1Desc: "幅広い参加者データベースにアクセスし、研究に最適な実験・調査の候補者を効率的に見つけられます。",
-    researcherFeature2Title: "効率的な実験募集プロセス",
-    researcherFeature2Desc: "募集ページの作成から参加者管理まで、これまで手間のかかっていた募集業務をオンラインで完結。研究本来の業務に集中できます。",
-    researcherFeature3Title: "事務作業の軽減",
-    researcherFeature3Desc: "謝礼の管理や、相互評価の機能を実装予定です。これにより、事務作業の大幅な削減が期待できます。",
-    researcherAction: "実験募集の掲載依頼はこちら",
-
-    // --- Plans Section ---
-    plansSectionTitle: "各種プラン",
-    plan1Title: "スポットプラン",
-    plan1Desc: "単一の研究・実験プロジェクトごとにご利用いただけるプランです。小規模な調査や、初めてご利用になる方に最適です。",
-    plan2Title: "パートナープラン",
-    plan2Desc: "大学や研究機関など、継続的に複数の実験募集を行う方向けの年間契約プランです。割安な料金でご利用いただけます。",
-    plan3Title: "エンタープライズ",
-    plan3Desc: "大規模なリサーチや、特別な要件が必要なプロジェクト向けに、仕様をカスタマイズするプランです。詳しくはお問い合わせください。",
-
-    // --- Future Services Section ---
-    futureServiceSectionTitle: "これからの事業内容",
-    futureServiceDesc: "私たちは、単なるマッチングプラットフォームに留まりません。将来的には、研究者と実験参加者がより深く交流できるコミュニティ機能の拡充や、収集された匿名化データを活用した新たなインサイトの提供など、研究開発の全プロセスを支援する総合的なプラットフォームへと進化していきます。",
-
-    // --- Company Section ---
-    companySectionTitle: "会社概要",
-    companyNameLabel: "会社名",
-    companyName: "Researchin株式会社",
-    companyAddressLabel: "所在地",
-  companyAddress: "東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C",
-    companyFoundedLabel: "設立",
-    companyFounded: "2025年8月20日",
-    companyCeoLabel: "代表取締役CEO",
-    companyCeoName: "今井崇人",
-    companyBizLabel: "事業内容",
-    companyBizDesc: "実験・研究開発における参加者マッチングプラットフォームの企画、開発、運営",
+    companyProfile: {
+      title: "会社概要",
+      nameLabel: "会社名",
+      name: "Researchin株式会社",
+      foundedLabel: "設立",
+      founded: "2025年8月20日",
+      ceoLabel: "代表者",
+      ceo: "今井崇人",
+      addressLabel: "所在地",
+      address: "東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
+    },
     
-    // --- Contact Section ---
-    contactSectionTitle: "Contact",
-    contactSectionSubtitle: 'ご相談・連携・取材のご依頼は、<br class="mobile-only">以下までお願いします。',
+    // --- Footer ---
+    footer: {
+      contactPrefix: "ご連絡はこちら:",
+      contactEmail: "info@jobresearchin.com"
+    }
   },
   {
     key: "en",
-    metaTitle: "Researchin | Apply for University & Corporate Experiment Recruitments",
-    metaDescription: "Find and apply for paid experiments in psychology, medicine, and more from leading universities and companies. Join Researchin to contribute to science.",
+    // --- Meta & Header ---
+    meta: {
+      title: "Making Research Commonplace | Researchin",
+      description: "A new platform connecting researchers and participants. We offer streamlined recruitment and reduced administrative burdens for researchers, and accessible opportunities for participants.",
+      siteName: "Researchin"
+    },
+    header: {
+      navOverview: "Overview",
+      navResearchers: "For Researchers",
+      navParticipants: "For Participants",
+      navTeam: "Team",
+      navCompany: "Company",
+      navContact: "Contact",
+      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+    },
+
+    // --- 1. Hero Section ---
+    hero: {
+      title: "Making Research Commonplace",
+      subtitle: "We provide a new platform connecting researchers and participants. We offer streamlined recruitment and reduced administrative burdens for researchers, and accessible opportunities for participants.",
+      participantBtnText: "Access Platform →",
+      participantBtnLink: "https://stg.jobresearchin.com/",
+      researcherBtnText: "For Researchers",
+      researcherBtnLink: "#researchers",
+      businessesTitle: "Our Other Businesses",
+      businessesInquiry: "We are developing multiple businesses to make research more accessible. Please contact us for more information."
+    },
+
+    // --- 2. Service Overview ---
+    overview: {
+      title: "A New Platform Connecting Researchers and Participants",
+      subtitle: "Our service is a platform that connects researchers who want to accelerate R&D with participants interested in contributing to society.",
+      feature1: {
+        title: "For Researchers: High-Quality Recruitment & Admin Support",
+        desc: "Quickly and efficiently recruit participants who meet your criteria. Our administrative support allows you to focus more time on your research."
+      },
+      feature2: {
+        title: "For Participants: Easy Registration",
+        desc: "No expert knowledge required. You can easily participate with a simple registration. We list many studies, so you can join one that fits you."
+      },
+      feature3: {
+        title: "For Both: A Transparent System",
+        desc: "Study details, conditions, and compensation are clearly presented upfront, ensuring both parties connect with a mutual understanding."
+      }
+    },
     
-    // --- Navigation ---
-    navVision: "Vision",
-    navParticipants: "Apply for Experiments",
-    navResearchers: "Recruit Participants",
-    navPlans: "Plans",
-    navCompany: "Company",
-    navContactBtn: "Contact",
+    // --- 3a. Researchers Section ---
+    researchers: {
+      title: "For Researchers",
+      subtitle: "We reduce the hassle of recruitment and provide an environment where you can focus on your research.",
+      point1: "Access a diverse pool of participants to efficiently find the most suitable candidates.",
+      point2: "Complete the entire recruitment process online, from creating pages to managing participants, so you can focus on your core research.",
+      point3: "Significantly reduce time and costs compared to traditional recruiting methods.",
+      btnText: "Recruitment Form",
+      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfTUvPiJ-xgYqx_31N6nYtKogQ22dNVTCTr06ubMPqvR-2vIQ/viewform"
+    },
 
-    // --- Hero Section ---
-    heroTitle: "IN TO RESEARCH",
-    heroSubtitle: "Making it easy for everyone to apply for experiments and research.",
+    // --- 3b. Participants Section ---
+    participants: {
+      title: "For Those Wanting to Participate in Studies",
+      subtitle: "Your desire to cooperate becomes the power to create the future.",
+      point1: "Your experience and time become the foundation for new discoveries and technological innovations, allowing you to contribute to society.",
+      point2: "Choose from a wide range of research projects that match your interests and passions.",
+      point3: "Receive fair compensation for your contribution, with a system that properly values your participation.",
+      btnText: "Find Available Studies",
+      btnLink: "https://stg.jobresearchin.com/"
+    },
+
+    // --- 4. Upcoming Features ---
+    features: {
+      title: "An Ever-Evolving Platform",
+      subtitle: "We listen to our users and continuously improve our service. The following features are scheduled to be added soon.",
+      feature1: { 
+        title: "Reward Payment Processing", 
+        desc: "The platform will handle the troublesome reward payment process, allowing researchers to manage everything from recruitment to payment in one stop." 
+      },
+      feature2: { 
+        title: "Cancellation Prevention", 
+        desc: "By introducing penalties for no-shows and a system to reward reliable participants, we will increase the reliability of recruitment." 
+      },
+      feature3: { 
+        title: "Incentives for Repeaters", 
+        desc: "An incentive program that provides additional rewards and benefits to participants who have cooperated in multiple studies." 
+      },
+      feature4: { 
+        title: "AI-Powered Recruitment Analytics", 
+        desc: "Our AI will analyze recruitment page views and application rates to suggest more effective wording and conditions, helping maximize your recruitment." 
+      }
+    },
     
-    // --- Vision Section ---
-    visionSectionTitle: "Our Vision",
-    visionSectionSubtitle: "The World We Envision",
-    visionDesc: "Our mission is to create a society where everyone has access to research. We are building a platform that connects experiment participants with researchers, providing big data solutions for research communities, and organizing tours of research facilities.",
+    // --- 5. Company Info Sections ---
+    businesses: {
+      title: "Our Businesses",
+      item1: { title: "Administrative Support", desc: "We handle burdensome administrative tasks for researchers and companies, allowing them to focus on their core work." },
+      item2: { title: "Website Development", desc: "We undertake everything from planning to production and operation of specialized websites to effectively communicate research content." },
+      item3: { title: "Tour Organization", desc: "We plan and host tours to research facilities and related companies, connecting the general public with the front lines of research." }
+    },
+    team: {
+      title: "Team",
+      members: [
+        { 
+          name: "Takahito Imai", 
+          title: "CEO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/takahitoimai/",
+          } 
+        },
+        { 
+          name: "Seiya Eriguchi", 
+          title: "CTO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/eriguchi/",
+            github: "https://github.com/seieric"
+          } 
+        },
+        { 
+          name: "Koki Hata", 
+          title: "CSO", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/koki-hata-aab3b0379/",
+          } 
+        },
+        { 
+          name: "Yoshito Ogasawara", 
+          title: "Stack System Inc. CEO & Engineer", 
+          affiliation: null, 
+          socials: { 
+            linkedin: "https://www.linkedin.com/in/yachtpa3/"
+          } 
+        },
+        { 
+          name: "Gota Naito", 
+          title: "FYBE CEO & Engineer", 
+          affiliation: null, 
+          socials: {
+            github: "https://github.com/konaito"
+          } 
+        }
+      ]
+    },
 
-    // --- Branching Buttons ---
-    participantButton: "Apply for an Experiment",
-    researcherButton: "Recruit Participants",
-
-    // --- Participants Section ---
-    participantSectionTitle: "For Those Who Want to Apply for Experiments & Surveys",
-    feature1Title: "Find Experiments That Fit You",
-    feature1Desc: "Easily search a wide range of experiments and research projects, from psychology experiments to surveys, based on your interests and availability.",
-    feature2Title: "Reliable Reward System",
-    feature2Desc: "Receive clear compensation for the experiments and surveys you participate in. A system that properly values your contribution.",
-    feature3Title: "Contribute to the Future",
-    feature3Desc: "Your experience and time become the foundation for new discoveries and technological innovations. Gain the valuable experience of contributing to society.",
-    participantAction: "Find the Latest Experiments",
-
-    // --- Researchers Section ---
-    researcherSectionTitle: "For Researchers Looking to Recruit Experiment Participants",
-    researcherFeature1Title: "Diverse Participant Pool",
-    researcherFeature1Desc: "Access a diverse participant database to efficiently find the most suitable candidates for your experiment or survey.",
-    researcherFeature2Title: "Streamlined Recruitment Process",
-    researcherFeature2Desc: "From creating recruitment pages to managing participants, complete all recruitment tasks online and focus on your core research.",
-    researcherFeature3Title: "Flexible Plans & Pricing",
-    researcherFeature3Desc: "From small-scale surveys to large-scale clinical trials, we offer optimal plans tailored to your project's scale and budget.",
-    researcherAction: "Post Your Experiment Recruitment",
-
-    // --- Plans Section ---
-    plansSectionTitle: "Our Plans",
-    plan1Title: "Spot Plan",
-    plan1Desc: "A plan available for individual research or experiment projects. Ideal for small-scale surveys or first-time users.",
-    plan2Title: "Partner Plan",
-    plan2Desc: "An annual contract plan for universities and research institutions that conduct multiple experiment recruitments. Available at a discounted rate.",
-    plan3Title: "Enterprise",
-    plan3Desc: "A customizable plan for large-scale research or projects with special requirements. Please contact us for details.",
-
-    // --- Future Services Section ---
-    futureServiceSectionTitle: "Our Future Endeavors",
-    futureServiceDesc: "We will not remain just a matching platform. In the future, we will evolve into a comprehensive platform that supports the entire R&D process, including enhancing community functions for deeper interaction between researchers and experiment participants.",
-
-    // --- Company Section ---
-    companySectionTitle: "Company Profile",
-    companyNameLabel: "Company Name",
-    companyCEO:"Takahito Imai",
-    companyName: "Researchin Inc.",
-    companyAddressLabel: "Address",
-    companyAddress: "東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C",
-    companyFoundedLabel: "Founded",
-    companyFounded: "August 20, 2025",
-    companyCeoLabel: "CEO", 
-    companyCeoName: "Takahito Imai",   
-    companyBizLabel: "Business",
-    companyBizDesc: "Planning, development, and operation of a participant matching platform for experiments and R&D.",
+    companyProfile: {
+      title: "Company Profile",
+      nameLabel: "Company Name",
+      name: "Researchin Inc.",
+      foundedLabel: "Founded",
+      founded: "August 20, 2025",
+      ceoLabel: "CEO",
+      ceo: "Takahito Imai",
+      addressLabel: "Address",
+      address: "Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
+    },
     
-    // --- Contact Section ---
-    contactSectionTitle: "Contact",
-    contactSectionSubtitle: 'For consultations, partnerships, or media inquiries, <br class="mobile-only">please contact us below.',
+    // --- Footer ---
+    footer: {
+      contactPrefix: "Contact:",
+      contactEmail: "info@jobresearchin.com"
+    }
   }
 ];
