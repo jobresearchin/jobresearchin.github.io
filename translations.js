@@ -20,7 +20,7 @@ module.exports = [
     // --- 1. Hero Section ---
     hero: {
       title: "研究を当たり前に",
-      subtitle: "私たちは、研究者と参加者を繋ぐ新たなプラットフォームを提供しています。研究者には円滑な募集と事務負担の軽減を、参加者には気軽に関われる機会を提供します。",
+      subtitle: "研究参加・募集の新しい形を提供します",
       participantBtnText: "研究に参加する",
       participantBtnLink: "https://stg.jobresearchin.com/",
       researcherBtnText: "研究者・企業の方はこちら",
@@ -46,7 +46,7 @@ module.exports = [
         desc: "研究内容や条件、謝礼などが事前に明確に提示され、双方が納得して繋がります。"
       }
     },
-    
+
     // --- 3a. Researchers Section ---
     researchers: {
       title: "研究者・企業の方へ",
@@ -73,75 +73,77 @@ module.exports = [
     features: {
       title: "進化し続けるプラットフォーム",
       subtitle: "私たちは、ユーザーの皆様の声に耳を傾け、サービスの改善を続けます。近日中に、以下の機能が追加される予定です。",
-      feature1: { 
-        title: "謝礼支払いの代行機能", 
-        desc: "面倒な謝礼の支払い手続きをプラットフォームが代行。研究者は募集から支払いまで、ワンストップで完結できます。" 
+      feature1: {
+        title: "謝礼支払いの代行機能",
+        desc: "面倒な謝礼の支払い手続きをプラットフォームが代行。研究者は募集から支払いまで、ワンストップで完結できます。"
       },
-      feature2: { 
-        title: "キャンセル防止機能", 
-        desc: "無断キャンセルを繰り返す参加者へのペナルティや、参加率の高いユーザーを評価する仕組みを導入し、募集の信頼性を高めます。" 
+      feature2: {
+        title: "キャンセル防止機能",
+        desc: "無断キャンセルを繰り返す参加者へのペナルティや、参加率の高いユーザーを評価する仕組みを導入し、募集の信頼性を高めます。"
       },
-      feature3: { 
-        title: "リピーターへのインセンティブ機能", 
-        desc: "複数回の研究に協力していただいた参加者へ、追加の謝礼や特典を提供するインセンティブプログラムを導入します。" 
+      feature3: {
+        title: "リピーターへのインセンティブ機能",
+        desc: "複数回の研究に協力していただいた参加者へ、追加の謝礼や特典を提供するインセンティブプログラムを導入します。"
       },
-      feature4: { 
-        title: "AIによる募集効果の分析", 
-        desc: "AIが募集ページの閲覧数や応募率を分析し、より効果的な募集文や条件設定を提案。募集効果の最大化を支援します。" 
+      feature4: {
+        title: "AIによる募集効果の分析",
+        desc: "AIが募集ページの閲覧数や応募率を分析し、より効果的な募集文や条件設定を提案。募集効果の最大化を支援します。"
       }
     },
-    
+
     // --- 5. Company Info Sections ---
     businesses: {
       title: "事業紹介",
-      item1: { title: "事務作業の代行", desc: "研究者や企業の煩雑な事務作業を代行し、コア業務に集中できる環境をサポートします。" },
-      item2: { title: "Webサイトの作成委託", desc: "研究内容やサービスを効果的に伝えるための、専門的なWebサイトの企画から制作・運用までを請け負います。" },
-      item3: { title: "ツアーの開催", desc: "研究施設や関連企業への見学ツアーを企画・開催し、一般の方々と研究の現場を繋ぎます。" }
+      item1: { title: "事務作業の代行", desc: "研究者や企業の煩雑な事務作業を代行し、業務に集中できる環境をサポートします。" },
+      item2: { title: "Webサイトの作成委託", desc: "専門的なWebサイトの企画から制作・運用までを請け負います。" },
+      item3: {
+        title: "ツアーの開催", desc: "学術機関・企業の研究施設のツアー企画・運営を行います。"
+      }
     },
 
     team: {
       title: "メンバー",
       members: [
-        { 
-          name: "今井 崇人", 
-          title: "CEO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "今井 崇人",
+          title: "CEO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/takahitoimai/",
-          } 
+          }
         },
-        { 
-          name: "江利口 晴矢", 
-          title: "CTO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "江利口 晴矢",
+          title: "CTO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/eriguchi/",
             github: "https://github.com/seieric"
-          } 
+          }
         },
-        { 
-          name: "波多 紘希", 
-          title: "CSO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "波多 紘希",
+          title: "CSO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/koki-hata-aab3b0379/",
-          } 
+          }
         },
-        { 
-          name: "小笠原 佳人", 
-          title: "Stack System Inc. CEO & Engineer", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "小笠原 佳人",
+          title: "Stack System Inc. CEO & Engineer",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/yachtpa3/"
-          } 
+          }
         },
-        { 
-          name: "内藤 剛汰", 
-          title: "FYBE CEO & Engineer", 
-          affiliation: null, 
+        {
+          name: "内藤 剛汰",
+          title: "FYBE CEO & Engineer",
+          affiliation: null,
           socials: {
             github: "https://github.com/konaito"
-          } 
+          }
         }
       ]
     },
@@ -157,7 +159,7 @@ module.exports = [
       addressLabel: "所在地",
       address: "東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
     },
-    
+
     // --- Footer ---
     footer: {
       contactPrefix: "ご連絡はこちら:",
@@ -184,8 +186,8 @@ module.exports = [
 
     // --- 1. Hero Section ---
     hero: {
-      title: "Making Research Commonplace",
-      subtitle: "We provide a new platform connecting researchers and participants. We offer streamlined recruitment and reduced administrative burdens for researchers, and accessible opportunities for participants.",
+      title: "IN TO RESEARCH",
+      subtitle: "",
       participantBtnText: "Access Platform →",
       participantBtnLink: "https://stg.jobresearchin.com/",
       researcherBtnText: "For Researchers",
@@ -211,7 +213,7 @@ module.exports = [
         desc: "Study details, conditions, and compensation are clearly presented upfront, ensuring both parties connect with a mutual understanding."
       }
     },
-    
+
     // --- 3a. Researchers Section ---
     researchers: {
       title: "For Researchers",
@@ -238,24 +240,24 @@ module.exports = [
     features: {
       title: "An Ever-Evolving Platform",
       subtitle: "We listen to our users and continuously improve our service. The following features are scheduled to be added soon.",
-      feature1: { 
-        title: "Reward Payment Processing", 
-        desc: "The platform will handle the troublesome reward payment process, allowing researchers to manage everything from recruitment to payment in one stop." 
+      feature1: {
+        title: "Reward Payment Processing",
+        desc: "The platform will handle the troublesome reward payment process, allowing researchers to manage everything from recruitment to payment in one stop."
       },
-      feature2: { 
-        title: "Cancellation Prevention", 
-        desc: "By introducing penalties for no-shows and a system to reward reliable participants, we will increase the reliability of recruitment." 
+      feature2: {
+        title: "Cancellation Prevention",
+        desc: "By introducing penalties for no-shows and a system to reward reliable participants, we will increase the reliability of recruitment."
       },
-      feature3: { 
-        title: "Incentives for Repeaters", 
-        desc: "An incentive program that provides additional rewards and benefits to participants who have cooperated in multiple studies." 
+      feature3: {
+        title: "Incentives for Repeaters",
+        desc: "An incentive program that provides additional rewards and benefits to participants who have cooperated in multiple studies."
       },
-      feature4: { 
-        title: "AI-Powered Recruitment Analytics", 
-        desc: "Our AI will analyze recruitment page views and application rates to suggest more effective wording and conditions, helping maximize your recruitment." 
+      feature4: {
+        title: "AI-Powered Recruitment Analytics",
+        desc: "Our AI will analyze recruitment page views and application rates to suggest more effective wording and conditions, helping maximize your recruitment."
       }
     },
-    
+
     // --- 5. Company Info Sections ---
     businesses: {
       title: "Our Businesses",
@@ -266,46 +268,46 @@ module.exports = [
     team: {
       title: "Team",
       members: [
-        { 
-          name: "Takahito Imai", 
-          title: "CEO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "Takahito Imai",
+          title: "CEO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/takahitoimai/",
-          } 
+          }
         },
-        { 
-          name: "Seiya Eriguchi", 
-          title: "CTO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "Seiya Eriguchi",
+          title: "CTO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/eriguchi/",
             github: "https://github.com/seieric"
-          } 
+          }
         },
-        { 
-          name: "Koki Hata", 
-          title: "CSO", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "Koki Hata",
+          title: "CSO",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/koki-hata-aab3b0379/",
-          } 
+          }
         },
-        { 
-          name: "Yoshito Ogasawara", 
-          title: "Stack System Inc. CEO & Engineer", 
-          affiliation: null, 
-          socials: { 
+        {
+          name: "Yoshito Ogasawara",
+          title: "Stack System Inc. CEO & Engineer",
+          affiliation: null,
+          socials: {
             linkedin: "https://www.linkedin.com/in/yachtpa3/"
-          } 
+          }
         },
-        { 
-          name: "Gota Naito", 
-          title: "FYBE CEO & Engineer", 
-          affiliation: null, 
+        {
+          name: "Gota Naito",
+          title: "FYBE CEO & Engineer",
+          affiliation: null,
           socials: {
             github: "https://github.com/konaito"
-          } 
+          }
         }
       ]
     },
@@ -321,7 +323,7 @@ module.exports = [
       addressLabel: "Address",
       address: "Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
     },
-    
+
     // --- Footer ---
     footer: {
       contactPrefix: "Contact:",

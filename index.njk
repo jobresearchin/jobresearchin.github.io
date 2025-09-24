@@ -86,13 +86,9 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
                         <h1>{{ lang.hero.title }}</h1>
                         <p class="delay-1">{{ lang.hero.subtitle }}</p>
                     </div>
-                     <div class="hero-illustration fade-in-up delay-1">
-
-                        {% image "images/hero-illustration.jpg", "研究者と参加者が協力しているイラスト", "(max-width: 992px) 90vw, 500px", width="500", height="400" %}
-                    </div>
                     <div class="hero-buttons fade-in-up delay-2">
                         <a href="{{ lang.hero.participantBtnLink }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ lang.hero.participantBtnText }}</a>
-                        <a href="{{ lang.hero.researcherBtnLink }}" class="btn btn-secondary">{{ lang.hero.researcherBtnText }}</a>
+                        <a href="{{ lang.hero.researcherBtnLink }}" class="btn btn-primary">{{ lang.hero.researcherBtnText }}</a>
                     </div>
                 </div>
             </div>
