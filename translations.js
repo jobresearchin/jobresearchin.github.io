@@ -139,7 +139,7 @@ module.exports = [
         },
         {
           name: "内藤 剛汰",
-          title: "FYBE CEO & Engineer",
+          title: "Supporter",
           affiliation: null,
           socials: {
             github: "https://github.com/konaito"
