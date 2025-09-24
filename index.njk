@@ -8,244 +8,267 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
 
 <!DOCTYPE html>
 <html lang="{{ lang.key }}">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ lang.metaTitle }}</title>
-  <meta name="description" content="{{ lang.metaDescription }}" />
+  <title>{{ lang.meta.title }}</title>
+  <meta name="description" content="{{ lang.meta.description }}" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-
   <link rel="stylesheet" href="/style.css" />
   <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/" />
   <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/" />
-
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ lang.metaTitle }}" />
-  <meta property="og:description" content="{{ lang.metaDescription }}" />
+  <meta property="og:title" content="{{ lang.meta.title }}" />
+  <meta property="og:description" content="{{ lang.meta.description }}" />
   <meta property="og:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
   <meta property="og:url" content="https://corp.jobresearchin.com/{% if lang.key == 'ja' %}{% else %}en/{% endif %}" />
-  <meta property="og:site_name" content="Researchin" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ lang.metaTitle }}" />
-  <meta name="twitter:description" content="{{ lang.metaDescription }}" />
-  <meta name="twitter:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-X754F6MGCM');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X754F6MGCM');
+  </script>
+</head>
+
 <body>
   <div class="mobile-sidebar" id="mobile-sidebar">
     <button class="menu-close-btn" id="menu-close-btn">&times;</button>
     <nav>
       <ul>
-        <li><a href="#vision" class="menu-link">{{ lang.navVision }}</a></li>
-        <li><a href="#participants-section" class="menu-link">{{ lang.navParticipants }}</a></li>
-        <li><a href="#researchers-section" class="menu-link">{{ lang.navResearchers }}</a></li>
-        <li><a href="#plans-section" class="menu-link">{{ lang.navPlans }}</a></li>
-        <li><a href="#company-section" class="menu-link">{{ lang.navCompany }}</a></li>
-        <li><a href="#contact" class="menu-link">{{ lang.navContactBtn }}</a></li>
+        <li><a href="#service-overview" class="menu-link">{{ lang.header.navOverview }}</a></li>
+        <li><a href="#researchers" class="menu-link">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="#participants" class="menu-link">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
+        <li><a href="#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
       </ul>
-      <div class="lang-switcher mobile-lang-switcher">
-        <a href="/" {% if lang.key=='ja' %}class="active" {% endif %}>JP</a>
-        <span>/</span>
-        <a href="/en/" {% if lang.key=='en' %}class="active" {% endif %}>EN</a>
-      </div>
     </nav>
   </div>
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
   <div class="site-wrapper">
     <header>
-      <div class="container nav-container">
+      <div class="nav-container">
         <a href="/" class="brand-logo">
-          <img eleventy:ignore src="/static/logo.png" alt="Researchin" />
+          {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
         </a>
         <nav class="desktop-nav">
-          <a href="#vision">{{ lang.navVision }}</a>
-          <a href="#participants-section">{{ lang.navParticipants }}</a>
-          <a href="#researchers-section">{{ lang.navResearchers }}</a>
-          <a href="#plans-section">{{ lang.navPlans }}</a>
-          <a href="#company-section">{{ lang.navCompany }}</a>
+          <a href="#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="#researchers">{{ lang.header.navResearchers }}</a>
+          <a href="#participants">{{ lang.header.navParticipants }}</a>
+          <a href="#team">{{ lang.header.navTeam }}</a>
+          <a href="#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
         <div class="header-right">
           <div class="lang-switcher desktop-lang-switcher">
-            <a href="/" {% if lang.key=='ja' %}class="active" {% endif %}>JP</a>
+            <a href="/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
             <span>/</span>
-            <a href="/en/" {% if lang.key=='en' %}class="active" {% endif %}>EN</a>
+            <a href="/en/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
           </div>
-          <a href="#contact" class="btn contact-btn">{{ lang.navContactBtn }}</a>
-          <button class="hamburger-menu" id="hamburger-menu" aria-label="{{ lang.navMenuAriaLabel }}">
-            <span></span>
-            <span></span>
-          </button>
+          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+          <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-background">
-          <img src="/images/hero-background.jpg" alt="Abstract background image">
+      <section class="hero" id="hero">
+        <div class="hero-main-content">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-content fade-in-up">
+                        <h1>{{ lang.hero.title }}</h1>
+                        <p class="delay-1">{{ lang.hero.subtitle }}</p>
+                    </div>
+                    <div class="hero-buttons fade-in-up delay-2">
+                        <a href="{{ lang.hero.participantBtnLink }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ lang.hero.participantBtnText }}</a>
+                        <a href="{{ lang.hero.researcherBtnLink }}" class="btn btn-primary">{{ lang.hero.researcherBtnText }}</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container hero-content">
-          <h1 class="fade-in-up">{{ lang.heroTitle }}</h1>
-          <p class="fade-in-up delay-1">{{ lang.heroSubtitle }}</p>
+        <div class="hero-businesses">
+            <div class="container">
+                <h3 class="hero-businesses-title fade-in-up">{{ lang.hero.businessesTitle }}</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>{{ lang.businesses.item1.title }}</h3>
+                        <p>{{ lang.businesses.item1.desc }}</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>{{ lang.businesses.item2.title }}</h3>
+                        <p>{{ lang.businesses.item2.desc }}</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>{{ lang.businesses.item3.title }}</h3>
+                        <p>{{ lang.businesses.item3.desc }}</p>
+                    </div>
+                </div>
+                <p class="hero-businesses-inquiry fade-in-up">
+                    {{ lang.hero.businessesInquiry | safe }}
+                </p>
+            </div>
         </div>
       </section>
 
-      <section id="vision" class="section bg-light">
+      <section id="service-overview" class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.overview.title }}</h2>
+            <p>{{ lang.overview.subtitle }}</p>
+          </div>
+          <div class="services-grid fade-in-up delay-1">
+    <div class="service-card">
+     
+      {% image "images/icon-researcher.jpg",  "60px", width="60", height="60" %}
+      <h3>{{ lang.overview.feature1.title }}</h3>
+      <p>{{ lang.overview.feature1.desc }}</p>
+    </div>
+    <div class="service-card">
+      
+      {% image "images/icon-participant.jpg",  "60px", width="60", height="60" %}
+      <h3>{{ lang.overview.feature2.title }}</h3>
+      <p>{{ lang.overview.feature2.desc }}</p>
+    </div>
+    <div class="service-card">
+      
+      {% image "images/icon-transparency.jpg",  "60px", width="60", height="60" %}
+      <h3>{{ lang.overview.feature3.title }}</h3>
+      <p>{{ lang.overview.feature3.desc }}</p>
+    </div>
+</div>
+        </div>
+      </section>
+
+      <section id="researchers" class="section">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.researchers.title }}</h2>
+            <p>{{ lang.researchers.subtitle }}</p>
+          </div>
+          <div class="feature-layout">
+            <div class="feature-content fade-in-up">
+              <ul>
+                <li>{{ lang.researchers.point1 }}</li>
+                <li>{{ lang.researchers.point2 }}</li>
+                <li>{{ lang.researchers.point3 }}</li>
+              </ul>
+              <a href="{{ lang.researchers.btnLink }}" class="btn btn-primary">{{ lang.researchers.btnText }}</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="participants" class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.participants.title }}</h2>
+            <p>{{ lang.participants.subtitle }}</p>
+          </div>
+          <div class="feature-layout reverse">
+            <div class="feature-content fade-in-up">
+              <ul>
+                <li>{{ lang.participants.point1 }}</li>
+                <li>{{ lang.participants.point2 }}</li>
+                <li>{{ lang.participants.point3 }}</li>
+              </ul>
+              <a href="{{ lang.participants.btnLink }}" class="btn btn-primary">{{ lang.participants.btnText }}</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="upcoming-features" class="section">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.features.title }}</h2>
+            <p>{{ lang.features.subtitle }}</p>
+          </div>
+          <div class="services-grid fade-in-up delay-1">
+             <div class="service-card">
+              <h3>{{ lang.features.feature1.title }}</h3>
+              <p>{{ lang.features.feature1.desc }}</p>
+            </div>
+            <div class="service-card">
+              <h3>{{ lang.features.feature2.title }}</h3>
+              <p>{{ lang.features.feature2.desc }}</p>
+            </div>
+            <div class="service-card">
+              <h3>{{ lang.features.feature3.title }}</h3>
+              <p>{{ lang.features.feature3.desc }}</p>
+            </div>
+            <div class="service-card">
+              <h3>{{ lang.features.feature4.title }}</h3>
+              <p>{{ lang.features.feature4.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section bg-light">
+  <div class="container narrow">
+    <div class="section-header fade-in-up">
+      <h2>{{ lang.team.title }}</h2>
+    </div>
+    <div class="team-list fade-in-up delay-1">
+      {% for member in lang.team.members %}
+      <div class="team-list-item">
+        <div class="team-item-info">
+          <div class="team-item-name">{{ member.name }}</div>
+          <div class="team-item-title">{{ member.title }}</div>
+          {% if member.affiliation %}
+            <div class="team-item-affiliation">{{ member.affiliation }}</div>
+          {% endif %}
+        </div>
+        <div class="team-item-socials">
+  {% if member.socials.linkedin %}
+    <a href="{{ member.socials.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="{{ member.name }}のLinkedIn">
+     
+      {% image "images/icon-linkedin.svg", "LinkedIn", null, width="24", height="24" %}
+    </a>
+  {% endif %}
+  {% if member.socials.github %}
+    <a href="{{ member.socials.github }}" target="_blank" rel="noopener noreferrer" aria-label="{{ member.name }}のGitHub">
+    
+      {% image "images/icon-github.svg", "GitHub", null, width="24", height="24" %}
+    </a>
+  {% endif %}
+</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+      <section id="company-profile" class="section">
         <div class="container narrow">
           <div class="section-header fade-in-up">
-            <h2>{{ lang.visionSectionTitle }}</h2>
-            <h2>{{ lang.visionSectionSubtitle }}</h2>
+            <h2>{{ lang.companyProfile.title }}</h2>
           </div>
-
-          <p class="fade-in-up delay-2">{{ lang.visionDesc }}</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container branch-buttons fade-in-up">
-          <a href="https://stg.jobresearchin.com/" class="btn btn-action" target="_blank" rel="noopener noreferrer">{{ lang.participantAction }}</a>
-          <a href="#researchers-section" class="btn btn-secondary">{{ lang.researcherButton }}</a>
-        </div>
-      </section>
-
-      <section id="participants-section" class="section bg-light">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <h2>{{ lang.participantSectionTitle }}</h2>
-          </div>
-          <div class="services-grid">
-            <div class="service-card fade-in-up">
-              <h3>{{ lang.feature1Title }}</h3>
-              <p>{{ lang.feature1Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-1">
-              <h3>{{ lang.feature2Title }}</h3>
-              <p>{{ lang.feature2Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-2">
-              <h3>{{ lang.feature3Title }}</h3>
-              <p>{{ lang.feature3Desc }}</p>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 40px;" class="fade-in-up delay-3">
-            <a href="https://stg.jobresearchin.com/" class="btn btn-action" target="_blank" rel="noopener noreferrer">{{ lang.participantAction }}</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="researchers-section" class="section">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <h2>{{ lang.researcherSectionTitle }}</h2>
-          </div>
-          <div class="services-grid">
-            <div class="service-card fade-in-up">
-              <h3>{{ lang.researcherFeature1Title }}</h3>
-              <p>{{ lang.researcherFeature1Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-1">
-              <h3>{{ lang.researcherFeature2Title }}</h3>
-              <p>{{ lang.researcherFeature2Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-2">
-              <h3>{{ lang.researcherFeature3Title }}</h3>
-              <p>{{ lang.researcherFeature3Desc }}</p>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 40px;" class="fade-in-up delay-3">
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN1z0gjGju9SeuPHe56JVR4Uomhp-poii6ha_FGxuYyR-_uQ/viewform?usp=sharing&ouid=106180778276517576394" class="btn btn-action" target="_blank" rel="noopener noreferrer">{{ lang.researcherAction }}</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="plans-section" class="section bg-light">
-        <div class="container">
-          <div class="section-header fade-in-up">
-            <h2>{{ lang.plansSectionTitle }}</h2>
-          </div>
-          <div class="services-grid">
-            <div class="service-card fade-in-up">
-              <h3>{{ lang.plan1Title }}</h3>
-              <p>{{ lang.plan1Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-1">
-              <h3>{{ lang.plan2Title }}</h3>
-              <p>{{ lang.plan2Desc }}</p>
-            </div>
-            <div class="service-card fade-in-up delay-2">
-              <h3>{{ lang.plan3Title }}</h3>
-              <p>{{ lang.plan3Desc }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="future-services-section" class="section">
-        <div class="container narrow fade-in-up">
-          <div class="section-header">
-            <h2>{{ lang.futureServiceSectionTitle }}</h2>
-          </div>
-          <p style="text-align: center;">{{ lang.futureServiceDesc }}</p>
-        </div>
-      </section>
-
-      <section id="company-section" class="section bg-light">
-        <div class="container narrow fade-in-up">
-          <div class="section-header">
-            <h2>{{ lang.companySectionTitle }}</h2>
-          </div>
-          <table class="company-table">
-    <tr>
-        <th>{{ lang.companyNameLabel }}</th>
-        <td>{{ lang.companyName }}</td>
-    </tr>
-    <tr>
-        <th>{{ lang.companyAddressLabel }}</th>
-        <td>{{ lang.companyAddress }}</td>
-    </tr>
-    <tr>
-        <th>{{ lang.companyFoundedLabel }}</th>
-        <td>{{ lang.companyFounded }}</td>
-    </tr>
-    <tr>
-        <th>{{ lang.companyCeoLabel }}</th>
-        <td>{{ lang.companyCeoName }}</td>
-    </tr>
-    <tr>
-        <th>{{ lang.companyBizLabel }}</th>
-        <td>{{ lang.companyBizDesc }}</td>
-    </tr>
-</table>
-        </div>
-      </section>
-      
-      <section id="contact" class="section">
-        <div class="container narrow fade-in-up">
-          <div class="section-header">
-            <h2>{{ lang.contactSectionTitle }}</h2>
-            <p>{{ lang.contactSectionSubtitle | safe }}</p>
-          </div>
-          <p class="contact-email">
-            <a href="mailto:info@jobresearchin.com">info@jobresearchin.com</a>
-          </p>
+          <table class="company-table fade-in-up delay-1">
+            <tr><th>{{ lang.companyProfile.nameLabel }}</th><td>{{ lang.companyProfile.name }}</td></tr>
+            <tr><th>{{ lang.companyProfile.foundedLabel }}</th><td>{{ lang.companyProfile.founded }}</td></tr>
+            <tr><th>{{ lang.companyProfile.ceoLabel }}</th><td>{{ lang.companyProfile.ceo }}</td></tr>
+            <tr><th>{{ lang.companyProfile.addressLabel }}</th><td>{{ lang.companyProfile.address }}</td></tr>
+          </table>
         </div>
       </section>
     </main>
-
+    
     <footer>
       <div class="container">
-        <p>&copy; <span id="currentYear"></span> Researchin Inc. All rights reserved.</p>
+        <div class="footer-contact">
+          <p>{{ lang.footer.contactPrefix }} <a href="mailto:{{ lang.footer.contactEmail }}">{{ lang.footer.contactEmail }}</a></p>
+        </div>
+        <p class="copyright">&copy; <span id="currentYear"></span> {{ lang.meta.siteName }} Inc. All rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -262,7 +285,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
     closeMenuBtn.addEventListener("click", closeMenu);
     overlay.addEventListener("click", closeMenu);
     menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
-    const animatedElements = document.querySelectorAll(".fade-in-up, .fade-in-left, .fade-in-right");
+    const animatedElements = document.querySelectorAll(".fade-in-up");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -274,5 +297,4 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
     animatedElements.forEach((el) => observer.observe(el));
   </script>
 </body>
-
 </html>
