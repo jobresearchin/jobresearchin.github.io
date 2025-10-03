@@ -22,7 +22,7 @@ module.exports = [
       title: "研究を当たり前に",
       subtitle: "研究参加・募集の新しい形を提供します",
       participantBtnText: "研究に参加する",
-      participantBtnLink: "https://stg.jobresearchin.com/",
+      participantBtnLink: " https://www.jobresearchin.com/",
       researcherBtnText: "研究者・企業の方はこちら",
       researcherBtnLink: "#researchers",
       businessesTitle: "その他の事業はこちら",
@@ -66,7 +66,7 @@ module.exports = [
       point2: "興味や関心に合わせて、豊富な研究プロジェクトの中から参加したいものを選べます。",
       point3: "参加する実験や調査に応じて、明確な謝礼が提供され、あなたの貢献が評価されます。",
       btnText: "参加できる研究を探す",
-      btnLink: "https://stg.jobresearchin.com/"
+      btnLink: "https://www.jobresearchin.com/"
     },
 
     // --- 4. Upcoming Features ---
@@ -157,7 +157,7 @@ module.exports = [
       ceoLabel: "代表者",
       ceo: "今井崇人",
       addressLabel: "所在地",
-      address: "東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
+      address: "〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
     },
 
     // --- Footer ---
@@ -189,7 +189,7 @@ module.exports = [
       title: "IN TO RESEARCH",
       subtitle: "",
       participantBtnText: "Access Platform →",
-      participantBtnLink: "https://stg.jobresearchin.com/",
+      participantBtnLink: "https://www.jobresearchin.com/",
       researcherBtnText: "For Researchers",
       researcherBtnLink: "#researchers",
       businessesTitle: "Our Other Businesses",
@@ -233,7 +233,7 @@ module.exports = [
       point2: "Choose from a wide range of research projects that match your interests and passions.",
       point3: "Receive fair compensation for your contribution, with a system that properly values your participation.",
       btnText: "Find Available Studies",
-      btnLink: "https://stg.jobresearchin.com/"
+      btnLink: "https://www.jobresearchin.com/"
     },
 
     // --- 4. Upcoming Features ---
@@ -321,7 +321,7 @@ module.exports = [
       ceoLabel: "CEO",
       ceo: "Takahito Imai",
       addressLabel: "Address",
-      address: "Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
+      address: "〒1150-0043 Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
     },
 
     // --- Footer ---
