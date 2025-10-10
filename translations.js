@@ -55,7 +55,7 @@ module.exports = [
       point2: "募集ページの作成から管理までオンラインで完結。研究本来の業務に集中できます。",
       point3: "従来のリクルーティング手法に比べ、時間とコストを大幅に削減します。",
       btnText: "募集のフォームはこちら",
-      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfTUvPiJ-xgYqx_31N6nYtKogQ22dNVTCTr06ubMPqvR-2vIQ/viewform"
+      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSeGU0gv5vPKHWXFn2RSIWguIK6LoM7q5X4OB7d1dOSUrRkRnA/viewform"
     },
 
     // --- 3b. Participants Section ---
@@ -127,6 +127,14 @@ module.exports = [
           affiliation: null,
           socials: {
             linkedin: "https://www.linkedin.com/in/koki-hata-aab3b0379/",
+          }
+        },
+        {
+          name: "柳澤 京佐",
+          title: "CMO",
+          affiliation: null,
+          socials: {
+            linkedin: "https://www.linkedin.com/in/%E4%BA%AC%E4%BD%90-%E6%9F%B3%E6%BE%A4-76a3a7368/",
           }
         },
         {
@@ -222,7 +230,7 @@ module.exports = [
       point2: "Complete the entire recruitment process online, from creating pages to managing participants, so you can focus on your core research.",
       point3: "Significantly reduce time and costs compared to traditional recruiting methods.",
       btnText: "Recruitment Form",
-      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfTUvPiJ-xgYqx_31N6nYtKogQ22dNVTCTr06ubMPqvR-2vIQ/viewform"
+      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSeGU0gv5vPKHWXFn2RSIWguIK6LoM7q5X4OB7d1dOSUrRkRnA/viewform"
     },
 
     // --- 3b. Participants Section ---
@@ -294,6 +302,14 @@ module.exports = [
           }
         },
         {
+          name: "Kyosuke Yanagisawa",
+          title: "CMO",
+          affiliation: null,
+          socials: {
+            linkedin: "https://www.linkedin.com/in/%E4%BA%AC%E4%BD%90-%E6%9F%B3%E6%BE%A4-76a3a7368/",
+          }
+        },
+        {
           name: "Yoshito Ogasawara",
           title: "Stack System Inc. CEO & Engineer",
           affiliation: null,
@@ -302,7 +318,7 @@ module.exports = [
           }
         },
         {
-          name: "Gota Naito",
+          name: "Kota Naito",
           title: "FYBE CEO & Engineer",
           affiliation: null,
           socials: {
