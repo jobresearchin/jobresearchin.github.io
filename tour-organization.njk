@@ -1,0 +1,180 @@
+---
+pagination:
+  data: translations
+  size: 1
+  alias: lang
+permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ lang.key }}/services/tour-organization/{% endif %}index.html"
+---
+
+<!DOCTYPE html>
+<html lang="{{ lang.key }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ lang.tourService.title }} | {{ lang.meta.title }}</title>
+  <meta name="description" content="{{ lang.tourService.description }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/services/tour-organization/" />
+  <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/services/tour-organization/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ lang.tourService.title }} | {{ lang.meta.title }}" />
+  <meta property="og:description" content="{{ lang.tourService.description }}" />
+  <meta property="og:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
+  <meta property="og:url" content="https://corp.jobresearchin.com/{% if lang.key == 'ja' %}services/tour-organization/{% else %}en/services/tour-organization/{% endif %}" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X754F6MGCM');
+  </script>
+</head>
+
+<body>
+  <div class="mobile-sidebar" id="mobile-sidebar">
+    <button class="menu-close-btn" id="menu-close-btn">&times;</button>
+    <nav>
+      <ul>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#service-overview" class="menu-link">{{ lang.header.navOverview }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#researchers" class="menu-link">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#participants" class="menu-link">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/services/{% else %}/{{ lang.key }}/services/{% endif %}" class="menu-link">{{ lang.header.navServices }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-container">
+        <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}" class="brand-logo">
+          {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
+        </a>
+        <nav class="desktop-nav">
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#researchers">{{ lang.header.navResearchers }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#participants">{{ lang.header.navParticipants }}</a>
+          <a href="{% if lang.key == 'ja' %}/services/{% else %}/{{ lang.key }}/services/{% endif %}">{{ lang.header.navServices }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#team">{{ lang.header.navTeam }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile">{{ lang.header.navCompany }}</a>
+        </nav>
+        <div class="header-right">
+          <div class="lang-switcher desktop-lang-switcher">
+            <a href="/services/tour-organization/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
+            <span>/</span>
+            <a href="/en/services/tour-organization/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
+          </div>
+          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+          <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero services-hero">
+        <div class="container">
+          <div class="hero-content fade-in-up">
+            <div class="service-icon-large">
+              {% image "images/icon-tour.svg", "ツアー開催アイコン", "80px", width="80", height="80" %}
+            </div>
+            <h1>{{ lang.tourService.title }}</h1>
+            <p>{{ lang.tourService.subtitle }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="service-detail-content fade-in-up">
+            <h2>{{ lang.tourService.overviewTitle }}</h2>
+            <p>{{ lang.tourService.overview }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.tourService.featuresTitle }}</h2>
+          </div>
+          <div class="features-grid fade-in-up delay-1">
+            {% for feature in lang.tourService.features %}
+            <div class="feature-item">
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="service-detail-content fade-in-up">
+            <h2>{{ lang.tourService.benefitsTitle }}</h2>
+            <ul class="benefits-list">
+              {% for benefit in lang.tourService.benefits %}
+              <li>{{ benefit }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.tourService.contactTitle }}</h2>
+            <p>{{ lang.tourService.contactText }}</p>
+          </div>
+          <div class="text-center fade-in-up delay-1">
+            <a href="{{ lang.tourService.contactForm }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ lang.tourService.contactButton }}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-contact">
+          <p>{{ lang.footer.contactPrefix }} <a href="mailto:{{ lang.footer.contactEmail }}">{{ lang.footer.contactEmail }}</a></p>
+        </div>
+        <p class="copyright">&copy; <span id="currentYear"></span> {{ lang.meta.siteName }} Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    const mobileSidebar = document.getElementById("mobile-sidebar");
+    const hamburgerBtn = document.getElementById("hamburger-menu");
+    const closeMenuBtn = document.getElementById("menu-close-btn");
+    const overlay = document.getElementById("sidebar-overlay");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const openMenu = () => { mobileSidebar.classList.add("is-open"); overlay.classList.add("is-open"); };
+    const closeMenu = () => { mobileSidebar.classList.remove("is-open"); overlay.classList.remove("is-open"); };
+    hamburgerBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+    menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+    const animatedElements = document.querySelectorAll(".fade-in-up");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

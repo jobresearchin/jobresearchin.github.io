@@ -515,6 +515,53 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
 }
 
+.service-card.clickable {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-card.clickable:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.service-card.clickable:hover h3 {
+    color: var(--primary-color);
+}
+
+.service-card.detailed {
+    text-align: left;
+    padding: 40px;
+}
+
+.service-card.detailed .service-icon {
+    margin-bottom: 20px;
+}
+
+.service-card.detailed .service-features {
+    margin: 24px 0;
+}
+
+.service-card.detailed .service-features h4 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.service-card.detailed .service-features ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.service-card.detailed .service-features li {
+    margin-bottom: 8px;
+    color: var(--muted-color);
+}
+
 .service-card .image-placeholder,
 .service-card picture {
     display: block;
@@ -824,5 +871,198 @@ footer {
 
     .company-table th {
         width: 30%;
+    }
+}
+
+/* --- News Page Styles --- */
+.news-hero,
+.services-hero {
+    background: linear-gradient(135deg, var(--primary-light-color), var(--bg-color));
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.news-hero h1,
+.services-hero h1 {
+    margin: 0 0 16px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.news-hero p,
+.services-hero p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--muted-color);
+}
+
+.news-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.news-meta time {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+}
+
+.news-category {
+    background-color: var(--primary-light-color);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.news-title {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.news-excerpt {
+    margin: 0 0 16px;
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+.news-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.news-link:hover {
+    color: var(--primary-dark-color);
+    text-decoration: underline;
+}
+
+.no-news {
+    text-align: center;
+    padding: 60px 0;
+    color: var(--muted-color);
+}
+
+/* --- Text utilities --- */
+.text-center {
+    text-align: center;
+}
+
+/* --- Service Detail Pages Styles --- */
+.service-icon-large {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.service-detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-detail-content h2 {
+    margin: 0 0 24px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.service-detail-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--muted-color);
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.feature-item {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-item h3 {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.feature-item p {
+    margin: 0;
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    background-color: var(--light-bg-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s;
+}
+
+.benefits-list li:hover {
+    background-color: var(--primary-light-color);
+}
+
+.benefits-list li::before {
+    content: "✓";
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

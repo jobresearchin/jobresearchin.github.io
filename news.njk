@@ -1,0 +1,151 @@
+---
+pagination:
+  data: translations
+  size: 1
+  alias: lang
+permalink: "{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}index.html"
+---
+
+<!DOCTYPE html>
+<html lang="{{ lang.key }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ lang.news.title }} | {{ lang.meta.title }}</title>
+  <meta name="description" content="{{ lang.news.description }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/news/" />
+  <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/news/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ lang.news.title }} | {{ lang.meta.title }}" />
+  <meta property="og:description" content="{{ lang.news.description }}" />
+  <meta property="og:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
+  <meta property="og:url" content="https://corp.jobresearchin.com/{% if lang.key == 'ja' %}news/{% else %}en/news/{% endif %}" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X754F6MGCM');
+  </script>
+</head>
+
+<body>
+  <div class="mobile-sidebar" id="mobile-sidebar">
+    <button class="menu-close-btn" id="menu-close-btn">&times;</button>
+    <nav>
+      <ul>
+        <li><a href="/#service-overview" class="menu-link">{{ lang.header.navOverview }}</a></li>
+        <li><a href="/#researchers" class="menu-link">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="/#participants" class="menu-link">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="/#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
+        <li><a href="/#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-container">
+        <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}" class="brand-logo">
+          {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
+        </a>
+        <nav class="desktop-nav">
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#researchers">{{ lang.header.navResearchers }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#participants">{{ lang.header.navParticipants }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#team">{{ lang.header.navTeam }}</a>
+          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile">{{ lang.header.navCompany }}</a>
+        </nav>
+        <div class="header-right">
+          <div class="lang-switcher desktop-lang-switcher">
+            <a href="/news/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
+            <span>/</span>
+            <a href="/en/news/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
+          </div>
+          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+          <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero news-hero">
+        <div class="container">
+          <div class="hero-content fade-in-up">
+            <h1>{{ lang.news.title }}</h1>
+            <p>{{ lang.news.subtitle }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          {% if lang.news.items.length > 0 %}
+          <div class="news-list fade-in-up">
+            {% for item in lang.news.items %}
+            <article class="news-item">
+              <div class="news-meta">
+                <time datetime="{{ item.date }}">{{ item.displayDate }}</time>
+                <span class="news-category">{{ item.category }}</span>
+              </div>
+              <h2 class="news-title">{{ item.title }}</h2>
+              <p class="news-excerpt">{{ item.excerpt }}</p>
+              {% if item.link %}
+              <a href="{{ item.link }}" class="news-link" target="_blank" rel="noopener noreferrer">{{ lang.news.readMore }}</a>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="no-news fade-in-up">
+            <p>{{ lang.news.noNews }}</p>
+          </div>
+          {% endif %}
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-contact">
+          <p>{{ lang.footer.contactPrefix }} <a href="mailto:{{ lang.footer.contactEmail }}">{{ lang.footer.contactEmail }}</a></p>
+        </div>
+        <p class="copyright">&copy; <span id="currentYear"></span> {{ lang.meta.siteName }} Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    const mobileSidebar = document.getElementById("mobile-sidebar");
+    const hamburgerBtn = document.getElementById("hamburger-menu");
+    const closeMenuBtn = document.getElementById("menu-close-btn");
+    const overlay = document.getElementById("sidebar-overlay");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const openMenu = () => { mobileSidebar.classList.add("is-open"); overlay.classList.add("is-open"); };
+    const closeMenu = () => { mobileSidebar.classList.remove("is-open"); overlay.classList.remove("is-open"); };
+    hamburgerBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+    menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+    const animatedElements = document.querySelectorAll(".fade-in-up");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

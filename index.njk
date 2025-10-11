@@ -62,6 +62,8 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
           <a href="#service-overview">{{ lang.header.navOverview }}</a>
           <a href="#researchers">{{ lang.header.navResearchers }}</a>
           <a href="#participants">{{ lang.header.navParticipants }}</a>
+          <a href="{% if lang.key == 'ja' %}/services/{% else %}/{{ lang.key }}/services/{% endif %}">{{ lang.header.navServices }}</a>
+          <a href="{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}">{{ lang.header.navNews }}</a>
           <a href="#team">{{ lang.header.navTeam }}</a>
           <a href="#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
@@ -97,18 +99,18 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
             <div class="container">
                 <h3 class="hero-businesses-title fade-in-up">{{ lang.hero.businessesTitle }}</h3>
                 <div class="services-grid">
-                    <div class="service-card">
+                    <a href="{% if lang.key == 'ja' %}/services/administrative-support/{% else %}/{{ lang.key }}/services/administrative-support/{% endif %}" class="service-card clickable">
                         <h3>{{ lang.businesses.item1.title }}</h3>
                         <p>{{ lang.businesses.item1.desc }}</p>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="{% if lang.key == 'ja' %}/services/website-development/{% else %}/{{ lang.key }}/services/website-development/{% endif %}" class="service-card clickable">
                         <h3>{{ lang.businesses.item2.title }}</h3>
                         <p>{{ lang.businesses.item2.desc }}</p>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ lang.key }}/services/tour-organization/{% endif %}" class="service-card clickable">
                         <h3>{{ lang.businesses.item3.title }}</h3>
                         <p>{{ lang.businesses.item3.desc }}</p>
-                    </div>
+                    </a>
                 </div>
                 <p class="hero-businesses-inquiry fade-in-up">
                     {{ lang.hero.businessesInquiry | safe }}
