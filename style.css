@@ -826,3 +826,285 @@ footer {
         width: 30%;
     }
 }
+
+/* ==============================================
+   ニュースページ用スタイル (News Page Styles)
+   ============================================== */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-light-color) 0%, var(--bg-color) 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.page-description {
+    font-size: 1.25rem;
+    color: var(--muted-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news-content {
+    padding: 80px 0;
+    min-height: 400px;
+}
+
+.news-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.no-news {
+    text-align: center;
+    padding: 60px 0;
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.no-news p {
+    font-size: 1.125rem;
+    color: var(--muted-color);
+    margin: 0;
+}
+
+/* ニュース記事のスタイル（将来の拡張用） */
+.news-item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 32px 0;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    color: var(--muted-color);
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.news-title a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    color: var(--primary-color);
+}
+
+.news-excerpt {
+    color: var(--muted-color);
+    line-height: 1.7;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 60px;
+    }
+
+    .page-title {
+        font-size: 2.25rem;
+    }
+
+    .page-description {
+        font-size: 1.125rem;
+    }
+
+    .news-content {
+        padding: 60px 0;
+    }
+
+    .no-news {
+        padding: 40px 20px;
+    }
+}
+
+/* ==============================================
+   サービス詳細ページ用スタイル (Services Detail Page Styles)
+   ============================================== */
+
+.services-detail-content {
+    padding: 80px 0;
+}
+
+.service-section {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.service-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.service-section-description {
+    font-size: 1.25rem;
+    color: var(--muted-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.features-list {
+    background-color: var(--light-bg-color);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-list h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.features-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    padding-left: 24px;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.additional-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.additional-service-card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.additional-service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.service-card-description {
+    color: var(--muted-color);
+    line-height: 1.7;
+}
+
+.services-cta {
+    background: linear-gradient(135deg, var(--primary-light-color) 0%, var(--bg-color) 100%);
+    padding: 60px 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.services-cta h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.services-cta p {
+    font-size: 1.125rem;
+    color: var(--muted-color);
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .services-detail-content {
+        padding: 60px 0;
+    }
+
+    .service-section {
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+    }
+
+    .service-section-title {
+        font-size: 2rem;
+    }
+
+    .service-section-description {
+        font-size: 1.125rem;
+    }
+
+    .features-list {
+        padding: 30px 20px;
+    }
+
+    .additional-services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .additional-service-card {
+        padding: 24px;
+    }
+
+    .services-cta {
+        padding: 40px 20px;
+        margin-top: 60px;
+    }
+
+    .services-cta h2 {
+        font-size: 1.75rem;
+    }
+}

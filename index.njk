@@ -47,6 +47,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
         <li><a href="#participants" class="menu-link">{{ lang.header.navParticipants }}</a></li>
         <li><a href="#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
         <li><a href="#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}" class="menu-link">{{ lang.news.title }}</a></li>
       </ul>
     </nav>
   </div>
@@ -64,6 +65,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
           <a href="#participants">{{ lang.header.navParticipants }}</a>
           <a href="#team">{{ lang.header.navTeam }}</a>
           <a href="#company-profile">{{ lang.header.navCompany }}</a>
+          <a href="{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}">{{ lang.news.title }}</a>
         </nav>
         <div class="header-right">
           <div class="lang-switcher desktop-lang-switcher">

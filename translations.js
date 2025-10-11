@@ -168,6 +168,46 @@ module.exports = [
       address: "〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
     },
 
+    // --- Services Detail ---
+    servicesDetail: {
+      title: "サービス詳細",
+      description: "Researchinが提供するサービスの詳細情報をご覧いただけます。",
+      mainService: {
+        title: "研究参加者募集プラットフォーム",
+        description: "研究者と参加者を効率的に繋ぐメインサービスです。",
+        features: [
+          "幅広い参加者データベース",
+          "簡単な募集ページ作成",
+          "自動マッチング機能",
+          "進捗管理ツール"
+        ]
+      },
+      additionalServices: {
+        title: "その他のサービス",
+        list: [
+          {
+            title: "事務作業代行",
+            description: "研究に関わる事務作業を専門スタッフが代行いたします。"
+          },
+          {
+            title: "Webサイト制作",
+            description: "研究機関や企業向けの専門的なWebサイトを制作いたします。"
+          },
+          {
+            title: "研究施設ツアー",
+            description: "一般向けの研究施設見学ツアーを企画・運営いたします。"
+          }
+        ]
+      }
+    },
+
+    // --- News ---
+    news: {
+      title: "ニュース",
+      description: "Researchinの最新情報をお届けします。",
+      noNews: "現在お知らせできるニュースはございません。今後の更新をお待ちください。"
+    },
+
     // --- Footer ---
     footer: {
       contactPrefix: "ご連絡はこちら:",
@@ -338,6 +378,46 @@ module.exports = [
       ceo: "Takahito Imai",
       addressLabel: "Address",
       address: "〒1150-0043 Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
+    },
+
+    // --- Services Detail ---
+    servicesDetail: {
+      title: "Services Detail",
+      description: "Detailed information about the services provided by Researchin.",
+      mainService: {
+        title: "Research Participant Recruitment Platform",
+        description: "Our main service that efficiently connects researchers and participants.",
+        features: [
+          "Extensive participant database",
+          "Easy recruitment page creation",
+          "Automatic matching function",
+          "Progress management tools"
+        ]
+      },
+      additionalServices: {
+        title: "Additional Services",
+        list: [
+          {
+            title: "Administrative Support",
+            description: "Our specialized staff handles administrative tasks related to research."
+          },
+          {
+            title: "Website Development",
+            description: "We create specialized websites for research institutions and companies."
+          },
+          {
+            title: "Research Facility Tours",
+            description: "We plan and organize tours of research facilities for the general public."
+          }
+        ]
+      }
+    },
+
+    // --- News ---
+    news: {
+      title: "News",
+      description: "Latest updates from Researchin.",
+      noNews: "No news to share at the moment. Please stay tuned for future updates."
     },
 
     // --- Footer ---
