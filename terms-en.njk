@@ -1,0 +1,174 @@
+---
+permalink: "/en/terms/index.html"
+---
+{% set lang = translations[1] %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service | {{ lang.meta.siteName }}</title>
+  <meta name="description" content="Please read the Terms of Service for Researchin before using our service." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  
+  <!-- OGP -->
+  <meta property="og:title" content="Terms of Service | {{ lang.meta.siteName }}" />
+  <meta property="og:description" content="Please read the Terms of Service for Researchin before using our service." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJRZ4YGCZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KJRZ4YGCZW');
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="desktop-nav">
+      <div class="nav-left">
+        <a href="/en/" class="logo">{{ lang.meta.siteName }}</a>
+      </div>
+      <div class="nav-center">
+        <a href="/en/business-details/">{{ lang.header.navOverview }}</a>
+        <a href="/en/#researchers">{{ lang.header.navResearchers }}</a>
+        <a href="/en/#participants">{{ lang.header.navParticipants }}</a>
+        <a href="/en/#services">{{ lang.header.navServices }}</a>
+        <a href="/en/news/">{{ lang.header.navNews }}</a>
+        <a href="/en/#team">{{ lang.header.navTeam }}</a>
+        <a href="/en/#company">{{ lang.header.navCompany }}</a>
+      </div>
+      <div class="header-right">
+        <a href="{{ lang.header.navContactLink }}" class="btn-contact">{{ lang.header.navContact }}</a>
+        <button class="hamburger-menu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <nav>
+      <ul>
+        <li><a href="/en/business-details/">{{ lang.header.navOverview }}</a></li>
+        <li><a href="/en/#researchers">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="/en/#participants">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="/en/#services">{{ lang.header.navServices }}</a></li>
+        <li><a href="/en/news/">{{ lang.header.navNews }}</a></li>
+        <li><a href="/en/#team">{{ lang.header.navTeam }}</a></li>
+        <li><a href="/en/#company">{{ lang.header.navCompany }}</a></li>
+        <li><a href="{{ lang.header.navContactLink }}" class="mobile-contact-btn">{{ lang.header.navContact }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="page-header">
+        <h1>Terms of Service</h1>
+        <p class="page-description">Please read these Terms of Service carefully before using Researchin services.</p>
+      </div>
+
+      <div class="terms-content">
+        <div class="notice-box">
+          <p><strong>Note:</strong> This is a translated version of our Japanese Terms of Service for reference purposes. In case of any discrepancy, the Japanese version shall prevail.</p>
+        </div>
+
+        <section class="terms-section">
+          <h2>Article 1 (Application)</h2>
+          <ol>
+            <li>These terms and conditions set forth the terms and conditions of use between users of the platform service "Researchin Beta" (hereinafter referred to as "the Service") provided by Researchin Inc. (hereinafter referred to as "the Company") and the Company.</li>
+            <li>Users are deemed to have agreed to all the contents of these terms and conditions by using the Service.</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>Article 2 (Definitions)</h2>
+          <p>The definitions of terms used in these terms and conditions are as follows:</p>
+          <ol>
+            <li>"Researchers" refers to universities, public institutions, companies, or individuals who use the Service to recruit participants for experiments, surveys, monitoring, etc.</li>
+            <li>"Participants" refers to individuals who apply for or participate in experiments recruited by researchers using the Service.</li>
+            <li>"Recruitment Information" refers to information related to participant recruitment posted by researchers on the Service or collected and posted by the Company from external sites.</li>
+            <li>"Legal Representative" refers to a parent or other person who has the right of representation under the Civil Code for minors.</li>
+            <li>"Intellectual Property Rights" refers to copyrights, patent rights, utility model rights, trademark rights, design rights, and other intellectual property rights (including the right to acquire such rights or to apply for registration, etc.).</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>Article 3 (Service Content)</h2>
+          <ol>
+            <li>The Service is a platform that supports matching between researchers and participants.</li>
+            <li>The Company may collect recruitment information published on external websites and post it on the Service for user convenience.</li>
+            <li>The Company may provide services for acting as an intermediary for remuneration payments between researchers and participants, or paid plans for researchers in the future. Detailed conditions shall be separately determined.</li>
+          </ol>
+        </section>
+
+        <div class="effective-date">
+          <p><strong>【Effective Date: September 24, 2025】</strong></p>
+          <p style="margin-top: 16px; font-size: 0.9rem; color: #666;">
+            <em>This English version is provided for reference only. The Japanese version is the official and binding version of these Terms of Service.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/en/contact/" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="/en/legal/" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="/en/terms/" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="/en/privacy/" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileSidebar = document.querySelector('.mobile-sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+    function toggleMobileMenu() {
+      mobileSidebar.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    }
+
+    hamburgerMenu.addEventListener('click', toggleMobileMenu);
+    sidebarOverlay.addEventListener('click', toggleMobileMenu);
+
+    // Animation on scroll
+    const animatedElements = document.querySelectorAll('.terms-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

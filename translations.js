@@ -8,7 +8,7 @@ module.exports = [
       siteName: "Researchin"
     },
     header: {
-      navOverview: "サービス概要",
+      navOverview: "事業説明",
       navResearchers: "研究者の方へ",
       navParticipants: "参加者の方へ",
       navServices: "サービス一覧",
@@ -16,7 +16,12 @@ module.exports = [
       navTeam: "メンバー",
       navCompany: "会社概要",
       navContact: "お問い合わせ",
-      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
+      servicesMenu: {
+        administrative: "事務作業の代行",
+        website: "Webサイトの作成委託",
+        tour: "ツアーの開催"
+      }
     },
 
     // --- 1. Hero Section ---
@@ -46,7 +51,8 @@ module.exports = [
       feature3: {
         title: "双方に：透明性の高い仕組み",
         desc: "研究内容や条件、謝礼などが事前に明確に提示され、双方が納得して繋がります。"
-      }
+      },
+      detailsButton: "詳細な事業説明"
     },
 
     // --- 3a. Researchers Section ---
@@ -376,7 +382,11 @@ module.exports = [
     // --- Footer ---
     footer: {
       contactPrefix: "ご連絡はこちら:",
-      contactEmail: "info@jobresearchin.com"
+      contactEmail: "info@jobresearchin.com",
+      contact: "お問い合わせ",
+      legalInfo: "法的情報",
+      terms: "利用規約",
+      privacy: "プライバシーポリシー"
     }
   },
   {
@@ -388,7 +398,7 @@ module.exports = [
       siteName: "Researchin"
     },
     header: {
-      navOverview: "Overview",
+      navOverview: "Business Description",
       navResearchers: "For Researchers",
       navParticipants: "For Participants",
       navServices: "Services",
@@ -396,7 +406,12 @@ module.exports = [
       navTeam: "Team",
       navCompany: "Company",
       navContact: "Contact",
-      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+      navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
+      servicesMenu: {
+        administrative: "Administrative Support",
+        website: "Website Development",
+        tour: "Tour Organization"
+      }
     },
 
     // --- 1. Hero Section ---
@@ -426,7 +441,8 @@ module.exports = [
       feature3: {
         title: "For Both: A Transparent System",
         desc: "Study details, conditions, and compensation are clearly presented upfront, ensuring both parties connect with a mutual understanding."
-      }
+      },
+      detailsButton: "Detailed Business Description"
     },
 
     // --- 3a. Researchers Section ---
@@ -621,7 +637,11 @@ module.exports = [
     // --- Footer ---
     footer: {
       contactPrefix: "Contact:",
-      contactEmail: "info@jobresearchin.com"
+      contactEmail: "info@jobresearchin.com",
+      contact: "Contact",
+      legalInfo: "Legal Information",
+      terms: "Terms of Service",
+      privacy: "Privacy Policy"
     }
   }
 ];

@@ -1,0 +1,289 @@
+---
+permalink: "/terms/index.html"
+---
+{% set lang = translations[0] %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>利用規約 | {{ lang.meta.siteName }}</title>
+  <meta name="description" content="Researchinの利用規約をご確認ください。サービスのご利用前に必ずお読みください。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  
+  <!-- OGP -->
+  <meta property="og:title" content="利用規約 | {{ lang.meta.siteName }}" />
+  <meta property="og:description" content="Researchinの利用規約をご確認ください。サービスのご利用前に必ずお読みください。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJRZ4YGCZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KJRZ4YGCZW');
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="desktop-nav">
+      <div class="nav-left">
+        <a href="/" class="logo">{{ lang.meta.siteName }}</a>
+      </div>
+      <div class="nav-center">
+        <a href="/business-details/">{{ lang.header.navOverview }}</a>
+        <a href="#researchers">{{ lang.header.navResearchers }}</a>
+        <a href="#participants">{{ lang.header.navParticipants }}</a>
+        <a href="#services">{{ lang.header.navServices }}</a>
+        <a href="/news/">{{ lang.header.navNews }}</a>
+        <a href="#team">{{ lang.header.navTeam }}</a>
+        <a href="#company">{{ lang.header.navCompany }}</a>
+      </div>
+      <div class="header-right">
+        <a href="{{ lang.header.navContactLink }}" class="btn-contact">{{ lang.header.navContact }}</a>
+        <button class="hamburger-menu" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <nav>
+      <ul>
+        <li><a href="/business-details/">{{ lang.header.navOverview }}</a></li>
+        <li><a href="#researchers">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="#participants">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="#services">{{ lang.header.navServices }}</a></li>
+        <li><a href="/news/">{{ lang.header.navNews }}</a></li>
+        <li><a href="#team">{{ lang.header.navTeam }}</a></li>
+        <li><a href="#company">{{ lang.header.navCompany }}</a></li>
+        <li><a href="{{ lang.header.navContactLink }}" class="mobile-contact-btn">{{ lang.header.navContact }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="page-header">
+        <h1>利用規約</h1>
+        <p class="page-description">Researchinサービスの利用規約です。サービスのご利用前に必ずお読みください。</p>
+      </div>
+
+      <div class="terms-content">
+        <section class="terms-section">
+          <h2>第1条（適用）</h2>
+          <ol>
+            <li>本規約は、Researchin株式会社（以下「当社」といいます。）が提供するプラットフォームサービス「Researchin Beta」（以下「本サービス」といいます。）の利用条件を、本サービスの利用者（以下「利用者」といいます。）と当社との間で定めるものです。</li>
+            <li>利用者は、本サービスを利用することにより、本規約の全ての内容に同意したものとみなされます。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第2条（定義）</h2>
+          <p>本規約において使用する用語の定義は、以下のとおりとします。</p>
+          <ol>
+            <li>「研究者」とは、本サービスを利用して実験、調査、モニター等の参加者を募集する大学、公的機関、企業または個人をいいます。</li>
+            <li>「参加者」とは、本サービスを利用して研究者が募集する実験等に応募し、または参加する個人をいいます。</li>
+            <li>「募集情報」とは、研究者が本サービスに掲載する、または当社が外部サイトから収集して掲載する、参加者募集に関する情報をいいます。</li>
+            <li>「法定代理人」とは、未成年者に対して民法に基づき代理権を有する親権者その他の者をいいます。</li>
+            <li>「知的財産権」とは、著作権、特許権、実用新案権、商標権、意匠権その他の知的財産権（それらの権利を取得し、またはそれらの権利につき登録等を出願する権利を含みます。）をいいます。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第3条（本サービスの内容）</h2>
+          <ol>
+            <li>本サービスは、研究者と参加者との間のマッチングを支援するプラットフォームです。</li>
+            <li>当社は、外部のウェブサイトで公開されている募集情報を収集し、利用者の利便性のために本サービス上に掲載することがあります。</li>
+            <li>当社は、将来的に、研究者と参加者間の謝礼金の支払いを代行するサービスや、研究者向けの有料プランを提供する場合があります。詳細な条件は、別途定めるものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第4条（利用者登録・年齢要件）</h2>
+          <ol>
+            <li>本サービスの利用を希望する者は、本規約に同意の上、当社の定める方法により利用登録を申請することができます。</li>
+            <li>当社は、当社の基準に従って登録の可否を判断し、登録を認める場合にはその旨を通知します。利用者は、登録情報に変更があった場合、遅滞なく当社の定める方法により当該変更事項を通知するものとします。</li>
+            <li>本サービスは、原則として満18歳以上の個人の利用を前提とします。満18歳未満の者（以下「未成年者」といいます。）が利用する場合は、法定代理人の同意を得るものとします。</li>
+            <li>当社は、未成年者の利用に際し、法定代理人の同意の有無を確認するため、同意書の提出、本人確認、追加情報の提供を求めることがあります。未成年者が法定代理人の同意なく本サービスを利用したことが判明した場合、当社は当該未成年者の利用を停止し、登録を抹消できるものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第5条（研究参加の募集・掲載基準）</h2>
+          <ol>
+            <li>研究者は、募集情報の掲載及び研究の実施にあたり、関係法令、学術指針、所属機関の倫理審査（IRB等）に従い、適切な保護措置を講じるものとします。</li>
+            <li>未成年者を対象とする研究参加の募集に際しては、原則として法定代理人による事前同意（保護者同意）を必要とし、未成年者本人の同意（アセント）の取得にも努めるものとします。</li>
+            <li>研究者は、募集情報に以下の事項を明示するものとします。
+              <ol style="list-style-type: none;">
+                <li>(1) 未成年者対象の有無及び対象年齢範囲</li>
+                <li>(2) 必要な同意手続（保護者同意・本人アセント）</li>
+                <li>(3) 予見可能なリスク・負担、謝礼の有無・水準、参加撤回方法</li>
+                <li>(4) 個人情報・行動データ・生体情報等の取扱い（目的、保存期間、第三者提供の有無を含む）</li>
+              </ol>
+            </li>
+            <li>当社は、未成年者の保護に必要と判断した場合、募集情報の掲載を拒否または修正を求め、掲載後であっても当該情報を削除できるものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第6条（同意の取得・包括同意・再同意）</h2>
+          <ol>
+            <li>研究参加に関する同意は、原則として各研究（プロトコル）ごとに取得するものとします。内容・リスク・取得データ・謝礼が異なる場合は、都度同意が必要です。</li>
+            <li>同一研究計画の範囲内で反復参加が想定される場合、期間、対象タスク、データの取扱い、謝礼の上限、撤回方法を特定した包括同意を用いることができます。この場合でも、重要な変更（リスクの増加、取得データの拡張、目的の大幅な変更、謝礼水準の大幅な変更）があるときは再同意を取得します。</li>
+            <li>謝礼の受領方法・決済処理に限った包括同意を設定する場合は、金額範囲・受領手段・本人確認方法・有効期間・撤回手続を明確化し、重要変更時には再同意を求めます。</li>
+            <li>取得した同意・アセント及び変更履歴は、適切に記録・保存するものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第7条（謝礼・決済）</h2>
+          <ol>
+            <li>参加者は、研究参加に対して謝礼を受領できることがあります。謝礼の金額、受領手段、支払い条件は、募集情報または別途定める条件に従うものとします。</li>
+            <li>未成年者が謝礼の受領または決済を行う場合には、法定代理人の同意が必要となることがあります。当社が謝礼の支払い代行を行う場合、未成年者への支払いは、当社の定める年齢要件、同意手続及び本人確認手続に従うものとします。</li>
+            <li>高額な謝礼、受領手段の変更、第三者への支払い委託など重要な変更が生じる場合、当社は個別の再同意を求めることがあります。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第8条（個人情報の取扱い）</h2>
+          <ol>
+            <li>当社は、本サービスの利用によって取得する個人情報について、当社「プライバシーポリシー」に従い適切に取り扱います。</li>
+            <li>未成年者の個人情報を取り扱う場合、当社は関係法令及び公的ガイドラインに従い、特に慎重な管理を行います。満14歳未満の個人情報の取得・利用については、原則として法定代理人の同意を前提とします。</li>
+            <li>位置情報、健康・生体データ、顔画像・音声等のセンシティブ情報を取得する場合、研究者は法定代理人の明確な同意を得たうえで、その目的、保存期間、第三者提供の有無を明示するものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第9条（ID及びパスワードの管理）</h2>
+          <ol>
+            <li>利用者は、自己の責任において、本サービスのユーザーID及びパスワードを管理するものとします。</li>
+            <li>利用者は、いかなる場合にも、ユーザーID及びパスワードを第三者に譲渡または貸与することはできません。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第10条（禁止事項）</h2>
+          <p>利用者は、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
+          <ol>
+            <li>法令または公序良俗に違反する行為</li>
+            <li>犯罪行為に関連する行為</li>
+            <li>当社のサーバーまたはネットワークの機能を破壊または妨害する行為</li>
+            <li>虚偽の情報を提供する行為</li>
+            <li>他の利用者の個人情報を収集または蓄積する行為</li>
+            <li>他の利用者に成りすます行為</li>
+            <li>当社のサービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為</li>
+            <li>当社または第三者の知的財産権、肖像権、プライバシー、名誉その他の権利または利益を侵害する行為</li>
+            <li>研究者と参加者間で、本サービスを介さずに直接取引を行うことを誘引する行為</li>
+            <li>その他、当社が不適切と判断する行為</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第11条（本サービスの提供の停止等）</h2>
+          <ol>
+            <li>当社は、以下のいずれかの事由があると判断した場合、利用者に事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
+              <ol style="list-style-type: none;">
+                <li>(1) 本サービスにかかるコンピュータシステムの保守点検または更新を行う場合</li>
+                <li>(2) 地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合</li>
+                <li>(3) その他、当社が本サービスの提供が困難と判断した場合</li>
+              </ol>
+            </li>
+            <li>当社は、本サービスの提供の停止または中断により、利用者または第三者が被ったいかなる不利益または損害についても、理由を問わず一切の責任を負わないものとします。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第12条（登録抹消等）</h2>
+          <p>当社は、利用者が本規約のいずれかの条項に違反した場合、事前の通知なく、利用者に対して本サービスの全部もしくは一部の利用を制限し、または利用者としての登録を抹消することができるものとします。</p>
+        </section>
+
+        <section class="terms-section">
+          <h2>第13条（免責事項）</h2>
+          <ol>
+            <li>当社は、本サービスの内容について、その完全性、正確性、確実性、有用性等につき、いかなる保証も行いません。</li>
+            <li>当社が外部サイトから収集して掲載する募集情報について、その内容の正確性、最新性に関して一切の保証をしません。利用者は、必ずリンク先の公式な募集情報を確認するものとします。</li>
+            <li>本サービスに関して、利用者と他の利用者または第三者との間に生じた取引、連絡、紛争等については、全て当事者の責任において解決するものとし、当社は一切の責任を負いません。</li>
+            <li>当社の債務不履行責任は、当社の故意または重過失によらない場合には免責されます。</li>
+          </ol>
+        </section>
+
+        <section class="terms-section">
+          <h2>第14条（規約の変更）</h2>
+          <p>当社は、必要と判断した場合、利用者に通知することなくいつでも本規約を変更することができます。変更後の規約は、本ウェブサイトに掲載したときから効力を生じるものとします。</p>
+        </section>
+
+        <section class="terms-section">
+          <h2>第15条（準拠法・裁判管轄）</h2>
+          <ol>
+            <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+            <li>本サービスに関して紛争が生じた場合には、当社の本店所在地を管轄する裁判所を専属的合意管轄とします。</li>
+          </ol>
+        </section>
+
+        <div class="effective-date">
+          <p><strong>【施行日：2025年9月24日】</strong></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/contact/" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="/legal/" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="/terms/" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="/privacy/" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileSidebar = document.querySelector('.mobile-sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+    function toggleMobileMenu() {
+      mobileSidebar.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    }
+
+    hamburgerMenu.addEventListener('click', toggleMobileMenu);
+    sidebarOverlay.addEventListener('click', toggleMobileMenu);
+
+    // Animation on scroll
+    const animatedElements = document.querySelectorAll('.terms-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

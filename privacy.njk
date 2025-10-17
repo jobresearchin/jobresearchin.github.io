@@ -1,0 +1,253 @@
+---
+permalink: "/privacy/index.html"
+---
+{% set lang = translations[0] %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | {{ lang.meta.siteName }}</title>
+  <meta name="description" content="Researchinのプライバシーポリシーをご確認ください。個人情報の取り扱いについて詳しく説明しています。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  
+  <!-- OGP -->
+  <meta property="og:title" content="プライバシーポリシー | {{ lang.meta.siteName }}" />
+  <meta property="og:description" content="Researchinのプライバシーポリシーをご確認ください。個人情報の取り扱いについて詳しく説明しています。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJRZ4YGCZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KJRZ4YGCZW');
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="desktop-nav">
+      <div class="nav-left">
+        <a href="/" class="logo">{{ lang.meta.siteName }}</a>
+      </div>
+      <div class="nav-center">
+        <a href="/business-details/">{{ lang.header.navOverview }}</a>
+        <a href="#researchers">{{ lang.header.navResearchers }}</a>
+        <a href="#participants">{{ lang.header.navParticipants }}</a>
+        <a href="#services">{{ lang.header.navServices }}</a>
+        <a href="/news/">{{ lang.header.navNews }}</a>
+        <a href="#team">{{ lang.header.navTeam }}</a>
+        <a href="#company">{{ lang.header.navCompany }}</a>
+      </div>
+      <div class="header-right">
+        <a href="{{ lang.header.navContactLink }}" class="btn-contact">{{ lang.header.navContact }}</a>
+        <button class="hamburger-menu" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar">
+    <nav>
+      <ul>
+        <li><a href="/business-details/">{{ lang.header.navOverview }}</a></li>
+        <li><a href="#researchers">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="#participants">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="#services">{{ lang.header.navServices }}</a></li>
+        <li><a href="/news/">{{ lang.header.navNews }}</a></li>
+        <li><a href="#team">{{ lang.header.navTeam }}</a></li>
+        <li><a href="#company">{{ lang.header.navCompany }}</a></li>
+        <li><a href="{{ lang.header.navContactLink }}" class="mobile-contact-btn">{{ lang.header.navContact }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="page-header">
+        <h1>プライバシーポリシー</h1>
+        <p class="page-description">Researchinにおける個人情報の取り扱いについて詳しく説明いたします。</p>
+      </div>
+
+      <div class="privacy-content">
+        <div class="intro-section">
+          <p>Researchin株式会社（以下「当社」といいます。）は、当社の提供するサービス「Researchin」（以下「本サービス」といいます。）における、利用者についての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。</p>
+        </div>
+
+        <section class="privacy-section">
+          <h2>第1条（収集する利用者情報及び収集方法）</h2>
+          <p>本ポリシーにおいて、「利用者情報」とは、利用者の識別に係る情報、通信サービス上の行動履歴、その他利用者のスマートフォン、PC等の端末において利用者または利用者の端末に関連して生成または蓄積された情報であって、本ポリシーに基づき当社が収集するものをいいます。</p>
+          
+          <p>本サービスにおいて当社が収集する利用者情報は、その収集方法に応じて、以下のとおりです。</p>
+          
+          <h3>1. 利用者からご提供いただく情報</h3>
+          <ol class="sub-list">
+            <li>氏名、生年月日、性別、職業、学歴、その他のプロフィールに関する情報</li>
+            <li>メールアドレス、電話番号、住所等連絡先に関する情報</li>
+            <li>クレジットカード情報、銀行口座情報等決済手段に関する情報</li>
+            <li>研究参加に関する同意書、法定代理人の同意の有無、本人確認に関する情報（未成年者が関与する場合を含みます）</li>
+          </ol>
+          
+          <h3>2. 利用者が本サービスを利用するにあたって当社が収集する情報</h3>
+          <ol class="sub-list">
+            <li>端末情報</li>
+            <li>ログ情報</li>
+            <li>Cookie及び匿名ID</li>
+            <li>位置情報</li>
+          </ol>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第2条（利用目的）</h2>
+          <p>当社は、取得した利用者情報を以下の目的で利用します。</p>
+          <ol>
+            <li>本サービスの提供、維持、保護及び改善のため</li>
+            <li>本サービスに関するご案内、お問い合わせ等への対応のため</li>
+            <li>本サービスに関する当社の規約、ポリシー等（以下「規約等」といいます。）に違反する行為に対する対応のため</li>
+            <li>本サービスに関する規約等の変更を通知するため</li>
+            <li>研究者と参加者との最適なマッチングのため</li>
+            <li>謝礼金の支払い代行業務及び決済処理のため（未成年者が関与する場合の同意確認及び本人確認を含みます）</li>
+            <li>個人を識別できない形式に加工した統計データを作成するため</li>
+            <li>当社または第三者の広告の配信または表示のため（Cookie等の利用を含みます）</li>
+            <li>研究参加に関わる同意・アセントの取得、更新、記録・管理のため（包括同意や再同意の取得を含みます）</li>
+            <li>その他、上記利用目的に付随する目的のため</li>
+          </ol>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第3条（未成年者の情報の取扱い）</h2>
+          <ol>
+            <li>未成年者（満18歳未満）の利用者情報の取得・利用に際しては、原則として法定代理人の同意を前提とします。必要に応じて、同意書の提出、本人確認、追加情報の提供を求めることがあります。</li>
+            <li>満14歳未満の個人情報の取得・利用については、法定代理人の同意が必須となります。</li>
+            <li>位置情報、健康・生体データ、顔画像・音声等のセンシティブ情報を取得する場合、法定代理人の明確な同意を得たうえで、目的、保存期間、第三者提供の有無等を明示します。</li>
+            <li>未成年者に関する同意の取得は、原則として各研究（プロトコル）ごとに行います。同一研究計画の範囲内で反復参加が想定される場合は、期間、対象タスク、データの取扱い、謝礼の上限、撤回方法を特定した包括同意を用いることがあります。重要な変更がある場合には再同意を取得します。</li>
+            <li>謝礼の受領方法・決済処理に限った包括同意を設定する場合は、金額範囲、受領手段、本人確認方法、有効期間、撤回手続を明確化し、重要変更時には再同意を求めます。</li>
+          </ol>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第4条（アクセス解析ツールの利用）</h2>
+          <p>当社は、サービスの利用状況を分析し、サービスの改善や品質向上のため、以下のアクセス解析ツールを利用します。これらのツールはCookie等を利用して利用者情報を収集します。収集される情報は、単体では個人を特定しない形式で扱われますが、当社は取得データの安全管理に努めます。</p>
+          
+          <h3>1. Google Analytics</h3>
+          <div class="tool-info">
+            <p><strong>提供者：</strong>Google LLC</p>
+            <p><strong>収集される情報：</strong>本サービスの利用状況（アクセス状況、トラフィック、ルーティング等）</p>
+            <p><strong>利用目的：</strong>利用状況の分析と、それに基づくサービス改善のため</p>
+            <p><strong>情報収集の停止方法：</strong>Google社提供の「Google Analyticsオプトアウトアドオン」により、ブラウザ設定で情報収集を停止できます。関連ポリシーはサイト上のリンクをご参照ください。</p>
+          </div>
+          
+          <h3>2. Microsoft Clarity</h3>
+          <div class="tool-info">
+            <p><strong>提供者：</strong>Microsoft Corporation</p>
+            <p><strong>収集される情報：</strong>本サービス上での行動（クリック、スクロール、滞在時間など）のヒートマップデータやセッション記録</p>
+            <p><strong>利用目的：</strong>UI/UX改善のための分析</p>
+            <p><strong>情報収集の停止方法：</strong>Microsoft社のオプトアウト機能により停止できます。詳細は同社のプライバシー声明をご参照ください。</p>
+          </div>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第5条（第三者提供）</h2>
+          <p>当社は、利用者情報のうち個人情報について、個人情報保護法その他の法令に基づき開示が認められる場合を除き、あらかじめ利用者の同意を得ないで第三者に提供しません。ただし、以下の場合はこの限りではありません。</p>
+          <ol>
+            <li>利用目的の達成に必要な範囲内で、個人情報の取扱いの全部または一部を委託する場合</li>
+            <li>合併その他の事由による事業承継に伴い、個人情報が提供される場合</li>
+            <li>国の機関または地方公共団体等が法令の定める事務を遂行することに協力する必要がある場合で、同意取得により当該事務の遂行に支障を及ぼすおそれがあるとき</li>
+            <li>その他、個人情報保護法その他の法令で認められる場合</li>
+          </ol>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第6条（個人情報の開示）</h2>
+          <p>当社は、利用者から個人情報保護法に基づく開示の請求があった場合、利用者本人からの請求であることを確認のうえ、遅滞なく開示します（当該個人情報が存在しない場合はその旨を通知します）。なお、開示には手数料（1件あたり1,000円）を頂戴します。</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第7条（個人情報の訂正及び利用停止等）</h2>
+          <p>当社は、利用者から、(1)個人情報が真実でないことを理由とする訂正の請求、または(2)公表された利用目的の範囲を超える取扱い、もしくは偽りその他不正の手段による収集を理由とする利用停止の請求を受けた場合、本人確認のうえ遅滞なく必要な調査を行い、その結果に基づき訂正または利用停止を実施し、その旨を通知します。</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第8条（安全管理及び記録の保存）</h2>
+          <ol>
+            <li>当社は、利用者情報の漏えい、滅失または毀損の防止その他の安全管理のため、必要かつ適切な措置を講じます。</li>
+            <li>未成年者に係る同意・アセントの取得、更新、撤回、謝礼の受領記録、本人確認の履歴等については、適切な期間、適切な方法で記録・保存します。</li>
+          </ol>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第9条（お問い合わせ窓口）</h2>
+          <p>ご意見、ご質問、苦情のお申し出その他利用者情報の取扱いに関するお問い合わせは、当社のお問い合わせフォームからお願いいたします。</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>第10条（本ポリシーの変更手続）</h2>
+          <p>当社は、利用者情報の取扱いに関する運用状況を適宜見直し、継続的な改善に努めます。必要に応じて本ポリシーを変更することがあり、変更した場合は本ウェブサイトに掲載する方法で通知します。法令上利用者の同意が必要となる内容の変更の場合は、当社所定の方法で利用者の同意を得ます。</p>
+        </section>
+
+        <div class="effective-date">
+          <p><strong>【2025年9月24日改定案】</strong></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/contact/" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="/legal/" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="/terms/" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="/privacy/" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileSidebar = document.querySelector('.mobile-sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+    function toggleMobileMenu() {
+      mobileSidebar.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    }
+
+    hamburgerMenu.addEventListener('click', toggleMobileMenu);
+    sidebarOverlay.addEventListener('click', toggleMobileMenu);
+
+    // Animation on scroll
+    const animatedElements = document.querySelectorAll('.privacy-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

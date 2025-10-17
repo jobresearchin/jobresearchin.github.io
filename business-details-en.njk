@@ -1,0 +1,378 @@
+---
+permalink: "/en/business-details/index.html"
+---
+{% set lang = translations[1] %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detailed Business Description | {{ lang.meta.siteName }}</title>
+  <meta name="description" content="Detailed business description of Researchin. Learn more about our research platform business and various services." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/business-details/" />
+  <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/business-details/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Detailed Business Description | {{ lang.meta.siteName }}" />
+  <meta property="og:description" content="Detailed business description of Researchin. Learn more about our research platform business and various services." />
+  <meta property="og:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
+  <meta property="og:url" content="https://corp.jobresearchin.com/en/business-details/" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X754F6MGCM');
+  </script>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-container">
+        <a href="/en/" class="brand-logo">
+          {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
+        </a>
+        <nav class="desktop-nav">
+          <a href="/en/#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="/en/#researchers">{{ lang.header.navResearchers }}</a>
+          <a href="/en/#participants">{{ lang.header.navParticipants }}</a>
+          <div class="nav-dropdown">
+            <a href="#" class="nav-dropdown-toggle">{{ lang.header.navServices }}</a>
+            <div class="nav-dropdown-menu">
+              <a href="/en/services/administrative-support/">{{ lang.header.servicesMenu.administrative }}</a>
+              <a href="/en/services/website-development/">{{ lang.header.servicesMenu.website }}</a>
+              <a href="/en/services/tour-organization/">{{ lang.header.servicesMenu.tour }}</a>
+            </div>
+          </div>
+          <a href="/en/news/">{{ lang.header.navNews }}</a>
+          <a href="/en/#team">{{ lang.header.navTeam }}</a>
+          <a href="/en/#company-profile">{{ lang.header.navCompany }}</a>
+        </nav>
+        <div class="header-right">
+          <div class="lang-switcher desktop-lang-switcher">
+            <a href="/business-details/">JP</a>
+            <span>/</span>
+            <a href="/en/business-details/" class="active">EN</a>
+          </div>
+          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="section-header fade-in-up">
+            <h1>Detailed Business Description</h1>
+            <p>Learn more about Researchin's business operations and services.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>1. Business Overview</h2>
+            <p>Researchin Inc. is a technology startup that develops and operates "Researchin," an AI-driven matching platform that revolutionizes the participant recruitment process in academic research and corporate research and development (R&D). By seamlessly connecting researchers with high-quality research participants, we dramatically accelerate the research and development cycle and support innovation creation.</p>
+            
+            <h3>Mission and Vision</h3>
+            <ul>
+              <li><strong>Mission:</strong> Provide a platform that accelerates research and eliminates innovation bottlenecks</li>
+              <li><strong>Vision:</strong> Realize a society where anyone can easily participate in research and contribute to creating the future</li>
+            </ul>
+
+            <h3>Business Opportunity</h3>
+            <p>Traditional research participant recruitment requires significant time and cost, often resulting in only low-quality, biased samples. We have identified a massive business opportunity to dramatically improve research and development productivity by building a high-transparency two-sided marketplace using technology in this inefficient market.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>2. Market Analysis</h2>
+            
+            <h3>Market Size and Growth</h3>
+            <p>R&D investment by domestic universities, research institutions, and private companies amounts to 3 trillion yen annually, with the participant recruitment-related market estimated at 20 billion yen. The wave of digital transformation (DX) is also reaching the research and development field, with rapid migration from traditional analog recruitment methods to efficient online platforms predicted.</p>
+
+            <h3>Target Market</h3>
+            <div class="service-detail">
+              <h4>Researchers & Companies</h4>
+              <p><strong>Persona:</strong> Researchers affiliated with universities, public research institutions, and corporate R&D departments</p>
+              <p><strong>Needs:</strong> Quickly and cost-effectively gather high-quality participants and be freed from complex administrative work</p>
+            </div>
+            
+            <div class="service-detail">
+              <h4>Research Participants</h4>
+              <p><strong>Persona:</strong> General citizens, students, and people with specific conditions who are interested in social contribution and want to effectively utilize their free time</p>
+              <p><strong>Needs:</strong> Safely participate in research in a trustworthy environment and receive fair compensation for their contribution</p>
+            </div>
+
+            <h3>Competitive Advantages</h3>
+            <ul>
+              <li><strong>Technical Advantages:</strong> AI-powered recruitment optimization features provide unique value not found in competitors</li>
+              <li><strong>Network Effects:</strong> The more researchers and participants gather on the platform, the better the matching quality and speed for both sides</li>
+              <li><strong>Data Accumulation:</strong> Continuously improve matching algorithm accuracy by accumulating and analyzing recruitment and participation data</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>3. Platform Business Details</h2>
+            
+            <h3>"Researchin" Platform</h3>
+            <p>A one-stop online platform connecting researchers and participants. Researchers can complete everything from recruitment page creation to participant management and reward payments online, while participants can easily search for and apply to research that matches their interests and conditions.</p>
+
+            <h3>Problems and Solutions</h3>
+            <div class="service-detail">
+              <h4>Researcher Challenges and Solutions</h4>
+              <ul>
+                <li><strong>Challenge:</strong> Participant recruitment takes months → <strong>Solution:</strong> Complete recruitment from thousands of participants in days</li>
+                <li><strong>Challenge:</strong> Low-quality participants → <strong>Solution:</strong> Ensure quality through attribute filtering and evaluation systems</li>
+                <li><strong>Challenge:</strong> Complex scheduling and payment processes → <strong>Solution:</strong> Automate administrative work to provide environment for research focus</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Participant Challenges and Solutions</h4>
+              <ul>
+                <li><strong>Challenge:</strong> Few research participation opportunities → <strong>Solution:</strong> Provide access to diverse research projects</li>
+                <li><strong>Challenge:</strong> Unclear safety → <strong>Solution:</strong> Ensure transparent information disclosure and thorough personal information protection</li>
+                <li><strong>Challenge:</strong> Contributions not properly valued → <strong>Solution:</strong> Visualize contributions through clear reward systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>4. Technology and Product Roadmap</h2>
+            <p>Our platform evolves through continuous feature additions. AI-powered feature development, in particular, is the core of our business growth.</p>
+
+            <h3>Development Phases</h3>
+            <div class="service-detail">
+              <h4>Phase 1 (Current) - Released</h4>
+              <ul>
+                <li>Recruitment page creation and reward payment proxy features</li>
+                <li>Participant search and application functions</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Phase 2 (Short-term) - In Development</h4>
+              <ul>
+                <li>Administrator dashboard</li>
+                <li>Cancellation prevention features (evaluation system)</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Phase 3 (Medium-term) - Planned</h4>
+              <ul>
+                <li>AI-powered recruitment effectiveness analysis engine</li>
+                <li>Incentive features for repeat participants</li>
+              </ul>
+            </div>
+
+            <h3>Strategic Partnership with Google Cloud</h3>
+            <p>The above roadmap, especially the AI functionality and scalability that form the backbone of our business, are made possible by Google Cloud's advanced service portfolio.</p>
+            <ul>
+              <li><strong>AI Recruitment Analysis Engine:</strong> Leverage Vertex AI to build and deploy advanced predictive models</li>
+              <li><strong>Data Infrastructure:</strong> Aggregate all platform data in BigQuery for real-time advanced analysis and AI model training</li>
+              <li><strong>Scalable Infrastructure:</strong> Adopt Google Kubernetes Engine (GKE) to achieve high availability and auto-scaling</li>
+              <li><strong>Core Services:</strong> Utilize Cloud SQL and Cloud Storage to build robust and stable service infrastructure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>5. Revenue Model</h2>
+            <p>Our revenue is centered on platform usage fees while diversifying through value-added services for researchers.</p>
+
+            <h3>1. Platform Fees</h3>
+            <div class="service-detail">
+              <h4>Fee Model</h4>
+              <p>We collect <strong>25%</strong> of the total reward amount for completed research participation as platform usage fees from researchers. Usage fees are invoiced monthly only, eliminating the traditional "individual procedures for each participant" and significantly reducing administrative burden.</p>
+              
+              <h4>(Future) Subscription Model</h4>
+              <p>For companies and research institutions that frequently conduct large-scale recruitment, we will offer monthly/annual premium plans.</p>
+            </div>
+
+            <h3>2. Value-Added Services</h3>
+            <div class="service-detail">
+              <h4>Website Development</h4>
+              <p>Create official websites for research labs and projects.</p>
+              <ul>
+                <li>One-time creation plan: From ¥75,000</li>
+                <li>Monthly update plan: From ¥30,000/month</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Payment Proxy Service</h4>
+              <p>Handle participant rewards and related vendor payments on behalf of customers, issuing consolidated invoices at month-end.</p>
+              <ul>
+                <li>Monthly plan: From ¥20,000/month</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Lab Tour Planning</h4>
+              <p>Plan and operate facility tours for research labs and facilities.</p>
+              <ul>
+                <li>General participants: ¥10,000/person</li>
+                <li>Student participants: ¥5,000/person</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>6. Marketing Strategy</h2>
+            
+            <h3>Researcher & Company Acquisition Strategy</h3>
+            <ul>
+              <li><strong>Digital Marketing:</strong> Targeted advertising on LinkedIn and academic media</li>
+              <li><strong>Content Marketing:</strong> Publish know-how about "effective participant recruitment" for researchers through blogs and other channels</li>
+              <li><strong>Partnerships:</strong> Collaborate with university research support departments and academic societies</li>
+            </ul>
+
+            <h3>Participant Acquisition Strategy</h3>
+            <ul>
+              <li><strong>Social Media Marketing:</strong> Campaigns using X (formerly Twitter), Instagram, and other platforms</li>
+              <li><strong>Referral Programs:</strong> Incentive design to encourage referrals from existing participants</li>
+              <li><strong>PR:</strong> Communicate highly socially contributory research cases to media to improve recognition</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>7. Company Information</h2>
+            
+            <h3>Basic Information</h3>
+            <div class="service-detail">
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600; width: 30%;">Company Name</td>
+                  <td style="padding: 12px 0;">Researchin Inc.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">Founded</td>
+                  <td style="padding: 12px 0;">August 20, 2025</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">Address</td>
+                  <td style="padding: 12px 0;">〒150-0043 Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">CEO</td>
+                  <td style="padding: 12px 0;">Takahito Imai</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">Business</td>
+                  <td style="padding: 12px 0;">Development and operation of research participant matching platform "Researchin"</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; font-weight: 600;">Website</td>
+                  <td style="padding: 12px 0;"><a href="https://corp.jobresearchin.com/" style="color: #10B981;">https://corp.jobresearchin.com/</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <h3>Management Team</h3>
+            <ul>
+              <li><strong>Chief Executive Officer (CEO): Takahito Imai</strong> - Oversees business strategy and overall management</li>
+              <li><strong>Chief Technology Officer (CTO): Seiya Eriguchi</strong> - Leads technology development and product architecture design</li>
+              <li><strong>Chief Strategy Officer (CSO): Koki Hata</strong> - Responsible for market analysis, business development, and partnership strategy</li>
+              <li><strong>Chief Marketing Officer (CMO): Kyosuke Yanagisawa</strong> - Oversees marketing and user acquisition strategy</li>
+              <li><strong>Technical Advisor: Yoshito Ogasawara (Stack System Inc. CEO)</strong> - Provides advice on advanced technical challenges</li>
+              <li><strong>Supporter: Kota Naito</strong> - Provides comprehensive support for business operations</li>
+            </ul>
+
+            <h3>Business History and Current Status</h3>
+            <p>Since our founding in August 2025, we have focused on developing a platform foundation that provides value to both researchers and participants under the vision of "making research accessible." We are currently on the verge of acquiring initial traction and are progressing toward pre-seed/seed stage fundraising goals. We are in a phase aiming for rapid business expansion.</p>
+
+            <h3>Strategic Focus</h3>
+            <p>Our management resources are concentrated with top priority on the growth and technical advantage building of "Researchin," our core scalable technology platform business. To complement the platform business and provide multifaceted support for researchers' activities, we also provide value-added services such as website development and lab tour planning, but these are solely aimed at strengthening the customer base and improving satisfaction for our core business. This business portfolio aligns with our growth strategy as a technology startup.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>Contact Us</h2>
+            <p>If you would like to learn more about our business, please feel free to contact us.</p>
+          </div>
+          <div class="section-cta fade-in-up delay-1">
+            <a href="{{ lang.header.navContactLink }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-contact">
+              <p>{{ lang.footer.contactPrefix }} <a href="mailto:{{ lang.footer.contactEmail }}">{{ lang.footer.contactEmail }}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const animatedElements = document.querySelectorAll(".fade-in-up");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/en/contact/" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="/en/legal/" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="/en/terms/" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="/en/privacy/" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,378 @@
+---
+permalink: "/business-details/index.html"
+---
+{% set lang = translations[0] %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>詳細な事業説明 | {{ lang.meta.siteName }}</title>
+  <meta name="description" content="Researchinの詳細な事業説明ページ。研究プラットフォーム事業をはじめとした各種サービスについて詳しくご紹介します。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/business-details/" />
+  <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/business-details/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="詳細な事業説明 | {{ lang.meta.siteName }}" />
+  <meta property="og:description" content="Researchinの詳細な事業説明ページ。研究プラットフォーム事業をはじめとした各種サービスについて詳しくご紹介します。" />
+  <meta property="og:image" content="https://corp.jobresearchin.com/static/og-image.jpg" />
+  <meta property="og:url" content="https://corp.jobresearchin.com/business-details/" />
+  <meta property="og:site_name" content="{{ lang.meta.siteName }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X754F6MGCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X754F6MGCM');
+  </script>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-container">
+        <a href="/" class="brand-logo">
+          {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
+        </a>
+        <nav class="desktop-nav">
+          <a href="/#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="/#researchers">{{ lang.header.navResearchers }}</a>
+          <a href="/#participants">{{ lang.header.navParticipants }}</a>
+          <div class="nav-dropdown">
+            <a href="#" class="nav-dropdown-toggle">{{ lang.header.navServices }}</a>
+            <div class="nav-dropdown-menu">
+              <a href="/services/administrative-support/">{{ lang.header.servicesMenu.administrative }}</a>
+              <a href="/services/website-development/">{{ lang.header.servicesMenu.website }}</a>
+              <a href="/services/tour-organization/">{{ lang.header.servicesMenu.tour }}</a>
+            </div>
+          </div>
+          <a href="/news/">{{ lang.header.navNews }}</a>
+          <a href="/#team">{{ lang.header.navTeam }}</a>
+          <a href="/#company-profile">{{ lang.header.navCompany }}</a>
+        </nav>
+        <div class="header-right">
+          <div class="lang-switcher desktop-lang-switcher">
+            <a href="/business-details/" class="active">JP</a>
+            <span>/</span>
+            <a href="/en/business-details/">EN</a>
+          </div>
+          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="section-header fade-in-up">
+            <h1>詳細な事業説明</h1>
+            <p>Researchinの事業内容について詳しくご説明します。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>1. 事業概要</h2>
+            <p>Researchin株式会社は、学術研究および企業の研究開発（R&D）における参加者募集のプロセスを革新する、AI駆動型のマッチングプラットフォーム「Researchin」を開発・運営するテクノロジースタートアップです。研究者と質の高い研究参加者をシームレスに繋ぐことで、研究開発のサイクルを劇的に加速させ、イノベーションの創出を支援します。</p>
+            
+            <h3>ミッションとビジョン</h3>
+            <ul>
+              <li><strong>ミッション：</strong>研究を加速させるプラットフォームを提供し、イノベーションのボトルネックを解消する</li>
+              <li><strong>ビジョン：</strong>誰もが気軽に研究に参加し、未来の創造に貢献できる社会を実現する</li>
+            </ul>
+
+            <h3>事業機会</h3>
+            <p>従来の研究参加者募集は、多大な時間とコストを要し、しばしば質の低い、偏ったサンプルしか得られないという深刻な課題を抱えています。我々はこの非効率な市場に、テクノロジーを駆使した透明性の高い両面市場（two-sided marketplace）を構築することで、研究開発の生産性を飛躍的に向上させる巨大な事業機会を見出しています。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>2. 市場分析</h2>
+            
+            <h3>市場規模と成長性</h3>
+            <p>国内における大学、研究機関、民間企業のR&D投資額は年間3兆円に上り、そのうち参加者募集に関連する市場は推定200億円と算出されます。デジタルトランスフォーメーション（DX）の波は研究開発分野にも及んでおり、旧来のアナログな募集手法から、効率的なオンラインプラットフォームへの移行が急速に進むと予測されます。</p>
+
+            <h3>ターゲット市場</h3>
+            <div class="service-detail">
+              <h4>研究者・企業</h4>
+              <p><strong>ペルソナ：</strong>大学、公的研究機関、企業のR&D部門に所属する研究者</p>
+              <p><strong>ニーズ：</strong>質の高い参加者を迅速かつ低コストで集め、煩雑な事務作業から解放されたい</p>
+            </div>
+            
+            <div class="service-detail">
+              <h4>研究参加者</h4>
+              <p><strong>ペルソナ：</strong>社会貢献に関心があり、空き時間を有効活用したい一般市民、学生、特定の条件を持つ人々</p>
+              <p><strong>ニーズ：</strong>信頼できる環境で安全に研究に参加し、自身の貢献に対する正当な対価（謝礼）を得たい</p>
+            </div>
+
+            <h3>競争優位性</h3>
+            <ul>
+              <li><strong>技術的優位性：</strong>AIによる募集効果の最適化提案機能は、競合にはない独自の価値を提供</li>
+              <li><strong>ネットワーク効果：</strong>プラットフォームに研究者と参加者が集まるほど、双方にとってのマッチングの質と速度が向上</li>
+              <li><strong>データの蓄積：</strong>募集と参加に関するデータを蓄積・分析することで、マッチングアルゴリズムの精度を継続的に向上</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>3. プラットフォーム事業詳細</h2>
+            
+            <h3>「Researchin」プラットフォーム</h3>
+            <p>研究者と参加者を繋ぐ、ワンストップのオンラインプラットフォームです。研究者は募集ページの作成から参加者管理、謝礼の支払いまでをオンラインで完結でき、参加者は自身の興味や条件に合った研究を容易に探し、応募することができます。</p>
+
+            <h3>解決する課題とソリューション</h3>
+            <div class="service-detail">
+              <h4>研究者の課題と解決策</h4>
+              <ul>
+                <li><strong>課題：</strong>参加者募集に数ヶ月かかる → <strong>解決：</strong>数千人規模の参加者プールから数日で募集完了</li>
+                <li><strong>課題：</strong>質の低い参加者が集まる → <strong>解決：</strong>属性フィルタリングと評価システムで質を担保</li>
+                <li><strong>課題：</strong>スケジュール調整や謝礼支払いが煩雑 → <strong>解決：</strong>事務作業を自動化し、研究に集中できる環境を提供</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>参加者の課題と解決策</h4>
+              <ul>
+                <li><strong>課題：</strong>研究参加の機会が少ない → <strong>解決：</strong>多様な研究プロジェクトへのアクセスを提供</li>
+                <li><strong>課題：</strong>安全性が不透明 → <strong>解決：</strong>透明性の高い情報開示と個人情報保護を徹底</li>
+                <li><strong>課題：</strong>貢献が正当に評価されない → <strong>解決：</strong>明確な謝礼システムで貢献を可視化</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>4. 技術と製品ロードマップ</h2>
+            <p>当社のプラットフォームは、継続的な機能追加によって進化します。特にAIを活用した機能開発は、事業成長の核となります。</p>
+
+            <h3>開発フェーズ</h3>
+            <div class="service-detail">
+              <h4>Phase 1（現在）- リリース済み</h4>
+              <ul>
+                <li>募集ページ作成・謝礼支払い代行機能</li>
+                <li>参加者検索・応募機能</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Phase 2（短期）- 開発中</h4>
+              <ul>
+                <li>管理者画面</li>
+                <li>キャンセル防止機能（評価システム）</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>Phase 3（中期）- 計画中</h4>
+              <ul>
+                <li>AIによる募集効果分析エンジン</li>
+                <li>リピーターへのインセンティブ機能</li>
+              </ul>
+            </div>
+
+            <h3>Google Cloudとの戦略的連携</h3>
+            <p>上記ロードマップ、特に事業の根幹をなすAI機能とスケーラビリティの実現は、Google Cloudの先進的なサービス群を基盤とすることで可能になります。</p>
+            <ul>
+              <li><strong>AI募集効果分析エンジン：</strong>Vertex AI を活用し、高度な予測モデルを構築・デプロイ</li>
+              <li><strong>データ基盤：</strong>全てのプラットフォームデータは BigQuery に集約し、リアルタイムでの高度な分析とAIモデルの学習に利用</li>
+              <li><strong>スケーラブルなインフラ：</strong>Google Kubernetes Engine (GKE) を採用し、高可用性と自動スケーリングを実現</li>
+              <li><strong>コアサービス：</strong>Cloud SQL と Cloud Storage を活用し、堅牢で安定したサービス基盤を構築</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>5. 収益化モデル</h2>
+            <p>当社の収益は、プラットフォーム利用料を主軸としつつ、研究者向けの付加価値サービスによって多角化を図ります。</p>
+
+            <h3>1. プラットフォーム手数料</h3>
+            <div class="service-detail">
+              <h4>手数料モデル</h4>
+              <p>成立した研究参加の謝礼（参加報酬）総額に対し、<strong>25%</strong>をプラットフォーム利用料として研究者側から徴収します。利用料は月末の請求書払いのみとし、従来の「参加者ごとの個別手続き」を不要にすることで、事務負担を大幅に軽減します。</p>
+              
+              <h4>（将来的に）サブスクリプションモデル</h4>
+              <p>大量の募集を頻繁に行う企業や研究機関向けに、月額/年額のプレミアムプランを提供します。</p>
+            </div>
+
+            <h3>2. 付加価値サービス</h3>
+            <div class="service-detail">
+              <h4>HP制作</h4>
+              <p>研究室やプロジェクトの公式HPを制作します。</p>
+              <ul>
+                <li>単発制作プラン: 75,000円～</li>
+                <li>月額更新プラン: 30,000円/月～</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>支払い代行サービス</h4>
+              <p>顧客に代わり、参加者謝礼および関係業者への支払いを一括して代行し、月末にまとめて請求書を発行します。</p>
+              <ul>
+                <li>月額プラン: 20,000円/月～</li>
+              </ul>
+            </div>
+
+            <div class="service-detail">
+              <h4>ラボツアー企画</h4>
+              <p>研究室や施設への見学ツアーを企画・運営します。</p>
+              <ul>
+                <li>一般参加者: 10,000円/名</li>
+                <li>学生参加者: 5,000円/名</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>6. マーケティング戦略</h2>
+            
+            <h3>研究者・企業獲得戦略</h3>
+            <ul>
+              <li><strong>デジタルマーケティング：</strong>LinkedInや学術系メディアでのターゲティング広告</li>
+              <li><strong>コンテンツマーケティング：</strong>研究者向けに「効果的な参加者募集」に関するノウハウをブログ等で発信</li>
+              <li><strong>パートナーシップ：</strong>大学の研究支援部門や学会との提携</li>
+            </ul>
+
+            <h3>参加者獲得戦略</h3>
+            <ul>
+              <li><strong>SNSマーケティング：</strong>X（旧Twitter）、Instagramなどを活用したキャンペーン</li>
+              <li><strong>リファラルプログラム：</strong>既存参加者による紹介を促進するインセンティブ設計</li>
+              <li><strong>PR：</strong>社会貢献性の高い研究事例をメディアに発信し、認知度を向上</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="content-block fade-in-up">
+            <h2>7. 会社情報</h2>
+            
+            <h3>基本情報</h3>
+            <div class="service-detail">
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600; width: 30%;">会社名</td>
+                  <td style="padding: 12px 0;">Researchin株式会社</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">設立年月日</td>
+                  <td style="padding: 12px 0;">2025年8月20日</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">所在地</td>
+                  <td style="padding: 12px 0;">〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">代表取締役</td>
+                  <td style="padding: 12px 0;">今井 崇人</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 12px 0; font-weight: 600;">事業内容</td>
+                  <td style="padding: 12px 0;">研究参加者マッチングプラットフォーム「Researchin」の開発・運営</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; font-weight: 600;">ウェブサイト</td>
+                  <td style="padding: 12px 0;"><a href="https://corp.jobresearchin.com/" style="color: #10B981;">https://corp.jobresearchin.com/</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <h3>経営陣</h3>
+            <ul>
+              <li><strong>最高経営責任者 (CEO): 今井 崇人</strong> - 事業戦略および経営全般を統括</li>
+              <li><strong>最高技術責任者 (CTO): 江利口 晴矢</strong> - 技術開発、製品アーキテクチャ設計を主導</li>
+              <li><strong>最高戦略責任者 (CSO): 波多 紘希</strong> - 市場分析、事業開発、パートナーシップ戦略を担当</li>
+              <li><strong>最高マーケティング責任者 (CMO): 柳澤 京佐</strong> - マーケティングおよびユーザー獲得戦略を統括</li>
+              <li><strong>技術顧問: 小笠原 佳人 (Stack System Inc. CEO)</strong> - 高度な技術的課題に関する助言</li>
+              <li><strong>サポーター: 内藤 剛汰</strong> - 事業運営に関する広範な支援</li>
+            </ul>
+
+            <h3>事業の沿革と現状</h3>
+            <p>2025年8月の設立以来、当社は「研究を身近にする」というビジョンの下、研究者と参加者の双方にとって価値のあるプラットフォームの基盤開発に注力してきました。現在、初期トラクションの獲得が目前であり、プレシード／シード段階の資金調達を目標として進めています。事業の急拡大を目指すフェーズにあります。</p>
+
+            <h3>戦略的集中</h3>
+            <p>当社の経営資源は、中核事業であるスケーラブルなテクノロジープラットフォーム「Researchin」の成長と技術的優位性の構築に最優先で集中します。プラットフォーム事業を補完し、研究者の活動を多角的に支援するため、ウェブサイト制作やラボツアー企画といった付加価値サービスも提供しますが、これらはあくまで中核事業の顧客基盤強化と満足度向上を目的とします。この事業ポートフォリオは、テクノロジースタートアップとしての成長戦略に沿ったものです。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>お問い合わせ</h2>
+            <p>事業について詳しく知りたい方は、お気軽にお問い合わせください。</p>
+          </div>
+          <div class="section-cta fade-in-up delay-1">
+            <a href="{{ lang.header.navContactLink }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-contact">
+              <p>{{ lang.footer.contactPrefix }} <a href="mailto:{{ lang.footer.contactEmail }}">{{ lang.footer.contactEmail }}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const animatedElements = document.querySelectorAll(".fade-in-up");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    animatedElements.forEach((el) => observer.observe(el));
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/contact/" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="/legal/" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="/terms/" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="/privacy/" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

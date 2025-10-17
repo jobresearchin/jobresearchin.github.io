@@ -60,10 +60,18 @@ permalink: "{% if lang.key == 'ja' %}/services/administrative-support/{% else %}
           {% image "static/logo.png", "Researchin Logo", "(max-width: 600px) 150px, 200px" %}
         </a>
         <nav class="desktop-nav">
-          <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#service-overview">{{ lang.header.navOverview }}</a>
+          <a href="{% if lang.key == 'ja' %}/business-details/{% else %}/{{ lang.key }}/business-details/{% endif %}">{{ lang.header.navOverview }}</a>
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#researchers">{{ lang.header.navResearchers }}</a>
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#participants">{{ lang.header.navParticipants }}</a>
-          <a href="{% if lang.key == 'ja' %}/services/{% else %}/{{ lang.key }}/services/{% endif %}">{{ lang.header.navServices }}</a>
+          <div class="nav-dropdown">
+            <a href="#" class="nav-dropdown-toggle">{{ lang.header.navServices }}</a>
+            <div class="nav-dropdown-menu">
+              <a href="{% if lang.key == 'ja' %}/services/administrative-support/{% else %}/{{ lang.key }}/services/administrative-support/{% endif %}">{{ lang.header.servicesMenu.administrative }}</a>
+              <a href="{% if lang.key == 'ja' %}/services/website-development/{% else %}/{{ lang.key }}/services/website-development/{% endif %}">{{ lang.header.servicesMenu.website }}</a>
+              <a href="{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ lang.key }}/services/tour-organization/{% endif %}">{{ lang.header.servicesMenu.tour }}</a>
+            </div>
+          </div>
+          <a href="{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}">{{ lang.header.navNews }}</a>
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#team">{{ lang.header.navTeam }}</a>
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
@@ -176,5 +184,20 @@ permalink: "{% if lang.key == 'ja' %}/services/administrative-support/{% else %}
     }, { threshold: 0.1 });
     animatedElements.forEach((el) => observer.observe(el));
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="{% if lang.key == 'en' %}/en/contact/{% else %}/contact/{% endif %}" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="{% if lang.key == 'en' %}/en/legal/{% else %}/legal/{% endif %}" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="{% if lang.key == 'en' %}/en/terms/{% else %}/terms/{% endif %}" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="{% if lang.key == 'en' %}/en/privacy/{% else %}/privacy/{% endif %}" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

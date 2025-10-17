@@ -147,5 +147,20 @@ permalink: "{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% end
     }, { threshold: 0.1 });
     animatedElements.forEach((el) => observer.observe(el));
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="{% if lang.key == 'en' %}/en/contact/{% else %}/contact/{% endif %}" class="footer-link">{{ lang.footer.contact }}</a>
+        <a href="{% if lang.key == 'en' %}/en/legal/{% else %}/legal/{% endif %}" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="{% if lang.key == 'en' %}/en/terms/{% else %}/terms/{% endif %}" class="footer-link">{{ lang.footer.terms }}</a>
+        <a href="{% if lang.key == 'en' %}/en/privacy/{% else %}/privacy/{% endif %}" class="footer-link">{{ lang.footer.privacy }}</a>
+      </div>
+      <div class="footer-contact">
+        <p>{{ lang.footer.contactPrefix }} {{ lang.footer.contactEmail }}</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
