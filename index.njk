@@ -206,6 +206,87 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
         </div>
       </section>
 
+      <section id="usage-guide" class="section">
+        <div class="container">
+          <div class="section-header fade-in-up">
+            <h2>{{ lang.guide.title }}</h2>
+            <p>{{ lang.guide.subtitle }}</p>
+          </div>
+          
+          <div class="guide-steps">
+            <!-- Step 1 -->
+            <div class="guide-step fade-in-up">
+              <div class="guide-content">
+                <div class="guide-text">
+                  <h3>{{ lang.guide.step1.title }}</h3>
+                  <p>{{ lang.guide.step1.description }}</p>
+                </div>
+                <div class="guide-image">
+                  {% image lang.guide.step1.image, lang.guide.step1.alt, "(max-width: 600px) 100vw, 50vw" %}
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="guide-step fade-in-up delay-1">
+              <div class="guide-content reverse">
+                <div class="guide-text">
+                  <h3>{{ lang.guide.step2.title }}</h3>
+                  <p>{{ lang.guide.step2.description }}</p>
+                </div>
+                <div class="guide-image">
+                  {% image lang.guide.step2.image, lang.guide.step2.alt, "(max-width: 600px) 100vw, 50vw" %}
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="guide-step fade-in-up delay-2">
+              <div class="guide-content">
+                <div class="guide-text">
+                  <h3>{{ lang.guide.step3.title }}</h3>
+                  <p>{{ lang.guide.step3.description }}</p>
+                </div>
+                <div class="guide-image">
+                  {% image lang.guide.step3.image, lang.guide.step3.alt, "(max-width: 600px) 100vw, 50vw" %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detailed Steps -->
+          <div class="detailed-steps fade-in-up delay-3">
+            <h3>{{ lang.guide.detailedSteps.title }}</h3>
+            <div class="detailed-steps-grid">
+              <div class="detailed-step">
+                <h4>{{ lang.guide.detailedSteps.step4.title }}</h4>
+                <p>{{ lang.guide.detailedSteps.step4.description }}</p>
+              </div>
+              <div class="detailed-step">
+                <h4>{{ lang.guide.detailedSteps.step5.title }}</h4>
+                <p>{{ lang.guide.detailedSteps.step5.description }}</p>
+              </div>
+              <div class="detailed-step">
+                <h4>{{ lang.guide.detailedSteps.step6.title }}</h4>
+                <p>{{ lang.guide.detailedSteps.step6.description }}</p>
+              </div>
+              <div class="detailed-step">
+                <h4>{{ lang.guide.detailedSteps.step7.title }}</h4>
+                <p>{{ lang.guide.detailedSteps.step7.description }}</p>
+              </div>
+              <div class="detailed-step">
+                <h4>{{ lang.guide.detailedSteps.step8.title }}</h4>
+                <p>{{ lang.guide.detailedSteps.step8.description }}</p>
+              </div>
+              <div class="detailed-step help-section">
+                <h4>{{ lang.guide.helpSection.title }}</h4>
+                <p>{{ lang.guide.helpSection.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="upcoming-features" class="section">
         <div class="container">
           <div class="section-header fade-in-up">

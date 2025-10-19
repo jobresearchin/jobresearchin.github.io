@@ -1520,3 +1520,150 @@ footer {
         padding: 16px;
     }
 }
+
+/* ==============================================
+   Usage Guide Section Styles
+   ============================================== */
+.guide-steps {
+    margin: 48px 0;
+}
+
+.guide-step {
+    margin-bottom: 60px;
+}
+
+.guide-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.guide-content.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.guide-content.reverse .guide-text {
+    order: 2;
+}
+
+.guide-content.reverse .guide-image {
+    order: 1;
+}
+
+.guide-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.guide-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.guide-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guide-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.detailed-steps {
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.detailed-steps h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.detailed-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.detailed-step {
+    background-color: var(--bg-color);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.detailed-step.help-section {
+    background-color: #f8f9fa;
+    border-color: var(--primary-color);
+}
+
+.detailed-step h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.detailed-step p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Mobile Responsive Styles for Guide Section */
+@media (max-width: 768px) {
+    .guide-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .guide-content.reverse .guide-text,
+    .guide-content.reverse .guide-image {
+        order: unset;
+    }
+    
+    .guide-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .guide-text p {
+        font-size: 0.9rem;
+    }
+    
+    .detailed-steps {
+        padding: 32px 0;
+    }
+    
+    .detailed-steps h3 {
+        font-size: 1.5rem;
+    }
+    
+    .detailed-steps-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .detailed-step {
+        padding: 20px;
+    }
+    
+    .detailed-step h4 {
+        font-size: 1rem;
+    }
+    
+    .detailed-step p {
+        font-size: 0.9rem;
+    }
+}

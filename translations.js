@@ -77,6 +77,57 @@ module.exports = [
       btnLink: "https://www.jobresearchin.com/"
     },
 
+    // --- 3c. Usage Guide Section ---
+    guide: {
+      title: "Researchinの使い方（参加者向けガイド）",
+      subtitle: "研究参加の流れを3つのステップでご説明します。",
+      step1: {
+        title: "1. 募集一覧から気になる研究を探す",
+        description: "トップページの検索バーや一覧表から、実施期間、研究タイトル、所属機関、謝礼額を確認します。気になる研究をクリックすると詳細ページへ移動できます。",
+        image: "images/Researchin_explain1.png",
+        alt: "研究募集一覧の画面"
+      },
+      step2: {
+        title: "2. 研究詳細ページで参加条件と実施概要を確認する",
+        description: "タイトル、実施期間（例：2025年10月10日〜10月31日）、謝礼（例：2000JPY）、実施場所（オンライン／研究室）を確認します。実験内容や問い合わせ先の案内がある場合は、必要に応じて主催者へ質問して不明点を解消します。参加条件が「特になし」の場合でも、日程や環境（オンライン可否）を自分の都合と照らし合わせて判断します。",
+        image: "images/Researchin_explain2.png",
+        alt: "研究詳細ページの画面"
+      },
+      step3: {
+        title: "3. 応募フォームを開く",
+        description: "研究詳細ページの「応募する」ボタンを押すと、応募フォーム（「研究への応募」）が表示されます。",
+        image: "images/Researchin_explain3.png",
+        alt: "応募フォームの画面"
+      },
+      detailedSteps: {
+        title: "詳細な参加手順",
+        step4: {
+          title: "4. 基本情報を入力する（必須）",
+          description: "フルネーム（漢字／カタカナ）、メールアドレス、性別、生年月日を入力します。入力は誤字や半角・全角に注意し、メールは受信可能なアドレスを使用してください。"
+        },
+        step5: {
+          title: "5. 振込先情報を入力する（必須）",
+          description: "銀行名、支店名、口座種類（普通／当座）、口座番号を正確に記入します。謝礼の振り込みに必要なため、誤りがないか必ず再確認します。"
+        },
+        step6: {
+          title: "6. 任意情報の入力（必要に応じて）",
+          description: "身体情報（身長・体重・利き手）、国籍・使用言語、学歴・職業・業種、家族・経済情報（世帯年収、婚姻状況、同居人数、子どもの有無）などを選択または記入します。視力（裸眼・矯正）、色覚特性、生活習慣（喫煙・飲酒）、アレルギー、既往歴・現在の健康状態は、研究の適格性判断や安全管理に役立ちます。該当事項があれば詳細欄に具体的に記入します。"
+        },
+        step7: {
+          title: "7. 内容を確認して送信",
+          description: "入力内容を見直し、間違いがないことを確認したら「応募する」または「送信」ボタンを押します。送信後は確認メールが届くことがあるため、受信設定を整えておきます。"
+        },
+        step8: {
+          title: "8. 参加までの流れ",
+          description: "主催者から日程調整や事前説明の連絡が来ます。オンライン実施の場合は接続環境（通信、カメラ・マイク）を事前に準備してください。実験当日は案内に従って参加し、終了後に謝礼が指定口座へ振り込まれます。"
+        }
+      },
+      helpSection: {
+        title: "困ったときは",
+        description: "詳細ページの問い合わせボタンから主催者へ連絡できます。会社情報やプライバシーポリシー・利用規約はページ下部から確認できます。"
+      }
+    },
+
     // --- 4. Upcoming Features ---
     features: {
       title: "進化し続けるプラットフォーム",
@@ -465,6 +516,57 @@ module.exports = [
       point3: "Receive fair compensation for your contribution, with a system that properly values your participation.",
       btnText: "Find Available Studies",
       btnLink: "https://www.jobresearchin.com/"
+    },
+
+    // --- 3c. Usage Guide Section ---
+    guide: {
+      title: "How to Use Researchin (Participant Guide)",
+      subtitle: "We explain the research participation process in 3 simple steps.",
+      step1: {
+        title: "1. Find Interesting Research from the Listing",
+        description: "Use the search bar or listing on the top page to check implementation periods, research titles, affiliated institutions, and compensation amounts. Click on research that interests you to go to the detailed page.",
+        image: "images/Researchin_explain1.png",
+        alt: "Research listing screen"
+      },
+      step2: {
+        title: "2. Check Participation Conditions and Implementation Overview on the Research Detail Page",
+        description: "Check the title, implementation period (e.g., October 10-31, 2025), compensation (e.g., 2000 JPY), and implementation location (online/laboratory). If there are experiment details or contact information, ask the organizer questions as needed to clarify any uncertainties. Even if the participation condition is 'no special requirements,' consider the schedule and environment (online availability) against your convenience.",
+        image: "images/Researchin_explain2.png",
+        alt: "Research detail page screen"
+      },
+      step3: {
+        title: "3. Open the Application Form",
+        description: "Press the 'Apply' button on the research detail page to display the application form ('Research Application').",
+        image: "images/Researchin_explain3.png",
+        alt: "Application form screen"
+      },
+      detailedSteps: {
+        title: "Detailed Participation Steps",
+        step4: {
+          title: "4. Enter Basic Information (Required)",
+          description: "Enter your full name (Kanji/Katakana), email address, gender, and date of birth. Be careful with typos and half-width/full-width characters, and use an email address that can receive messages."
+        },
+        step5: {
+          title: "5. Enter Bank Transfer Information (Required)",
+          description: "Accurately enter bank name, branch name, account type (savings/checking), and account number. Since this is necessary for compensation transfer, double-check for errors."
+        },
+        step6: {
+          title: "6. Enter Optional Information (As Needed)",
+          description: "Select or enter physical information (height, weight, handedness), nationality/language used, education/occupation/industry, family/economic information (household income, marital status, number of cohabitants, presence of children). Vision (naked eye/corrected), color vision characteristics, lifestyle habits (smoking/drinking), allergies, medical history/current health status help with research eligibility judgment and safety management. If applicable, enter specific details in the detailed fields."
+        },
+        step7: {
+          title: "7. Review and Submit",
+          description: "Review the entered content and confirm there are no errors, then press the 'Apply' or 'Submit' button. After submission, you may receive a confirmation email, so prepare your reception settings."
+        },
+        step8: {
+          title: "8. Process Until Participation",
+          description: "The organizer will contact you for schedule coordination and advance explanations. For online implementation, prepare your connection environment (communication, camera/microphone) in advance. On the experiment day, participate according to the guidance, and compensation will be transferred to your designated account after completion."
+        }
+      },
+      helpSection: {
+        title: "When You Need Help",
+        description: "You can contact the organizer through the inquiry button on the detail page. Company information, privacy policy, and terms of service can be found at the bottom of the page."
+      }
     },
 
     // --- 4. Upcoming Features ---
