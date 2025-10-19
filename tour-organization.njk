@@ -189,8 +189,7 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-links">
-        <a href="{% if lang.key == 'en' %}/en/contact/{% else %}/contact/{% endif %}" class="footer-link">{{ lang.footer.contact }}</a>
-        <a href="{% if lang.key == 'en' %}/en/legal/{% else %}/legal/{% endif %}" class="footer-link">{{ lang.footer.legalInfo }}</a>
+        <a href="{{ lang.footer.contactLink }}" target="_blank" rel="noopener noreferrer" class="footer-link">{{ lang.footer.contact }}</a>
         <a href="{% if lang.key == 'en' %}/en/terms/{% else %}/terms/{% endif %}" class="footer-link">{{ lang.footer.terms }}</a>
         <a href="{% if lang.key == 'en' %}/en/privacy/{% else %}/privacy/{% endif %}" class="footer-link">{{ lang.footer.privacy }}</a>
       </div>

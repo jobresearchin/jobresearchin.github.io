@@ -435,7 +435,7 @@ module.exports = [
       contactPrefix: "ご連絡はこちら:",
       contactEmail: "info@jobresearchin.com",
       contact: "お問い合わせ",
-      legalInfo: "法的情報",
+      contactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
       terms: "利用規約",
       privacy: "プライバシーポリシー"
     }
@@ -741,7 +741,7 @@ module.exports = [
       contactPrefix: "Contact:",
       contactEmail: "info@jobresearchin.com",
       contact: "Contact",
-      legalInfo: "Legal Information",
+      contactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
       terms: "Terms of Service",
       privacy: "Privacy Policy"
     }
