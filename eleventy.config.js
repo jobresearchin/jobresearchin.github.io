@@ -34,13 +34,35 @@ async function imageShortcode(src, alt, sizes, width, height) {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
+async function faviconShortcode(src) {
+  let metadata = await Image(src, {
+    widths: [16, 32, 48, 180],
+    formats: ['png'],
+    outputDir: "./_site/images/favicon/",
+    urlPath: "/images/favicon/",
+  });
+
+  return metadata;
+}
+
 module.exports = function(eleventyConfig) {
+  // Favicon generation
+  eleventyConfig.on('beforeBuild', async () => {
+    await Image("images/LogosquareResearchin.jpg", {
+      widths: [16, 32, 48, 180],
+      formats: ['png'],
+      outputDir: "./_site/images/favicon/",
+      urlPath: "/images/favicon/",
+    });
+  });
+
   // (他の設定はそのまま)
   eleventyConfig.addGlobalData("translations", () => {
     return require("./translations.js");
   });
   
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("favicon", faviconShortcode);
 
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("robots.txt");
