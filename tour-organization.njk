@@ -76,12 +76,11 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
         <div class="header-right">
-          <div class="lang-switcher desktop-lang-switcher">
+          <div class="lang-switcher">
             <a href="/services/tour-organization/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
             <span>/</span>
             <a href="/en/services/tour-organization/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
           </div>
-          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
           <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
         </div>
       </div>
@@ -141,7 +140,7 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
       <section class="section bg-light">
         <div class="container narrow">
           <div class="section-header fade-in-up">
-            <h2>{{ lang.tourService.contactTitle }}</h2>
+            <h2 class="contact-title-compact">{{ lang.tourService.contactTitle }}</h2>
             <p>{{ lang.tourService.contactText }}</p>
           </div>
           <div class="text-center fade-in-up delay-1">

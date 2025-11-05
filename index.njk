@@ -53,6 +53,7 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
             <li><a href="{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ lang.key }}/services/tour-organization/{% endif %}" class="menu-link submenu-link">{{ lang.header.servicesMenu.tour }}</a></li>
           </ul>
         </li>
+        <li><a href="{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% endif %}" class="menu-link">{{ lang.header.navNews }}</a></li>
         <li><a href="#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
         <li><a href="#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
       </ul>
@@ -83,12 +84,11 @@ permalink: "{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}index
           <a href="#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
         <div class="header-right">
-          <div class="lang-switcher desktop-lang-switcher">
+          <div class="lang-switcher">
             <a href="/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
             <span>/</span>
             <a href="/en/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
           </div>
-          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
           <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
         </div>
       </div>

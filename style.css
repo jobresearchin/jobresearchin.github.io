@@ -277,11 +277,40 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-right: 16px;
+}
+
+@media (max-width: 991px) {
+    .lang-switcher {
+        margin-right: 8px;
+    }
+    
+    .lang-switcher a {
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+    
+    .lang-switcher span {
+        font-size: 0.9rem;
+    }
 }
 
 .desktop-lang-switcher {
     display: none;
     margin-right: 24px;
+}
+
+.mobile-lang-switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.mobile-lang-item {
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .lang-switcher a {
@@ -387,6 +416,26 @@ header {
     font-size: 2rem;
     font-weight: 700;
     margin: 0 0 16px;
+}
+
+.contact-title-compact {
+    font-size: 1.5rem !important;
+    line-height: 1.3;
+}
+
+.contact-title-compact + p {
+    font-size: 1rem;
+    max-width: 700px;
+}
+
+@media (max-width: 768px) {
+    .contact-title-compact {
+        font-size: 1.3rem !important;
+    }
+    
+    .contact-title-compact + p {
+        font-size: 0.95rem;
+    }
 }
 
 .section-header p {
@@ -897,13 +946,16 @@ footer {
     }
 
     .desktop-nav,
-    .btn.contact-btn,
-    .desktop-lang-switcher {
+    .btn.contact-btn {
         display: flex;
     }
 
     .desktop-nav {
         align-items: center;
+    }
+
+    .lang-switcher {
+        margin-right: 24px;
     }
 
     .hero-main-content {

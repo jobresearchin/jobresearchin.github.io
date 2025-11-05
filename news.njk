@@ -66,12 +66,11 @@ permalink: "{% if lang.key == 'ja' %}/news/{% else %}/{{ lang.key }}/news/{% end
           <a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile">{{ lang.header.navCompany }}</a>
         </nav>
         <div class="header-right">
-          <div class="lang-switcher desktop-lang-switcher">
+          <div class="lang-switcher">
             <a href="/news/" {% if lang.key=='ja' %}class="active"{% endif %}>JP</a>
             <span>/</span>
             <a href="/en/news/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
           </div>
-          <a href="{{ lang.header.navContactLink }}" class="btn contact-btn" target="_blank" rel="noopener noreferrer">{{ lang.header.navContact }}</a>
           <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
         </div>
       </div>
