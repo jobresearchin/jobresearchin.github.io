@@ -375,15 +375,6 @@ module.exports = [
           }
         },
         {
-          name: "江利口 晴矢",
-          title: "CTO",
-          affiliation: null,
-          socials: {
-            linkedin: "https://www.linkedin.com/in/eriguchi/",
-            github: "https://github.com/seieric"
-          }
-        },
-        {
           name: "波多 紘希",
           title: "CSO",
           affiliation: null,
@@ -678,15 +669,6 @@ module.exports = [
           affiliation: null,
           socials: {
             linkedin: "https://www.linkedin.com/in/takahitoimai/",
-          }
-        },
-        {
-          name: "Seiya Eriguchi",
-          title: "CTO",
-          affiliation: null,
-          socials: {
-            linkedin: "https://www.linkedin.com/in/eriguchi/",
-            github: "https://github.com/seieric"
           }
         },
         {
