@@ -383,7 +383,7 @@ module.exports = [
           }
         },
         {
-          name: "トーシフ　イブネ　イクバル",
+          name: "トーシフ イブネ イクバル",
           title: "CTO",
           affiliation: null,
           socials: {
@@ -408,7 +408,7 @@ module.exports = [
       foundedLabel: "設立",
       founded: "2025年8月20日",
       ceoLabel: "代表者",
-      ceo: "崇人",
+      ceo: "今井 崇人",
       addressLabel: "所在地",
       address: "〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
     },
