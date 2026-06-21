@@ -681,7 +681,7 @@ module.exports = [
         },
         {
           name: "Yoshito Ogasawara",
-          title: "Stack System Inc. CEO & Engineer",
+          title: "Advisor",
           affiliation: null,
           socials: {
             linkedin: "https://www.linkedin.com/in/yachtpa3/"
