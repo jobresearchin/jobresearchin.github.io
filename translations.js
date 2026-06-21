@@ -383,27 +383,19 @@ module.exports = [
           }
         },
         {
-          name: "柳澤 京佐",
-          title: "CMO",
+          name: "トーシフ　イブネ　イクバル",
+          title: "CTO",
           affiliation: null,
           socials: {
-            linkedin: "https://www.linkedin.com/in/%E4%BA%AC%E4%BD%90-%E6%9F%B3%E6%BE%A4-76a3a7368/",
+            linkedin: "https://www.linkedin.com/in/tausif-ibne-iqbal-0232a937a/",
           }
         },
         {
           name: "小笠原 佳人",
-          title: "Stack System Inc. CEO & Engineer",
+          title: "技術顧問",
           affiliation: null,
           socials: {
             linkedin: "https://www.linkedin.com/in/yachtpa3/"
-          }
-        },
-        {
-          name: "内藤 剛汰",
-          title: "Supporter",
-          affiliation: null,
-          socials: {
-            github: "https://github.com/konaito"
           }
         }
       ]
@@ -416,7 +408,7 @@ module.exports = [
       foundedLabel: "設立",
       founded: "2025年8月20日",
       ceoLabel: "代表者",
-      ceo: "今井崇人",
+      ceo: "崇人",
       addressLabel: "所在地",
       address: "〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷区道玄坂東急ビル2F-C"
     },
@@ -680,11 +672,11 @@ module.exports = [
           }
         },
         {
-          name: "Kyosuke Yanagisawa",
-          title: "CMO",
+          name: "Tausif Ibne Iqbal",
+          title: "CTO",
           affiliation: null,
           socials: {
-            linkedin: "https://www.linkedin.com/in/%E4%BA%AC%E4%BD%90-%E6%9F%B3%E6%BE%A4-76a3a7368/",
+            linkedin: "https://www.linkedin.com/in/tausif-ibne-iqbal-0232a937a/",
           }
         },
         {
@@ -693,14 +685,6 @@ module.exports = [
           affiliation: null,
           socials: {
             linkedin: "https://www.linkedin.com/in/yachtpa3/"
-          }
-        },
-        {
-          name: "Kota Naito",
-          title: "FYBE CEO & Engineer",
-          affiliation: null,
-          socials: {
-            github: "https://github.com/konaito"
           }
         }
       ]
