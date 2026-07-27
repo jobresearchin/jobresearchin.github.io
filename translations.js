@@ -18,18 +18,18 @@ module.exports = [
       navContact: "お問い合わせ",
       navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
       servicesMenu: {
-        administrative: "事務作業の代行",
-        website: "Webサイトの作成委託",
-        tour: "ツアーの開催"
+        administrative: "研究事務サポート",
+        website: "研究・事業サイト制作",
+        tour: "研究施設ツアー・イベント"
       }
     },
 
     // --- 1. Hero Section ---
     hero: {
-      title: "研究を当たり前に",
-      subtitle: "研究参加・募集の新しい形を提供します",
+      title: "研究する人と、参加する人をつなぐ。",
+      subtitle: "研究・調査の募集と応募をスムーズに",
       participantBtnText: "研究に参加する",
-      participantBtnLink: " https://www.jobresearchin.com/",
+      participantBtnLink: "https://www.jobresearchin.com/",
       researcherBtnText: "研究者・企業の方はこちら",
       researcherBtnLink: "#researchers",
       businessesTitle: "その他の事業はこちら",
@@ -38,19 +38,19 @@ module.exports = [
 
     // --- 2. Service Overview ---
     overview: {
-      title: "研究者と参加者を繋ぐ新しいプラットフォーム",
-      subtitle: "私たちのサービスは、研究開発を加速させたい研究者と、社会貢献に関心のある参加者を繋ぐプラットフォームです。",
+      title: "募集と参加を、スムーズに。",
+      subtitle: "Researchinは、研究者・企業の参加者募集と、協力したい方の研究探しをつなぐプラットフォームです。",
       feature1: {
-        title: "研究者向け：質の高い募集と事務代行",
-        desc: "求める条件に合った参加者を、スピーディーかつ効率的に募集。また、事務作業の代行によって時間をより研究に注げます。"
+        title: "募集から管理まで一つに",
+        desc: "募集ページの作成、応募受付、参加者情報の管理をオンラインで一元化。必要に応じて事務作業も支援します。"
       },
       feature2: {
-        title: "参加者向け：簡単な登録",
-        desc: "専門知識は不要。簡単な登録で気軽に参加できます。多くの研究を掲載。自分に合った研究に参加可能です。"
+        title: "内容を比べて応募",
+        desc: "専門知識は必要ありません。研究内容、日程、場所、参加条件、謝礼を確認し、自分に合う研究へ応募できます。"
       },
       feature3: {
-        title: "双方に：透明性の高い仕組み",
-        desc: "研究内容や条件、謝礼などが事前に明確に提示され、双方が納得して繋がります。"
+        title: "大切な条件を応募前に",
+        desc: "研究内容、実施方法、参加条件、謝礼を事前に明示。不明点は主催者に問い合わせたうえで判断できます。"
       },
       detailsButton: "詳細な事業説明"
     },
@@ -58,21 +58,21 @@ module.exports = [
     // --- 3a. Researchers Section ---
     researchers: {
       title: "研究者・企業の方へ",
-      subtitle: "募集の手間を削減し、研究に集中できる環境を提供します。",
-      point1: "多様な参加者プールにアクセスし、最適な候補者を効率的に見つけられます。",
-      point2: "募集ページの作成から管理までオンラインで完結。研究本来の業務に集中できます。",
-      point3: "従来のリクルーティング手法に比べ、時間とコストを大幅に削減します。",
-      btnText: "募集のフォームはこちら",
+      subtitle: "募集ページの作成から応募管理までを整え、研究に向き合う時間を増やします。",
+      point1: "研究内容と参加条件が伝わる募集ページを作成し、対象となる方へ届けます。",
+      point2: "応募受付、参加者情報、連絡状況をオンラインでまとめて管理できます。",
+      point3: "研究ごとの条件や進め方に合わせ、必要な事務作業を支援します。",
+      btnText: "参加者募集を相談する",
       btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSeGU0gv5vPKHWXFn2RSIWguIK6LoM7q5X4OB7d1dOSUrRkRnA/viewform"
     },
 
     // --- 3b. Participants Section ---
     participants: {
       title: "実験・調査に参加したい方へ",
-      subtitle: "あなたの「協力したい」という気持ちが、未来を創る力になります。",
-      point1: "あなたの経験や時間が、新しい発見や技術革新の礎となり、社会に貢献できます。",
-      point2: "興味や関心に合わせて、豊富な研究プロジェクトの中から参加したいものを選べます。",
-      point3: "参加する実験や調査に応じて、明確な謝礼が提供され、あなたの貢献が評価されます。",
+      subtitle: "内容や条件を比べて、興味のある実験・調査に応募できます。",
+      point1: "研究の目的や参加内容を読み、納得したうえで応募できます。",
+      point2: "日程、場所、参加条件から、自分に合う実験・調査を探せます。",
+      point3: "謝礼の有無や金額は募集ページで事前に確認できます。",
       btnText: "参加できる研究を探す",
       btnLink: "https://www.jobresearchin.com/"
     },
@@ -80,22 +80,22 @@ module.exports = [
     // --- 3c. Usage Guide Section ---
     guide: {
       title: "Researchinの使い方（参加者向けガイド）",
-      subtitle: "研究参加の流れを3つのステップでご説明します。",
+      subtitle: "研究参加の流れを3ステップで紹介します。",
       step1: {
-        title: "1. 募集一覧から気になる研究を探す",
-        description: "トップページの検索バーや一覧表から、実施期間、研究タイトル、所属機関、謝礼額を確認します。気になる研究をクリックすると詳細ページへ移動できます。",
+        title: "募集一覧から研究を探す",
+        description: "一覧では、研究タイトル、実施期間、所属機関、謝礼を確認できます。検索や絞り込みを使い、気になる募集を開いてください。",
         image: "images/Researchin_explain1.png",
         alt: "研究募集一覧の画面"
       },
       step2: {
-        title: "2. 研究詳細ページで参加条件と実施概要を確認する",
-        description: "タイトル、実施期間（例：2025年10月10日〜10月31日）、謝礼（例：2000JPY）、実施場所（オンライン／研究室）を確認します。実験内容や問い合わせ先の案内がある場合は、必要に応じて主催者へ質問して不明点を解消します。参加条件が「特になし」の場合でも、日程や環境（オンライン可否）を自分の都合と照らし合わせて判断します。",
+        title: "参加条件と内容を確認する",
+        description: "詳細ページで、研究の目的、参加内容、参加条件、日時、場所（オンライン／現地）、謝礼、問い合わせ先を確認します。不明点があれば、応募前に主催者へ問い合わせてください。",
         image: "images/Researchin_explain2.png",
         alt: "研究詳細ページの画面"
       },
       step3: {
-        title: "3. 応募フォームを開く",
-        description: "研究詳細ページの「応募する」ボタンを押すと、応募フォーム（「研究への応募」）が表示されます。",
+        title: "応募フォームを開く",
+        description: "内容と条件に納得できたら、「応募する」からフォームを開きます。",
         image: "images/Researchin_explain3.png",
         alt: "応募フォームの画面"
       },
@@ -103,23 +103,23 @@ module.exports = [
         title: "詳細な参加手順",
         step4: {
           title: "4. 基本情報を入力する（必須）",
-          description: "フルネーム（漢字／カタカナ）、メールアドレス、性別、生年月日を入力します。入力は誤字や半角・全角に注意し、メールは受信可能なアドレスを使用してください。"
+          description: "氏名、メールアドレス、性別、生年月日など、必須項目を入力します。主催者からの連絡を受け取れるメールアドレスを使用してください。"
         },
         step5: {
-          title: "5. 振込先情報を入力する（必須）",
-          description: "銀行名、支店名、口座種類（普通／当座）、口座番号を正確に記入します。謝礼の振り込みに必要なため、誤りがないか必ず再確認します。"
+          title: "5. 謝礼の受け取り情報を入力する（必要な場合）",
+          description: "謝礼があり、振込先の登録を求められた場合は、銀行名、支店名、口座種別、口座番号を入力します。送信前に誤りがないか確認してください。"
         },
         step6: {
           title: "6. 任意情報の入力（必要に応じて）",
-          description: "身体情報（身長・体重・利き手）、国籍・使用言語、学歴・職業・業種、家族・経済情報（世帯年収、婚姻状況、同居人数、子どもの有無）などを選択または記入します。視力（裸眼・矯正）、色覚特性、生活習慣（喫煙・飲酒）、アレルギー、既往歴・現在の健康状態は、研究の適格性判断や安全管理に役立ちます。該当事項があれば詳細欄に具体的に記入します。"
+          description: "研究によって、身体情報、職業、生活習慣、既往歴などを確認する場合があります。参加条件や安全確認に使われるため、該当する項目を正確に入力してください。"
         },
         step7: {
           title: "7. 内容を確認して送信",
-          description: "入力内容を見直し、間違いがないことを確認したら「応募する」または「送信」ボタンを押します。送信後は確認メールが届くことがあるため、受信設定を整えておきます。"
+          description: "入力内容を確認し、「応募する」または「送信」を押します。確認メールが届かない場合は、迷惑メールフォルダや受信設定を確認してください。"
         },
         step8: {
           title: "8. 参加までの流れ",
-          description: "主催者から日程調整や事前説明の連絡が来ます。オンライン実施の場合は接続環境（通信、カメラ・マイク）を事前に準備してください。実験当日は案内に従って参加し、終了後に謝礼が指定口座へ振り込まれます。"
+          description: "応募後、主催者から日程や参加方法の連絡があります。案内に沿って準備・参加し、謝礼がある場合は終了後に指定口座へ振り込まれます。"
         }
       },
       helpSection: {
@@ -130,33 +130,33 @@ module.exports = [
 
     // --- 4. Upcoming Features ---
     features: {
-      title: "進化し続けるプラットフォーム",
-      subtitle: "私たちは、ユーザーの皆様の声に耳を傾け、サービスの改善を続けます。近日中に、以下の機能が追加される予定です。",
+      title: "今後のアップデート",
+      subtitle: "募集と参加をより使いやすくするため、次の機能を順次検討・開発しています。",
       feature1: {
-        title: "謝礼支払いの代行機能",
-        desc: "面倒な謝礼の支払い手続きをプラットフォームが代行。研究者は募集から支払いまで、ワンストップで完結できます。"
+        title: "謝礼支払いの一括管理",
+        desc: "参加者への謝礼支払いを、研究ごとにまとめて管理できる機能を開発しています。"
       },
       feature2: {
-        title: "キャンセル防止機能",
-        desc: "無断キャンセルを繰り返す参加者へのペナルティや、参加率の高いユーザーを評価する仕組みを導入し、募集の信頼性を高めます。"
+        title: "参加実績の確認",
+        desc: "参加履歴をもとに無断キャンセルを減らし、安心して予定を組める仕組みを検討しています。"
       },
       feature3: {
-        title: "リピーターへのインセンティブ機能",
-        desc: "複数回の研究に協力していただいた参加者へ、追加の謝礼や特典を提供するインセンティブプログラムを導入します。"
+        title: "継続参加の特典",
+        desc: "複数の研究に参加した方へ、追加謝礼や特典を設定できる機能を検討しています。"
       },
       feature4: {
-        title: "AIによる募集効果の分析",
-        desc: "AIが募集ページの閲覧数や応募率を分析し、より効果的な募集文や条件設定を提案。募集効果の最大化を支援します。"
+        title: "募集結果の分析と改善提案",
+        desc: "閲覧数や応募率を確認し、募集文や条件を見直すヒントを得られる機能を開発しています。"
       }
     },
 
     // --- 5. Company Info Sections ---
     businesses: {
       title: "事業紹介",
-      item1: { title: "事務作業の代行", desc: "研究者や企業の煩雑な事務作業を代行し、業務に集中できる環境をサポートします。" },
-      item2: { title: "Webサイトの作成委託", desc: "専門的なWebサイトの企画から制作・運用までを請け負います。" },
+      item1: { title: "研究事務サポート", desc: "書類作成、日程調整、応募者対応など、研究に伴う事務作業を必要な範囲で支援します。" },
+      item2: { title: "研究・事業サイト制作", desc: "目的と読み手を整理し、研究機関や企業の情報が伝わるWebサイトを企画・制作します。" },
       item3: {
-        title: "ツアーの開催", desc: "学術機関・企業の研究施設のツアー企画・運営を行います。"
+        title: "研究施設ツアー・イベント", desc: "研究施設の見学ツアーや科学イベントを、企画から参加者募集、当日運営まで支援します。"
       }
     },
 
@@ -171,7 +171,7 @@ module.exports = [
       contactText: "各サービスについて詳しく知りたい方、ご相談をご希望の方は、お気軽にお問い合わせください。",
       items: [
         {
-          title: "事務作業の代行",
+          title: "研究事務サポート",
           description: "研究者や企業の煩雑な事務作業を代行し、業務に集中できる環境をサポートします。",
           icon: "images/icon-admin.svg",
           features: [
@@ -184,7 +184,7 @@ module.exports = [
           contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
         },
         {
-          title: "Webサイトの作成委託",
+          title: "研究・事業サイト制作",
           description: "専門的なWebサイトの企画から制作・運用までを請け負います。",
           icon: "images/icon-web.svg",
           features: [
@@ -197,7 +197,7 @@ module.exports = [
           contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
         },
         {
-          title: "ツアーの開催",
+          title: "研究施設ツアー・イベント",
           description: "学術機関・企業の研究施設のツアー企画・運営を行います。",
           icon: "images/icon-tour.svg",
           features: [
@@ -221,11 +221,11 @@ module.exports = [
       noNews: "現在、お知らせはありません。",
       items: [
         {
-          date: "2025-10-11",
-          displayDate: "2025年10月11日",
+          date: "2026-07-27",
+          displayDate: "2026年7月27日",
           category: "お知らせ",
-          title: "Webサイトをリニューアルしました",
-          excerpt: "より使いやすく、分かりやすいWebサイトにリニューアルいたしました。",
+          title: "代表・今井崇人が経産省「J-StarX」UC Berkeley Haasプログラムに採択",
+          excerpt: "当社代表の今井崇人が、経済産業省の起業家海外派遣プログラム「J-StarX」におけるUC Berkeley Haas School of Businessのプログラムに採択されました。",
           link: null
         }
       ]
@@ -233,8 +233,8 @@ module.exports = [
 
     // --- Administrative Support Service Page ---
     adminService: {
-      title: "事務作業の代行",
-      subtitle: "研究者や企業の煩雑な事務作業を代行し、業務に集中できる環境をサポートします。",
+      title: "研究事務サポート",
+      subtitle: "書類作成、日程調整、応募者対応など、研究に伴う事務作業を必要な範囲で支援します。",
       description: "研究者・企業向けの事務作業代行サービスの詳細情報です。",
       overviewTitle: "サービス概要",
       overview: "研究活動や企業活動において発生する様々な事務作業を専門的に代行いたします。書類作成からスケジュール管理、データ整理まで、お客様のニーズに合わせて幅広く対応し、本業により集中していただける環境を提供します。",
@@ -261,7 +261,7 @@ module.exports = [
           description: "研究助成金の申請手続きや学会発表の申込みなど、複雑な手続き業務をサポートします。"
         }
       ],
-      benefitsTitle: "このサービスを利用するメリット",
+      benefitsTitle: "導入のメリット",
       benefits: [
         "研究や本業により多くの時間を割くことができます",
         "専門的な事務作業を経験豊富なスタッフが担当します",
@@ -269,7 +269,7 @@ module.exports = [
         "コスト削減と業務効率化を同時に実現できます",
         "繁忙期の業務負荷を軽減できます"
       ],
-      contactTitle: "事務作業代行に関するお問い合わせ",
+      contactTitle: "研究事務のご相談",
       contactText: "事務作業代行サービスについて詳しく知りたい方、お見積りをご希望の方は、お気軽にお問い合わせください。",
       contactButton: "お問い合わせフォーム",
       contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
@@ -277,8 +277,8 @@ module.exports = [
 
     // --- Website Development Service Page ---
     webService: {
-      title: "Webサイトの作成委託",
-      subtitle: "専門的なWebサイトの企画から制作・運用までを請け負います。",
+      title: "研究・事業サイト制作",
+      subtitle: "目的と読み手を整理し、研究機関や企業の情報が伝わるWebサイトを企画・制作します。",
       description: "研究機関・企業向けのWebサイト制作サービスの詳細情報です。",
       overviewTitle: "サービス概要",
       overview: "研究機関や企業のニーズに特化したWebサイトの企画・制作・運用を一貫してサポートします。最新の技術と豊富な経験を活かし、効果的で使いやすいWebサイトを提供いたします。",
@@ -305,7 +305,7 @@ module.exports = [
           description: "サイト公開後も継続的な保守・更新・改善提案により、Webサイトの価値を維持・向上させます。"
         }
       ],
-      benefitsTitle: "このサービスを利用するメリット",
+      benefitsTitle: "導入のメリット",
       benefits: [
         "専門性の高いWebサイトで研究成果や事業内容を効果的に発信できます",
         "最新の技術とデザインで競合他社との差別化を図れます",
@@ -313,7 +313,7 @@ module.exports = [
         "継続的なサポートにより、常に最適な状態を維持できます",
         "専門知識不要で簡単にコンテンツを更新できます"
       ],
-      contactTitle: "Webサイト制作に関するお問い合わせ",
+      contactTitle: "Webサイト制作のご相談",
       contactText: "Webサイト制作サービスについて詳しく知りたい方、お見積りをご希望の方は、お気軽にお問い合わせください。",
       contactButton: "お問い合わせフォーム",
       contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
@@ -321,8 +321,8 @@ module.exports = [
 
     // --- Tour Organization Service Page ---
     tourService: {
-      title: "ツアーの開催",
-      subtitle: "学術機関・企業の研究施設のツアー企画・運営を行います。",
+      title: "研究施設ツアー・イベント",
+      subtitle: "研究施設の見学ツアーや科学イベントを、企画から参加者募集、当日運営まで支援します。",
       description: "研究施設見学ツアーの企画・運営サービスの詳細情報です。",
       overviewTitle: "サービス概要",
       overview: "研究機関や企業の研究施設を一般の方々に紹介するツアーの企画から運営まで、トータルにサポートします。研究の成果を社会に広め、研究への理解と関心を深めていただく機会を提供します。",
@@ -349,7 +349,7 @@ module.exports = [
           description: "効果的な広報活動による参加者募集から、当日の受付・管理まで一貫して対応します。"
         }
       ],
-      benefitsTitle: "このサービスを利用するメリット",
+      benefitsTitle: "導入のメリット",
       benefits: [
         "研究成果を社会に広く発信し、研究への理解を促進できます",
         "新たな研究協力者やパートナーとの出会いの機会を創出できます",
@@ -357,7 +357,7 @@ module.exports = [
         "専門的な企画・運営により、効果的なイベントを開催できます",
         "参加者との交流を通じて、新たな研究のヒントを得ることができます"
       ],
-      contactTitle: "ツアー開催に関するお問い合わせ",
+      contactTitle: "ツアー・イベントのご相談",
       contactText: "ツアー開催サービスについて詳しく知りたい方、企画のご相談をご希望の方は、お気軽にお問い合わせください。",
       contactButton: "お問い合わせフォーム",
       contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
@@ -442,17 +442,17 @@ module.exports = [
       navContact: "Contact",
       navContactLink: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform",
       servicesMenu: {
-        administrative: "Administrative Support",
-        website: "Website Development",
-        tour: "Tour Organization"
+        administrative: "Research Admin Support",
+        website: "Research Websites",
+        tour: "Research Tours & Events"
       }
     },
 
     // --- 1. Hero Section ---
     hero: {
-      title: "IN TO RESEARCH",
-      subtitle: "",
-      participantBtnText: "Access Platform →",
+      title: "Where researchers and participants meet.",
+      subtitle: "Smooth recruitment and applications for studies and surveys.",
+      participantBtnText: "Find a study",
       participantBtnLink: "https://www.jobresearchin.com/",
       researcherBtnText: "For Researchers",
       researcherBtnLink: "#researchers",
@@ -462,19 +462,19 @@ module.exports = [
 
     // --- 2. Service Overview ---
     overview: {
-      title: "A New Platform Connecting Researchers and Participants",
-      subtitle: "Our service is a platform that connects researchers who want to accelerate R&D with participants interested in contributing to society.",
+      title: "Recruit and join, clearly.",
+      subtitle: "Researchin helps researchers and organizations recruit participants, while giving people one place to find studies they can join.",
       feature1: {
-        title: "For Researchers: High-Quality Recruitment & Admin Support",
-        desc: "Quickly and efficiently recruit participants who meet your criteria. Our administrative support allows you to focus more time on your research."
+        title: "Recruit and manage in one place",
+        desc: "Create a study listing, accept applications, and manage participant information online. Administrative support is available when needed."
       },
       feature2: {
-        title: "For Participants: Easy Registration",
-        desc: "No expert knowledge required. You can easily participate with a simple registration. We list many studies, so you can join one that fits you."
+        title: "Compare before applying",
+        desc: "No specialist knowledge is required. Review the study, schedule, location, eligibility, and compensation before choosing what fits."
       },
       feature3: {
-        title: "For Both: A Transparent System",
-        desc: "Study details, conditions, and compensation are clearly presented upfront, ensuring both parties connect with a mutual understanding."
+        title: "Know the terms upfront",
+        desc: "Study details, format, eligibility, and compensation are shown before you apply. Contact the organizer if anything is unclear."
       },
       detailsButton: "Detailed Business Description"
     },
@@ -482,21 +482,21 @@ module.exports = [
     // --- 3a. Researchers Section ---
     researchers: {
       title: "For Researchers",
-      subtitle: "We reduce the hassle of recruitment and provide an environment where you can focus on your research.",
-      point1: "Access a diverse pool of participants to efficiently find the most suitable candidates.",
-      point2: "Complete the entire recruitment process online, from creating pages to managing participants, so you can focus on your core research.",
-      point3: "Significantly reduce time and costs compared to traditional recruiting methods.",
-      btnText: "Recruitment Form",
+      subtitle: "Set up your listing and manage applications in one place, leaving more time for the research itself.",
+      point1: "Create a clear listing that explains the study and eligibility requirements to potential participants.",
+      point2: "Manage applications, participant information, and contact status online in one place.",
+      point3: "Get administrative support tailored to the requirements and workflow of each study.",
+      btnText: "Discuss participant recruitment",
       btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSeGU0gv5vPKHWXFn2RSIWguIK6LoM7q5X4OB7d1dOSUrRkRnA/viewform"
     },
 
     // --- 3b. Participants Section ---
     participants: {
-      title: "For Those Wanting to Participate in Studies",
-      subtitle: "Your desire to cooperate becomes the power to create the future.",
-      point1: "Your experience and time become the foundation for new discoveries and technological innovations, allowing you to contribute to society.",
-      point2: "Choose from a wide range of research projects that match your interests and passions.",
-      point3: "Receive fair compensation for your contribution, with a system that properly values your participation.",
+      title: "For Participants",
+      subtitle: "Compare the details and requirements, then apply to studies that interest you.",
+      point1: "Read the purpose of the study and what participation involves before you decide to apply.",
+      point2: "Find studies that fit your schedule, location, and eligibility.",
+      point3: "Check whether compensation is offered and how much before you apply.",
       btnText: "Find Available Studies",
       btnLink: "https://www.jobresearchin.com/"
     },
@@ -504,46 +504,46 @@ module.exports = [
     // --- 3c. Usage Guide Section ---
     guide: {
       title: "How to Use Researchin (Participant Guide)",
-      subtitle: "We explain the research participation process in 3 simple steps.",
+      subtitle: "From discovery to application in 3 steps.",
       step1: {
-        title: "1. Find Interesting Research from the Listing",
-        description: "Use the search bar or listing on the top page to check implementation periods, research titles, affiliated institutions, and compensation amounts. Click on research that interests you to go to the detailed page.",
-        image: "images/Researchin_explain1.png",
+        title: "Find a study",
+        description: "The study list shows the title, dates, host institution, and compensation. Use search or filters, then open any listing you want to learn more about.",
+        image: "images/Researchin_explain1-en.png",
         alt: "Research listing screen"
       },
       step2: {
-        title: "2. Check Participation Conditions and Implementation Overview on the Research Detail Page",
-        description: "Check the title, implementation period (e.g., October 10-31, 2025), compensation (e.g., 2000 JPY), and implementation location (online/laboratory). If there are experiment details or contact information, ask the organizer questions as needed to clarify any uncertainties. Even if the participation condition is 'no special requirements,' consider the schedule and environment (online availability) against your convenience.",
-        image: "images/Researchin_explain2.png",
+        title: "Review the details",
+        description: "Review the study purpose, what you will do, eligibility, date and time, location (online or in person), compensation, and contact details. Ask the organizer before applying if anything is unclear.",
+        image: "images/Researchin_explain2-en.png",
         alt: "Research detail page screen"
       },
       step3: {
-        title: "3. Open the Application Form",
-        description: "Press the 'Apply' button on the research detail page to display the application form ('Research Application').",
-        image: "images/Researchin_explain3.png",
+        title: "Open the application",
+        description: "Once you understand and accept the details, select “Apply” to open the application form.",
+        image: "images/Researchin_explain3-en.png",
         alt: "Application form screen"
       },
       detailedSteps: {
         title: "Detailed Participation Steps",
         step4: {
           title: "4. Enter Basic Information (Required)",
-          description: "Enter your full name (Kanji/Katakana), email address, gender, and date of birth. Be careful with typos and half-width/full-width characters, and use an email address that can receive messages."
+          description: "Enter the required details, including your name, email address, gender, and date of birth. Use an address where the organizer can reach you."
         },
         step5: {
-          title: "5. Enter Bank Transfer Information (Required)",
-          description: "Accurately enter bank name, branch name, account type (savings/checking), and account number. Since this is necessary for compensation transfer, double-check for errors."
+          title: "5. Enter payment details when required",
+          description: "If compensation is offered and payment details are requested, enter the bank, branch, account type, and account number. Check every field before submitting."
         },
         step6: {
           title: "6. Enter Optional Information (As Needed)",
-          description: "Select or enter physical information (height, weight, handedness), nationality/language used, education/occupation/industry, family/economic information (household income, marital status, number of cohabitants, presence of children). Vision (naked eye/corrected), color vision characteristics, lifestyle habits (smoking/drinking), allergies, medical history/current health status help with research eligibility judgment and safety management. If applicable, enter specific details in the detailed fields."
+          description: "Some studies ask about your physical profile, occupation, daily habits, or medical history. Answer accurately because this information may be used to confirm eligibility and safety."
         },
         step7: {
           title: "7. Review and Submit",
-          description: "Review the entered content and confirm there are no errors, then press the 'Apply' or 'Submit' button. After submission, you may receive a confirmation email, so prepare your reception settings."
+          description: "Review your answers, then select “Apply” or “Submit.” If no confirmation arrives, check your spam folder and email settings."
         },
         step8: {
           title: "8. Process Until Participation",
-          description: "The organizer will contact you for schedule coordination and advance explanations. For online implementation, prepare your connection environment (communication, camera/microphone) in advance. On the experiment day, participate according to the guidance, and compensation will be transferred to your designated account after completion."
+          description: "The organizer will contact you with the schedule and instructions. Follow their guidance to prepare and take part. If compensation is offered, it will be paid to your designated account after completion."
         }
       },
       helpSection: {
@@ -554,32 +554,32 @@ module.exports = [
 
     // --- 4. Upcoming Features ---
     features: {
-      title: "An Ever-Evolving Platform",
-      subtitle: "We listen to our users and continuously improve our service. The following features are scheduled to be added soon.",
+      title: "What’s next",
+      subtitle: "We are exploring and developing these features to make recruitment and participation easier.",
       feature1: {
-        title: "Reward Payment Processing",
-        desc: "The platform will handle the troublesome reward payment process, allowing researchers to manage everything from recruitment to payment in one stop."
+        title: "Centralized compensation payments",
+        desc: "We’re developing a way to manage participant compensation by study in one place."
       },
       feature2: {
-        title: "Cancellation Prevention",
-        desc: "By introducing penalties for no-shows and a system to reward reliable participants, we will increase the reliability of recruitment."
+        title: "Participation history",
+        desc: "We’re exploring ways to use participation history to reduce no-shows and make scheduling more dependable."
       },
       feature3: {
-        title: "Incentives for Repeaters",
-        desc: "An incentive program that provides additional rewards and benefits to participants who have cooperated in multiple studies."
+        title: "Benefits for repeat participation",
+        desc: "We’re exploring a feature that lets organizers offer additional compensation or benefits to repeat participants."
       },
       feature4: {
-        title: "AI-Powered Recruitment Analytics",
-        desc: "Our AI will analyze recruitment page views and application rates to suggest more effective wording and conditions, helping maximize your recruitment."
+        title: "Recruitment insights",
+        desc: "We’re developing tools to review page views and application rates, with practical prompts for improving listings and eligibility criteria."
       }
     },
 
     // --- 5. Company Info Sections ---
     businesses: {
       title: "Our Businesses",
-      item1: { title: "Administrative Support", desc: "We handle burdensome administrative tasks for researchers and companies, allowing them to focus on their core work." },
-      item2: { title: "Website Development", desc: "We undertake everything from planning to production and operation of specialized websites to effectively communicate research content." },
-      item3: { title: "Tour Organization", desc: "We plan and host tours to research facilities and related companies, connecting the general public with the front lines of research." }
+      item1: { title: "Research Admin Support", desc: "We help with the administrative work around research, including documents, scheduling, and applicant communication." },
+      item2: { title: "Research Websites", desc: "We plan and build websites that clearly communicate the work of research institutions and organizations to the people they need to reach." },
+      item3: { title: "Research Tours & Events", desc: "We support research facility tours and science events, from planning and participant recruitment through on-site delivery." }
     },
 
     // --- Services Page ---
@@ -593,7 +593,7 @@ module.exports = [
       contactText: "If you would like to learn more about any of our services or have questions, please feel free to contact us.",
       items: [
         {
-          title: "Administrative Support",
+          title: "Research Admin Support",
           description: "We handle burdensome administrative tasks for researchers and companies, allowing them to focus on their core work.",
           icon: "images/icon-admin.svg",
           features: [
@@ -606,7 +606,7 @@ module.exports = [
           contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
         },
         {
-          title: "Website Development",
+          title: "Research Websites",
           description: "We undertake everything from planning to production and operation of specialized websites.",
           icon: "images/icon-web.svg",
           features: [
@@ -619,7 +619,7 @@ module.exports = [
           contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
         },
         {
-          title: "Tour Organization",
+          title: "Research Tours & Events",
           description: "We plan and host tours to research facilities and related companies.",
           icon: "images/icon-tour.svg",
           features: [
@@ -634,6 +634,93 @@ module.exports = [
       ]
     },
 
+    // --- Research Administration Support Page ---
+    adminService: {
+      title: "Research Admin Support",
+      subtitle: "Practical help with the documents, scheduling, and participant communication that sit around research.",
+      description: "Administrative support for research teams and organizations.",
+      overviewTitle: "Service overview",
+      overview: "We support the day-to-day administrative work that accompanies research, from preparing documents and coordinating schedules to organizing data and communicating with applicants. The scope is tailored to each project so research teams can spend more time on their core work.",
+      featuresTitle: "What we can support",
+      features: [
+        { title: "Research documents", description: "Preparation and organization of research plans, reports, applications, and related project documents." },
+        { title: "Scheduling and meetings", description: "Coordination of study schedules, meetings, rooms, and participant communications." },
+        { title: "Data entry and organization", description: "Structured entry and organization of study data, survey responses, and project records." },
+        { title: "Applicant communication", description: "Support for routine email, status updates, and coordination with applicants and project partners." },
+        { title: "Applications and procedures", description: "Administrative support for grant applications, conference submissions, and other project procedures." }
+      ],
+      benefitsTitle: "How this helps",
+      benefits: [
+        "Keep more time available for research and core project work",
+        "Choose support that matches the actual scope of the project",
+        "Maintain clear, consistent administrative records",
+        "Reduce pressure during recruitment and other busy periods",
+        "Bring documents, schedules, and communication into one workflow"
+      ],
+      contactTitle: "Discuss research administration",
+      contactText: "Tell us what work is taking time away from your research. We will discuss the scope and a practical way to support it.",
+      contactButton: "Contact us",
+      contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+    },
+
+    // --- Research & Corporate Websites Page ---
+    webService: {
+      title: "Research Websites",
+      subtitle: "Websites planned around what you need to explain and who needs to understand it.",
+      description: "Website planning and production for research institutions, projects, and organizations.",
+      overviewTitle: "Service overview",
+      overview: "We plan and build websites for research teams and organizations. We start by clarifying the purpose, audience, and information structure, then create a responsive site that makes specialist work easier to understand and maintain.",
+      featuresTitle: "What we can support",
+      features: [
+        { title: "Responsive design", description: "Layouts designed to remain clear and usable across desktop, tablet, and mobile screens." },
+        { title: "Research and corporate sites", description: "Information architecture and production for laboratories, projects, institutions, and companies." },
+        { title: "Search and measurement", description: "Foundational search optimization and analytics setup to understand how information is being found." },
+        { title: "Content management", description: "A suitable editing workflow so the team can keep essential information up to date." },
+        { title: "Ongoing maintenance", description: "Support for updates, maintenance, and practical improvements after launch." }
+      ],
+      benefitsTitle: "How this helps",
+      benefits: [
+        "Explain specialist work clearly to the people you need to reach",
+        "Give visitors a consistent experience on any device",
+        "Organize content around real reader questions",
+        "Keep important information easier to update",
+        "Plan maintenance and improvements beyond the launch"
+      ],
+      contactTitle: "Talk to us about a website",
+      contactText: "Share the purpose of the site, its audience, and the information you need to publish. We will help shape the right scope.",
+      contactButton: "Contact us",
+      contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+    },
+
+    // --- Research Tours & Events Page ---
+    tourService: {
+      title: "Research Tours & Events",
+      subtitle: "Planning and delivery support for research facility tours and public-facing science events.",
+      description: "Planning and operational support for research tours and events.",
+      overviewTitle: "Service overview",
+      overview: "We help research institutions and organizations open their work to a wider audience through facility tours and events. Support can cover concept development, participant recruitment, guides, communication, and on-the-day operations.",
+      featuresTitle: "What we can support",
+      features: [
+        { title: "Facility tour planning", description: "A tour plan shaped around the facility, its research, the audience, and operational constraints." },
+        { title: "Public science events", description: "Planning and delivery of talks, demonstrations, and workshops for non-specialist audiences." },
+        { title: "Industry-academia events", description: "Operational support for events that bring research institutions, companies, and partners together." },
+        { title: "Guides and interpretation", description: "Coordination of guides and explanations that make specialist work accessible to visitors." },
+        { title: "Recruitment and attendance", description: "Participant recruitment, registration, pre-event communication, reception, and attendance management." }
+      ],
+      benefitsTitle: "How this helps",
+      benefits: [
+        "Share research with audiences beyond the institution",
+        "Create a clear, welcoming visitor experience",
+        "Coordinate recruitment and on-site operations in one plan",
+        "Match explanations and activities to the audience",
+        "Build useful points of contact with participants and partners"
+      ],
+      contactTitle: "Talk to us about a tour or event",
+      contactText: "Tell us about the facility, audience, timing, and experience you want to create. We will discuss the practical next steps.",
+      contactButton: "Contact us",
+      contactForm: "https://docs.google.com/forms/d/e/1FAIpQLScT9sKNc-MrP8il6V1qEGsINFswQY1npg1XRDtwLhr4yMjZeA/viewform"
+    },
+
     // --- News Page ---
     news: {
       title: "News",
@@ -643,11 +730,11 @@ module.exports = [
       noNews: "No news available at this time.",
       items: [
         {
-          date: "2025-10-11",
-          displayDate: "October 11, 2025",
+          date: "2026-07-27",
+          displayDate: "July 27, 2026",
           category: "Announcement",
-          title: "Website Renewal",
-          excerpt: "We have renewed our website to make it more user-friendly and informative.",
+          title: "CEO Takahito Imai Selected for METI’s J-StarX UC Berkeley Haas Program",
+          excerpt: "Our CEO, Takahito Imai, has been selected for the UC Berkeley Haas School of Business program under J-StarX, the Ministry of Economy, Trade and Industry’s overseas entrepreneurship program.",
           link: null
         }
       ]
@@ -699,7 +786,7 @@ module.exports = [
       ceoLabel: "CEO",
       ceo: "Takahito Imai",
       addressLabel: "Address",
-      address: "〒1150-0043 Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
+      address: "150-0043 Shibuya Dogenzaka Tokyu Building 2F-C, 1-10-8 Dogenzaka, Shibuya-ku, Tokyo"
     },
 
     // --- Footer ---

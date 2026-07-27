@@ -16,7 +16,7 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="alternate" hreflang="ja" href="https://corp.jobresearchin.com/services/tour-organization/" />
   <link rel="alternate" hreflang="en" href="https://corp.jobresearchin.com/en/services/tour-organization/" />
@@ -45,7 +45,7 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
         <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#service-overview" class="menu-link">{{ lang.header.navOverview }}</a></li>
         <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#researchers" class="menu-link">{{ lang.header.navResearchers }}</a></li>
         <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#participants" class="menu-link">{{ lang.header.navParticipants }}</a></li>
-        <li><a href="{% if lang.key == 'ja' %}/services/{% else %}/{{ lang.key }}/services/{% endif %}" class="menu-link">{{ lang.header.navServices }}</a></li>
+        <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#businesses" class="menu-link">{{ lang.header.navServices }}</a></li>
         <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#team" class="menu-link">{{ lang.header.navTeam }}</a></li>
         <li><a href="{% if lang.key == 'ja' %}/{% else %}/{{ lang.key }}/{% endif %}#company-profile" class="menu-link">{{ lang.header.navCompany }}</a></li>
       </ul>
@@ -81,7 +81,7 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
             <span>/</span>
             <a href="/en/services/tour-organization/" {% if lang.key=='en' %}class="active"{% endif %}>EN</a>
           </div>
-          <button class="hamburger-menu" id="hamburger-menu" aria-label="メニューを開く"><span></span><span></span></button>
+          <button class="hamburger-menu" id="hamburger-menu" aria-label="{% if lang.key == 'ja' %}メニューを開く{% else %}Open menu{% endif %}"><span></span><span></span></button>
         </div>
       </div>
     </header>
@@ -91,7 +91,12 @@ permalink: "{% if lang.key == 'ja' %}/services/tour-organization/{% else %}/{{ l
         <div class="container">
           <div class="hero-content fade-in-up">
             <div class="service-icon-large">
-              {% image "images/icon-tour.svg", "ツアー開催アイコン", "80px", width="80", height="80" %}
+              {% if lang.key == 'ja' %}
+                {% set serviceIconAlt = "ツアー開催アイコン" %}
+              {% else %}
+                {% set serviceIconAlt = "Research facility tour and event icon" %}
+              {% endif %}
+              {% image "images/icon-tour.svg", serviceIconAlt, "80px", width="80", height="80" %}
             </div>
             <h1>{{ lang.tourService.title }}</h1>
             <p>{{ lang.tourService.subtitle }}</p>

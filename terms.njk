@@ -13,7 +13,7 @@ permalink: "/terms/index.html"
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   
   <!-- OGP -->
@@ -40,13 +40,13 @@ permalink: "/terms/index.html"
         <a href="/" class="logo">{{ lang.meta.siteName }}</a>
       </div>
       <div class="nav-center">
-        <a href="/business-details/">{{ lang.header.navOverview }}</a>
-        <a href="#researchers">{{ lang.header.navResearchers }}</a>
-        <a href="#participants">{{ lang.header.navParticipants }}</a>
-        <a href="#services">{{ lang.header.navServices }}</a>
+        <a href="/#service-overview">{{ lang.header.navOverview }}</a>
+        <a href="/#researchers">{{ lang.header.navResearchers }}</a>
+        <a href="/#participants">{{ lang.header.navParticipants }}</a>
+        <a href="/#businesses">{{ lang.header.navServices }}</a>
         <a href="/news/">{{ lang.header.navNews }}</a>
-        <a href="#team">{{ lang.header.navTeam }}</a>
-        <a href="#company">{{ lang.header.navCompany }}</a>
+        <a href="/#team">{{ lang.header.navTeam }}</a>
+        <a href="/#company">{{ lang.header.navCompany }}</a>
       </div>
       <div class="header-right">
         <a href="{{ lang.header.navContactLink }}" class="btn-contact">{{ lang.header.navContact }}</a>
@@ -60,16 +60,20 @@ permalink: "/terms/index.html"
   </header>
 
   <!-- Mobile Sidebar -->
-  <div class="mobile-sidebar">
+  <div class="mobile-sidebar" aria-hidden="true" inert>
+    <div class="mobile-sidebar-head">
+      <span class="mobile-menu-label">MENU</span>
+      <button class="menu-close-btn" type="button" aria-label="メニューを閉じる"><span></span><span></span></button>
+    </div>
     <nav>
       <ul>
-        <li><a href="/business-details/">{{ lang.header.navOverview }}</a></li>
-        <li><a href="#researchers">{{ lang.header.navResearchers }}</a></li>
-        <li><a href="#participants">{{ lang.header.navParticipants }}</a></li>
-        <li><a href="#services">{{ lang.header.navServices }}</a></li>
+        <li><a href="/#service-overview">{{ lang.header.navOverview }}</a></li>
+        <li><a href="/#researchers">{{ lang.header.navResearchers }}</a></li>
+        <li><a href="/#participants">{{ lang.header.navParticipants }}</a></li>
+        <li><a href="/#businesses">{{ lang.header.navServices }}</a></li>
         <li><a href="/news/">{{ lang.header.navNews }}</a></li>
-        <li><a href="#team">{{ lang.header.navTeam }}</a></li>
-        <li><a href="#company">{{ lang.header.navCompany }}</a></li>
+        <li><a href="/#team">{{ lang.header.navTeam }}</a></li>
+        <li><a href="/#company">{{ lang.header.navCompany }}</a></li>
         <li><a href="{{ lang.header.navContactLink }}" class="mobile-contact-btn">{{ lang.header.navContact }}</a></li>
       </ul>
     </nav>
@@ -262,15 +266,30 @@ permalink: "/terms/index.html"
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const mobileSidebar = document.querySelector('.mobile-sidebar');
     const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    const closeMenuButton = document.querySelector('.menu-close-btn');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-sidebar a');
 
-    function toggleMobileMenu() {
-      mobileSidebar.classList.toggle('active');
-      sidebarOverlay.classList.toggle('active');
-      document.body.classList.toggle('menu-open');
+    function setMobileMenu(open) {
+      mobileSidebar.classList.toggle('active', open);
+      sidebarOverlay.classList.toggle('active', open);
+      document.body.classList.toggle('menu-open', open);
+      hamburgerMenu.setAttribute('aria-expanded', String(open));
+      mobileSidebar.setAttribute('aria-hidden', String(!open));
+      mobileSidebar.inert = !open;
+      if (open) closeMenuButton.focus();
     }
 
-    hamburgerMenu.addEventListener('click', toggleMobileMenu);
-    sidebarOverlay.addEventListener('click', toggleMobileMenu);
+    hamburgerMenu.setAttribute('aria-expanded', 'false');
+    hamburgerMenu.addEventListener('click', () => setMobileMenu(!mobileSidebar.classList.contains('active')));
+    closeMenuButton.addEventListener('click', () => { setMobileMenu(false); hamburgerMenu.focus(); });
+    sidebarOverlay.addEventListener('click', () => setMobileMenu(false));
+    mobileMenuLinks.forEach((link) => link.addEventListener('click', () => setMobileMenu(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && mobileSidebar.classList.contains('active')) {
+        setMobileMenu(false);
+        hamburgerMenu.focus();
+      }
+    });
 
     // Animation on scroll
     const animatedElements = document.querySelectorAll('.terms-section');
